@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.break_com" name="Break Videos" version="4.0.3" provider-name="bromix">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+        <import addon="plugin.video.youtube" version="5.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Watch funny videos from break.com</summary>
+		<summary lang="de">Schaue lustige Videos von break.com</summary>
+		<description lang="en">Break is the #1 source for funny videos. Get the hilarious videos today that will be viral tomorrow. Get the most awesome videos on Earth today, because being bored sucks.</description>
+		<description lang="de">Break ist die Nr. 1 Quelle für lustige Videos. Schaue die lustigen Videos, die morgen schon viral gehen. Hole dir die eindrucksvollsten Videos der Erde heute, denn Langeweile ist blöd.</description>
+		<disclaimer lang="en"></disclaimer>
+		<platform>all</platform>
+		<license>GNU General Public License v2.0</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=225052</forum>
+		<website>www.break.com</website>
+		<email>kodi at bromix dot org</email>
+		<source>https://github.com/bromix/plugin.video.break_com</source>
+	</extension>
+</addon>

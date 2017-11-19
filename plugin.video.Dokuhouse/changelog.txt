@@ -1,0 +1,20 @@
+version nr berichtigt von 0.5.4 auf 1.5.4 & 1.5.5 bis 1.5.7 fixed by loki1979
+Version 0.5.4
+ 29.08.2015
+ Links are fixed.
+Version 0.5.3
+ It's running again!
+Version 0.5.2
+ little bugfix
+Version 0.5.1
+ little bug
+Version 0.4
+ lauft wieder.
+Version 0.4
+ Suche wurde implementiert
+Version 0.3
+ Kleinere Verbesserungen
+Version 0.2
+ Kleinere Verbesserungen
+Version 0.1
+ initial

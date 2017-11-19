@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.Dokuhouse"
+       name="Dokuhouse"
+       version="1.5.8"
+       provider-name="Mentality | Loki1979 FIX">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Mentality stellt vor</summary>
+    <description>Es funktioniert wieder!
+~~~Mentality wünscht euch viel Spaß~~~
+Loki1979 FIX 23.03.2017 :
+Titel, Encoding ,Return ,Next Seit</description>    
+    <platform>all</platform>
+  </extension>
+</addon>
