@@ -1,0 +1,37 @@
+v3.1.0
+Contributed by Knuddeltiger:
+* Sorting options: Name or sequence number
+* Automatic video selection for best quality
+* Titles, countries and sequence numbers corrected
+* Errormessage for non-available videos corrected
+* Wrong or missing URLs corrected
+
+v3.0.2
+* Parser updated due to site redesign
+
+v3.0.1
+* Corrected parsed pages range
+
+v3.0.0
+* Parser updated due to site redesign
+
+v2.0.0
+* Complete redesign (Menu, Parsing, ...)
+* No need for caching anymore
+
+v1.0.1
+* Improvements to get rid of timeout-problems opening URLs: catch timeout and retry urlopen() several times  
+* Caching Main Page to reduce redundant requests to get the topic URLs. 
+* Added Metadata in URL Request: User-Agent
+* addon.xml: added http:// to <website>, 
+* corrected first version number (0.1 -> 1.0.0)
+* Several code design improvements
+* Videos Context menu: Toggle button watched / unwatched
+* unified logging instead of print()
+
+v1.0.0
+* Episodes ordered by continent
+* Episodes ordered alphabetically
+* Specials
+* Comfortable browsing experience based on cached menu navigation
+* Selective purge of navigation cache per context menu 
