@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.hsk.kodiaddons" name="[COLOR lime]HSK-DE REPOSITORY[/COLOR]" version="1.0.1" provider-name="[COLOR lime]HSK-DE[/COLOR]">
+    <extension point="xbmc.addon.repository" name="HSK-DE DE REPOSITORY">
+		<info compressed="false">http://hsk.goip.de/hsk-repo/de/addons.xml</info>
+		<checksum>http://hsk.goip.de/hsk-repo/de/addons.xml.md5</checksum>
+		<datadir zip="true">http://hsk.goip.de/hsk-repo/de/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR lime]H.S.K-DE PRPO[/COLOR]</summary>
+        <description>Facebook Gruppe :
+Hardware - Software - Kodi - DE</description>
+        <platform>all</platform>
+    </extension>
+</addon>
