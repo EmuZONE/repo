@@ -18,11 +18,11 @@
 		<disclaimer lang="en" />
 		<platform>all</platform>
 		<language />
-		<website>https://github.com/rmrector/context.artwork.downloader.auto</website>
+		<website>https://github.com/emuzone/repo/context.artwork.downloader.auto</website>
 		<forum />
 		<email />
 		<license>The MIT License</license>
-		<source>https://github.com/rmrector/context.artwork.downloader.auto</source>
+		<source>https://github.com/emuzone/repo/context.artwork.downloader.auto</source>
 	</extension>
 </addon>
 
@@ -48,7 +48,7 @@
 		<forum />
 		<email />
 		<license>The MIT License</license>
-		<source>https://github.com/rmrector/context.artwork.downloader.gui</source>
+		<source>https://github.com/emuzone/repo/context.artwork.downloader.gui</source>
 	</extension>
 </addon>
 
@@ -78,7 +78,7 @@ By default, the add-on will look in the "Extras" sub-folder for content (can be 
 Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/view/Add-on:Extras</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <forum></forum>
-    <source>https://github.com/tamland/kodi-addon-extras</source>
+    <source>https://github.com/emuzone/repo/kodi-addon-extras</source>
   </extension>
 </addon>
 
@@ -101,7 +101,7 @@ Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/vie
     <description lang="en">Open image location in maps browser from context menu. Needs script.maps.browser installed and activated.</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <forum></forum>
-    <source>https://github.com/phil65/context.maps.browser.map</source>
+    <source>https://github.com/emuzone/repo/context.maps.browser.map</source>
   </extension>
 </addon>
 
@@ -142,7 +142,7 @@ Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/vie
     <description lang="en_GB">Add folders to Skin Shortcuts managed menus directly from the context menu. Requires skin support.</description>
     <license>GNU General Public License, v2</license>
     <forum></forum>
-    <source>https://github.com/Ignoble61/context.skinshortcuts.addtomenu</source>
+    <source>https://github.com/emuzone/repo/context.skinshortcuts.addtomenu</source>
   </extension>
 </addon>
 
@@ -263,7 +263,7 @@ Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/vie
     <forum>http://forum.xbmc.org/showthread.php?tid=133547</forum>
     <website></website>
     <email></email>
-    <source></source>
+    <source>https://github.com/emuzone/repo/metadata.album.universal</source>
   </extension>
 </addon>
 
@@ -453,7 +453,7 @@ Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/vie
     <language></language>
 	<platform>all</platform>
 	<website></website>
-    <source>https://github.com/farlight1/metadata.artists.metal-archives.com</source>
+    <source>https://github.com/emuzone/repo/metadata.artists.metal-archives.com</source>
     <email></email>
     <forum></forum>
     <license>GPL v2.0</license>
