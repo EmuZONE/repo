@@ -1,2 +1,4 @@
-# repo
-AddOn Repository for XBMC
+
+![alt text][logo]
+
+[logo]: repository.emuzone/icon.png
