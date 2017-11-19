@@ -1,0 +1,46 @@
+0.5.2
+- fixed settings issue introduced with kodi leia dev build and typo in intermediate addon version 0.5.1.1
+0.5.1
+- finally solved the stuttering problem (many thanks to zeripath for finding a solution)
+0.5.0
+- fixed bug resulting in empty album song list for music unlimited users
+- playback of uploaded and purchased (amazon auto rip) songs in own playlists now possible
+0.4.8
+- added multifactor authentification
+- ssl certificate verification can now be disabled via plugin settings
+0.4.7
+- changing default value for the "force DVD player" setting to false as kodi 17 does not provide player enforcing by plugin
+0.4.5
+- fixed encoding problems when title/album/artist-names contains non latin1 letters
+- added property that provides current-playlist and playing playlist name
+0.4.4
+- fixed artist name display when playing song from album view
+- added artist name in the amazon playlist listing
+0.4.0
+- added customized playlist support
+0.3.2
+- fixed the check for login fix
+0.3.1
+- check for login fixed
+0.3.0
+- Login fix 2
+- adapted amazons new m3u8 data transfer
+- added one captcha detection message
+- added "back to main menu"
+- added/changed song thumbnail 
+0.2.4
+- Login fix as amazon changed their login site
+0.2.3
+- auto relogin on coockie timeout
+- changed default icon, using prime music icon now
+0.2.2
+- Made the dvd-player enforcement configurable
+- New background fanart (thx nexusle@kodinerds)
+0.2.1
+- Choosing the dvdplayer now explicitly via python code, no further editing of config file needed for stutter-free playback
+0.2.0
+- Implemented audio quality selection, now selection between 48kb, 128kb and 256kb available
+0.1.2
+- Bugfix: Fixed title-listing when album containes non-prime titles, too
+0.1.1
+- Initial release
