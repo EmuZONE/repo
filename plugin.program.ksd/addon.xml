@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.ksd" name="Kodi Stream Downloader" version="1.0.4" provider-name="Loki1979">
+    <requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>Kodi Stream Downloader ( KSD )</summary>
+<description>Das KSD Addon dient dazu Stream Videos
+heruntergeladen ! ( Keine Livestream's ! )
+
+1.)Starten Sie einen Video Stream !
+2.)Nach dem anlaufen den Stream beenden !
+3.)Gehen Sie nun zum Menuepunkt Programme zurueck !
+4.)Suchen Sie das KSD Addon und klicken Sie es an !
+
+Nun sollte der Download starten !
+Es wird immer das letzte gestartete Video heruntergeladen !
+</description>
+</extension>
+</addon>
