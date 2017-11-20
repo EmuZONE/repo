@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.hsk_wizard"
+       name="[COLOR blue]HSK-DE WIZARD[/COLOR]"
+	   version="1.2.4"
+	   provider-name="loki1979">
+    <requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="run.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+	    <summary>Wizard vom 19.11.2017 - 10:00</summary>
+        <description>Wizard Support:
+
+HSK-DE:
+Hardware - Software - Kodi - DE:
+https://www.facebook.com/groups/hskde/
+
+Kodimans Forum - HSK-DE:
+https://forum.kodiman.eu/forum/</description>
+        <disclaimer></disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license></license>
+        <forum></forum>
+        <website></website>
+        <email></email>
+        <source></source>
+        <news></news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+	</extension>
+</addon>

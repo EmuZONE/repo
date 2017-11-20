@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.oldiptvchanger" name="[COLOR blue]Old Simple Client IPTV Changer[/COLOR]" version="0.0.2" 
+provider-name="[COLOR red]Loki1979 | Andre Albus[/COLOR]">
+    <requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>[COLOR red]Old Simple Client IPTV Changer[/COLOR]</summary>
+		<description>Stellt den IPTV Simple Client auf das gewaehlte IPTV ein !
+
+IPTV Simple Client und Kodi TV muessen Sie selbst aktivieren !
+
+Addon Support:
+Hardware - Software - Kodi - DE
+https://www.facebook.com/groups/716337198478240/
+KODI Unlimited Support
+https://www.facebook.com/groups/792147990894717/
+
+Created by Loki1979 | Andre Albus 10.02.2016
+
+</description>
+		<license></license>
+		<language></language>	
+		<source></source>
+		<email></email>
+	</extension>
+</addon>

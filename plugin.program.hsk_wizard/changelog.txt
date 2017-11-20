@@ -1,0 +1,11 @@
+addon id = plugin.program.hsk_wizard
+
+name = HSK-DE WIZARD
+
+version = 1.2.4
+
+provider-name = loki1979
+
+xbmc python version = 2.1.0 +
+
+Wizard vom 19.11.2017 - 10:00
