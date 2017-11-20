@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.program.sendtoaxel"
+       version="0.0.5" name="SendTo Axel"
+       provider-name="The[COLOR tan]Highway[/COLOR]">
+  <requires>
+  	<import addon="xbmc.python" version="2.1.0" />
+  	<import addon="script.module.t0mm0.common" />
+  	<import addon="script.module.addon.common" optional="true" />
+  	<import addon="script.module.axel.downloader" optional="true" />
+  	<import addon="script.common.plugin.cache" optional="true" />
+  	<import addon="script.module.urlresolver" optional="true" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+  	<provides>video audio executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  	<summary>A tool to help with the use of script.module.axel.downloader.</summary>
+  	<description>Play the file (video or music) currently playing with Axel Player's MultiThreading.  This does not work for live streams.</description>
+  	<disclaimer>By using this, you take reponsibility for anything that happens.  I take no responsibility for any problems this plugin might in any way, form, shape or size cause. This is project is for a LEARNING EXPERIANCE.</disclaimer>
+  	<language>en</language>
+  	<platform>all</platform>
+  	<forum></forum>
+  	<website></website>
+  	<source></source>
+  	<email></email>
+  </extension>
+</addon>
