@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.emuzone" name="EmuZONE AddOns" version="1.0.0" provider-name="YggDraz1l">
-	<extension point="xbmc.addon.repository" name="YggDraz1l">
-		<info compressed="true">http://warcry.bplaced.net/ezmc/addons.xml</info>
-		<checksum>http://warcry.bplaced.net/ezmc/addons.xml.md5</checksum>
-		<datadir zip="true">http://warcry.bplaced.net/ezmc/</datadir>
+<addon id="repository.emuzone" name="EmuZONE Add-ons" version="2.1.1" provider-name="EmuZONE">
+	<extension point="xbmc.addon.repository" name="EmuZONE">
+		<info compressed="true">https://raw.githubusercontent.com/emuzone/repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/emuzone/repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/emuzone/repo/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Offizielle Repository der EmuZONE</summary>
-		<summary lang="de">Offizielle Repository der EmuZONE</summary>
-		<description lang="en">This is the official Repository of the german Community 'EmuZONE' which you'll find at www.worldowarcry.de. Most of the hosted Addons are supported by the members of the Community. Enjoy!</description>
-		<description lang="de">Das ist das offizielle Repository der deutschen Community 'EmuZONE', welche Du unter www.worldowarcry.de findest. Die meisten der hier gehosteten Addons werden von den Mitgliedern der Community aktiv supported. Viel Spaß!</description>
+		<summary lang="en">Official Repository of EmuZONE</summary>
+		<summary lang="de">Offizielles Repository der EmuZONE</summary>
+		<description lang="en">This is the official Repository of the german Community 'EmuZONE' which you'll find at www.worldofwarcry.de. Most of the hosted Addons are supported by the members of the Community. Enjoy!</description>
+		<description lang="de">Das ist das offizielle Repository der deutschen Community 'EmuZONE', welche Du unter www.worldofwarcry.de findest. Die meisten der hier gehosteten Addons werden von den Mitgliedern der Community aktiv supported. Viel Spaß!</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
