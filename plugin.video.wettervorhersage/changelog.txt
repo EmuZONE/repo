@@ -1,0 +1,10 @@
+0.0.1
+- first try
+0.0.2
+- more wetter.com Videos, removed n24, added wetter.info
+0.0.3
+- changes on wetter.com site, added zdf wetter
+0.0.4
+- compact list, added ntv, removed zdf
+0.0.5
+- added sachsen (wetter.com / mdr)

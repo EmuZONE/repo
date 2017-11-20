@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.wettervorhersage" name="Wettervorhersage" version="0.0.5" provider-name="stemaj">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="de">Wettervorhersage Deutschland</summary>
+		<language>de</language>
+		<description lang="de">Videos von verschiedenen Quellen aktueller Wettervohersagen</description>
+	</extension>
+</addon>

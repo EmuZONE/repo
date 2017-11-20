@@ -18,11 +18,11 @@
 		<disclaimer lang="en" />
 		<platform>all</platform>
 		<language />
-		<website>https://github.com/emuzone/repo/context.artwork.downloader.auto</website>
+		<website>https://github.com/rmrector/context.artwork.downloader.auto</website>
 		<forum />
 		<email />
 		<license>The MIT License</license>
-		<source>https://github.com/emuzone/repo/context.artwork.downloader.auto</source>
+		<source>https://github.com/rmrector/context.artwork.downloader.auto</source>
 	</extension>
 </addon>
 
@@ -48,7 +48,7 @@
 		<forum />
 		<email />
 		<license>The MIT License</license>
-		<source>https://github.com/emuzone/repo/context.artwork.downloader.gui</source>
+		<source>https://github.com/rmrector/context.artwork.downloader.gui</source>
 	</extension>
 </addon>
 
@@ -78,7 +78,7 @@ By default, the add-on will look in the "Extras" sub-folder for content (can be 
 Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/view/Add-on:Extras</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <forum></forum>
-    <source>https://github.com/emuzone/repo/kodi-addon-extras</source>
+    <source>https://github.com/tamland/kodi-addon-extras</source>
   </extension>
 </addon>
 
@@ -101,7 +101,7 @@ Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/vie
     <description lang="en">Open image location in maps browser from context menu. Needs script.maps.browser installed and activated.</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <forum></forum>
-    <source>https://github.com/emuzone/repo/context.maps.browser.map</source>
+    <source>https://github.com/phil65/context.maps.browser.map</source>
   </extension>
 </addon>
 
@@ -142,7 +142,7 @@ Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/vie
     <description lang="en_GB">Add folders to Skin Shortcuts managed menus directly from the context menu. Requires skin support.</description>
     <license>GNU General Public License, v2</license>
     <forum></forum>
-    <source>https://github.com/emuzone/repo/context.skinshortcuts.addtomenu</source>
+    <source>https://github.com/Ignoble61/context.skinshortcuts.addtomenu</source>
   </extension>
 </addon>
 
@@ -263,7 +263,7 @@ Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/vie
     <forum>http://forum.xbmc.org/showthread.php?tid=133547</forum>
     <website></website>
     <email></email>
-    <source>https://github.com/emuzone/repo/metadata.album.universal</source>
+    <source></source>
   </extension>
 </addon>
 
@@ -453,7 +453,7 @@ Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/vie
     <language></language>
 	<platform>all</platform>
 	<website></website>
-    <source>https://github.com/emuzone/repo/metadata.artists.metal-archives.com</source>
+    <source>https://github.com/farlight1/metadata.artists.metal-archives.com</source>
     <email></email>
     <forum></forum>
     <license>GPL v2.0</license>
@@ -3377,6 +3377,42 @@ https://www.facebook.com/groups/emuzone/</description>
   </extension>
 </addon>
 
+<addon id="plugin.program.hsk_wizard"
+       name="[COLOR blue]HSK-DE WIZARD[/COLOR]"
+	   version="1.2.4"
+	   provider-name="loki1979">
+    <requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="run.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+	    <summary>Wizard vom 19.11.2017 - 10:00</summary>
+        <description>Wizard Support:
+
+HSK-DE:
+Hardware - Software - Kodi - DE:
+https://www.facebook.com/groups/hskde/
+
+Kodimans Forum - HSK-DE:
+https://forum.kodiman.eu/forum/</description>
+        <disclaimer></disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license></license>
+        <forum></forum>
+        <website></website>
+        <email></email>
+        <source></source>
+        <news></news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+	</extension>
+</addon>
+
 <addon id="plugin.program.indigo" version="3.0.2" name="Indigo" author="tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -4564,6 +4600,24 @@ Titel, Encoding ,Return ,Next Seit</description>
     </extension>
 </addon>
 
+<addon id="plugin.video.galileo" name="[COLOR white]Galileo[/COLOR] [COLOR red]YouTube[/COLOR] [COLOR white]Chanel[/COLOR]" version="1.0.0" provider-name="Kodiman | HSK-DE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>powered by Kodiman</summary>
+    <description>https://www.kodiman.net/ :
+https://www.youtube.com/user/GalileoOffiziell/
+    </description>
+  </extension>
+</addon>
+
 <addon
 	id="plugin.video.gamekings"
 	name="GameKings"
@@ -5197,6 +5251,25 @@ JAVStream V0.93.3 (8th October 2017)
     </extension>
 </addon>
 
+<addon id="plugin.video.n24_de" name="N24.de" version="2.0.14" provider-name="AddonScriptorDE">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="de">N24 Mediathek und Livestream</summary>
+        <summary lang="en">N24 Media Library and Livestream</summary>
+        <language>de</language>
+        <description lang="de">N24 Mediathek und Livestream</description>
+        <description lang="en">N24 Media Library and Livestream</description>
+        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="plugin.video.nick_de" name="Nickelodeon.de" version="1.1.8" provider-name="L0RE">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -5296,6 +5369,40 @@ JAVStream V0.93.3 (8th October 2017)
     <description lang="en">Cultural sites and natural landscapes on planet earth, that UNESCO has declared part of the "Heritage of Mankind".</description>
     <disclaimer lang="de">Einige Teile dieses Addons könnten in deinem Land verboten sein - bitte stelle vor der installation sicher, dass du keine Gesetze verletzt.</disclaimer>
     <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="plugin.video.sempervideo" name="[COLOR green]Semper Video[/COLOR]" version="1.0.7" provider-name="EmuZONE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>EmuZONE Plugins</summary>
+    <description>Semper Video beschaeftigt sich mit allen Themen Rund um den PC, Betriebsystemen wie Windows oder Linux und gibt hilfreiche Tips und Tricks</description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.semper_video" name="[COLOR white]Semper[/COLOR] [COLOR blue]Video[/COLOR] [COLOR white]Chanel[/COLOR]" version="1.0.6" provider-name="Kodiman | HSK-DE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>powered by HSK</summary>
+    <description>https://www.sempervideo.de/ :
+https://www.youtube.com/user/SemperVideo/
+    </description>
   </extension>
 </addon>
 
@@ -5689,6 +5796,24 @@ Removed: Nudeflix</news>
     </extension>
 </addon>
 
+<addon id="plugin.video.venix" name="[COLOR white]Venix[/COLOR] [COLOR blue]YouTube[/COLOR] [COLOR white]Chanel[/COLOR]" version="1.0.0" provider-name="Kodiman | HSK-DE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>powered by HSK</summary>
+    <description>VENIX - Technik, Reviews und Tutorials :
+https://www.facebook.com/venix.tech.3
+    </description>
+  </extension>
+</addon>
+
 <addon id="plugin.video.vevo_tv" name="VEVO TV" version="1.1.5" provider-name="AddonScriptorDE">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
@@ -5753,6 +5878,21 @@ Removed: Nudeflix</news>
         <email>andreas at vogler dot name</email>
         <website>http://www.weltderwunder.tv</website>
     </extension>
+</addon>
+
+<addon id="plugin.video.wettervorhersage" name="Wettervorhersage" version="0.0.5" provider-name="stemaj">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="de">Wettervorhersage Deutschland</summary>
+		<language>de</language>
+		<description lang="de">Videos von verschiedenen Quellen aktueller Wettervohersagen</description>
+	</extension>
 </addon>
 
 <addon id="plugin.video.woodrocket" name="Wood Rocket" version="0.5" provider-name="ptom">
@@ -10014,6 +10154,25 @@ v5.2.14 (2017-01-23)
     <website>http://www.br.de</website>
     <email>andreas at vogler dot name</email>
     <source>https://github.com/kodinerds/repo/tree/master/addons/service.subtitles.tv4user</source>
+  </extension>
+</addon>
+
+<addon id="service.vpn.manager"
+       name="VPN Manager for OpenVPN"
+       version="4.0.7"
+       provider-name="Zomboided">
+  <requires>
+    <import addon="xbmc.python" version="2.7.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Configure and manage VPN connections using openVPN</summary>
+    <description lang="en">Establish a connection to a VPN provider and automatically switch VPN locations based on the add-on being used.  Also supports automatic reconnect and connection at boot time.  And with some simple configuring (see README and remote.xml file in add-on directory), you can cycle through VPN connections using a remote button.</description>
   </extension>
 </addon>
 

@@ -1,0 +1,26 @@
+1.0.0
+- Initial release
+1.0.1
+- Changed addon.xml
+1.0.2
+- Added <disclaimer> Tag to addon.xml
+1.0.3
+- Changed Timeout
+1.0.4
+- Fixed Livestream Problem
+1.0.5
+- Changed Timeout again
+1.0.6
+- Various fixes and optical optimizations
+1.0.7
+- Fixed wrong localization string & Livestream problem
+1.0.8 / 2.0.8
+- Fixed site changes
+2.0.9
+- Patched Version by PBHL
+2.0.12
+- Patch by Brat
+2.0.13
+- added weather
+2.0.14
+- weather redirecting fix
