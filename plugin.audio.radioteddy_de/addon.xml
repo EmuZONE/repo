@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.audio.radioteddy_de" name="RadioTeddy.de" version="1.0.0" provider-name="Tombstone">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="de">Radio Teddy, macht Spass! macht Schlau! - Das Radio für Eltern und Kids stream</summary>
+        <language>de</language>
+        <description lang="de">Made in Germany, Kinder Disco, Soft Mix, Gute Nacht Musik, Weihnachtslieder, Kinderlieder, TEDDY Cool und Livestream</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <source>https://github.com/kodinerds/repo/tree/master/addons/plugin.audio.radioteddy_de</source>
+        <forum>http://forum.xbmc.org/showthread.php?</forum>
+        <website>http://www.radioteddy.de/</website>
+    </extension>
+</addon>
