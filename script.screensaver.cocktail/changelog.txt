@@ -1,0 +1,13 @@
+1.1.0  10/2/2017
+- Fix screensaver errors
+- Fixes to skinning
+- Added ingredient descriptions
+- Added back button
+- New icon
+- Added screenshots
+
+1.0.0 - 6/9/2015
+-Added ingredient description
+
+0.0.2 - 4/9/2015
+-First Version
