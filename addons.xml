@@ -4553,6 +4553,22 @@ With Digi Storage Player you can easily browse through Media files ( music, movi
     </extension>
 </addon>
 
+<addon id="plugin.video.emuzone" name="[COLOR green]EmuZONE Freiheit Kanal[/COLOR]" version="1.0.7" provider-name="EmuZONE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Der 3. Blickwinkel</summary>
+    <description>Informationsvideos von der 3. Blickwinkel sowie anderen Inhalten zum Thema Volk und Nation.</description>
+  </extension>
+</addon>
+
 <addon id="plugin.video.exodus" version="4.1.07" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
