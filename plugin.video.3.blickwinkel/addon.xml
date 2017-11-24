@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.3.blickwinkel" name="[COLOR yellow]Der 3. Blickwinkel[/COLOR]" version="1.0.4" provider-name="EmuZONE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Der 3. Blickwinkel</summary>
+    <description>Der dritte Blickwinkel ist der WordPress-Blog von Frank Kraemer. Hier erortert er seine Sicht der Dinge zu aktuellen Themen wie der gerade betriebenen Masseneinwanderung oder geht auf Themen wie Nationalismus, Deutschenhass, die multikulturelle Gesellschaft und Zukunftsaussichten fur Deutschland und Europa ein.</description>
+  </extension>
+</addon>
