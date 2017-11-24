@@ -1,3 +1,3 @@
 ![alt text][logo]
 
-[logo]: MediaCenterGUI/mcgui.png
+[logo]: repository.emuzone/logo.png
