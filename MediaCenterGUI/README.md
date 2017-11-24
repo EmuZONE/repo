@@ -1,3 +1,4 @@
-![alt text][logo]
 
-[logo]: repository.emuzone/logo.png
+<p align="center">
+  <img src="https://github.com/EmuZONE/repo/edit/master/MediaCenterGUI/logo.png" width="350"/>
+</p>
