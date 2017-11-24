@@ -1,1 +1,1 @@
-![Alt text](https://github.com/EmuZONE/repo/MediaCenterGUI/logo.png?raw=true "MediaCenter GUI")
+![Alt text](https://raw.githubusercontent.com/EmuZONE/repo/master/MediaCenterGUI/mcgui.png?raw=true "MediaCenter GUI")
