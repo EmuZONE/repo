@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68799C9D-A34E-42D4-928C-79D81734AD98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>XBMC_Desktop.My.MyApplication</StartupObject>
+    <RootNamespace>XBMC_Desktop</RootNamespace>
+    <AssemblyName>Media Center</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Media Center.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Media Center.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon_edit.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>089B01C5DD841E89EA0590C319C429B0F8FE3F0D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>XBMC Desktop_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>XBMC Desktop_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Apps.Designer.vb">
+      <DependentUpon>Apps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Apps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmuListe.Designer.vb">
+      <DependentUpon>EmuListe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmuListe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmuZONE.Designer.vb">
+      <DependentUpon>EmuZONE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmuZONE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAQ.Designer.vb">
+      <DependentUpon>FAQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fusion.Designer.vb">
+      <DependentUpon>Fusion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fusion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IPTV.Designer.vb">
+      <DependentUpon>IPTV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IPTV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loader.Designer.vb">
+      <DependentUpon>Loader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MySQL.Designer.vb">
+      <DependentUpon>MySQL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MySQL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pair.Designer.vb">
+      <DependentUpon>Pair.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pair.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repos.Designer.vb">
+      <DependentUpon>Repos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Repos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skins.Designer.vb">
+      <DependentUpon>Skins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Skins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Apps.resx">
+      <DependentUpon>Apps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmuListe.resx">
+      <DependentUpon>EmuListe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmuZONE.resx">
+      <DependentUpon>EmuZONE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAQ.resx">
+      <DependentUpon>FAQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fusion.resx">
+      <DependentUpon>Fusion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPTV.resx">
+      <DependentUpon>IPTV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loader.resx">
+      <DependentUpon>Loader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MySQL.resx">
+      <DependentUpon>MySQL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pair.resx">
+      <DependentUpon>Pair.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repos.resx">
+      <DependentUpon>Repos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skins.resx">
+      <DependentUpon>Skins.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="XBMC Desktop_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xbmc-gui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon_edit.ico" />
+    <Content Include="Mybaco-Baco-Flurry-3-XBMC.ico" />
+    <None Include="Resources\Silver_Button.jpg" />
+    <None Include="Resources\1000px-Home_Icon.svg.png" />
+    <None Include="Resources\Arrow 2.png" />
+    <None Include="Resources\Arrow.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

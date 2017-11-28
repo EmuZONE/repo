@@ -1,0 +1,25 @@
+c:\users\yggdraz1l\documents\visual studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC_Desktop.Form1.resources
+c:\users\yggdraz1l\documents\visual studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC_Desktop.Resources.resources
+c:\users\yggdraz1l\documents\visual studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC_Desktop.Pair.resources
+c:\users\yggdraz1l\documents\visual studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC Desktop.vbproj.GenerateResource.Cache
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC_Desktop.Fusion.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC_Desktop.Repos.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC_Desktop.IPTV.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC_Desktop.EmuZONE.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC_Desktop.EmuListe.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC_Desktop.FAQ.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC_Desktop.Loader.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC_Desktop.MySQL.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC_Desktop.Apps.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\XBMC_Desktop.Skins.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\bin\Debug\Media Center.exe.config
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\bin\Debug\Media Center.exe
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\bin\Debug\Media Center.pdb
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\bin\Debug\Media Center.xml
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\Media Center.exe
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\Media Center.xml
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\XBMC Desktop\obj\Debug\Media Center.pdb
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\bin\Debug\Media Center.exe.config
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\Media Center.exe
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\Media Center.xml
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\Media Center.pdb
