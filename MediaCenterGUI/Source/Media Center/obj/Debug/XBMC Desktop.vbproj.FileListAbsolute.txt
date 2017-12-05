@@ -23,3 +23,21 @@ C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Cent
 C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\Media Center.exe
 C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\Media Center.xml
 C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\Media Center.pdb
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\bin\Debug\Media Center.exe
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\bin\Debug\Media Center.pdb
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\bin\Debug\Media Center.xml
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.Apps.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.EmuListe.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.EmuZONE.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.FAQ.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.Form1.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.Fusion.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.IPTV.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.Loader.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.Resources.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.MySQL.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.Pair.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.Repos.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.Skins.resources
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC Desktop.vbproj.GenerateResource.Cache
+C:\Users\YggDraz1l\Documents\Visual Studio 2013\Projects\XBMC Desktop\Media Center\obj\Debug\XBMC_Desktop.AboutBox1.resources

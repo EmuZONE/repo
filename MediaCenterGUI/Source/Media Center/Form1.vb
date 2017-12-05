@@ -1,4 +1,5 @@
-﻿Public Class Form1
+﻿Imports System.Net
+Public Class Form1
 
     Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
         Pair.Show()
@@ -11,6 +12,13 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
             Process.Start("kodi.exe")
+            If RadioButton1.Checked Then
+                Process.Start("downloader\JDownloader2.exe")
+                Try
+                Catch ex As Exception
+                    MsgBox("Die Anwendung konnte nicht gefunden werden.")
+                End Try
+            End If
             If CheckBox1.Checked Then
                 Me.Close()
             End If
@@ -128,5 +136,103 @@
 
     Private Sub BeendenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BeendenToolStripMenuItem.Click
         Me.Close()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub DownloadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DownloadToolStripMenuItem.Click
+        Process.Start("https://raw.githubusercontent.com/EmuZONE/IPTV/master/iptv/kodi/kodi.m3u")
+    End Sub
+
+    Private Sub VersionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VersionToolStripMenuItem.Click
+        MsgBox("EmuZONE Media Center GUI: Version 1.02 Beta")
+    End Sub
+
+    Private Sub ÜberToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ÜberToolStripMenuItem.Click
+        AboutBox1.Show()
+    End Sub
+
+    Private Sub OpenloadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenloadToolStripMenuItem.Click
+        MsgBox("Die Folgende Seite wird in einem externen Webbrowser geöffnet.")
+        Process.Start("https://olpair.com/")
+    End Sub
+
+    Private Sub TheVideoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TheVideoToolStripMenuItem.Click
+        MsgBox("Die Folgende Seite wird in einem externen Webbrowser geöffnet.")
+        Process.Start("https://tvad.me/pair")
+    End Sub
+
+    Private Sub FlashXToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FlashXToolStripMenuItem.Click
+        MsgBox("Die Folgende Seite wird in einem externen Webbrowser geöffnet.")
+        Process.Start("https://flashx.tv/pair/")
+    End Sub
+
+    Private Sub ExodusToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExodusToolStripMenuItem.Click
+        Try
+            Process.Start("plugins\script\exodus.exe")
+        Catch ex As Exception
+            MsgBox("Die gewünschte Datei konnte nicht gefunden werden.")
+        End Try
+
+    End Sub
+
+    Private Sub MP3StreamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MP3StreamToolStripMenuItem.Click
+        Try
+            Process.Start("plugins\script\mp3streams.exe")
+        Catch ex As Exception
+            MsgBox("Die gewünschte Datei konnte nicht gefunden werden.")
+        End Try
+    End Sub
+
+    Private Sub XStreamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles XStreamToolStripMenuItem.Click
+        Try
+            Process.Start("plugins\script\xstream.exe")
+        Catch ex As Exception
+            MsgBox("Die gewünschte Datei konnte nicht gefunden werden.")
+        End Try
+    End Sub
+
+    Private Sub DownloadToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles DownloadToolStripMenuItem1.Click
+        Try
+            Process.Start("sql\Setup\loadmgr.exe")
+        Catch ex As Exception
+            MsgBox("Die gewünschte Datei konnte nicht gefunden werden.")
+        End Try
+    End Sub
+
+    Private Sub StartenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StartenToolStripMenuItem.Click
+        Try
+            Process.Start("C:\Program Files (x86)\PremiumSoft\Navicat Premium\navicat.exe")
+        Catch ex As Exception
+            MsgBox("Das Programm Navicat muss zuerst heruntergeladen und installiert werden. Der Download wird nun gestartet, die Installation muss Manuell durchgeführt werden. Das heruntergeladene Archiv ist in dem Verzeichnis [sql] zu finden.")
+            Process.Start("sql\Setup\loadmgr.exe")
+        End Try
+    End Sub
+
+    Private Sub HeidiSQLToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HeidiSQLToolStripMenuItem.Click
+        Try
+            Process.Start("sql\heidisql.exe")
+        Catch ex As Exception
+            MsgBox("Die gewünschte Datei konnte nicht gefunden werden.")
+        End Try
+    End Sub
+
+    Private Sub DownloadToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles DownloadToolStripMenuItem2.Click
+        Try
+            Process.Start("iptv\Listen\Script\iptv.exe")
+        Catch ex As Exception
+            MsgBox("Die gewünschte Datei konnte nicht gefunden werden.")
+        End Try
+    End Sub
+
+    Private Sub AnzeigenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AnzeigenToolStripMenuItem.Click
+        Try
+            Process.Start("iptv\Listen\PayTV.xml")
+        Catch ex As Exception
+            MsgBox("Die gewünschte Datei konnte nicht gefunden werden und muss deshalb heruntergeladen werden.")
+            Process.Start("iptv\Listen\Script\iptv.exe")
+        End Try
     End Sub
 End Class
