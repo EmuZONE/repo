@@ -125,27 +125,6 @@ Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/vie
     </extension>
 </addon>
 
-<addon id="context.skinshortcuts.addtomenu" name="Skin Shortcuts - Add To Menu" version="1.0.0" provider-name="BobCratchett">
-  <requires>
-    <import addon="xbmc.python" version="2.20.0"/>
-    <import addon="script.skinshortcuts" version="1.0.7"/>
-  </requires>
-  <extension point="kodi.context.item" library="addon.py">
-    <item>
-      <label>32000</label>
-      <visible>!StringCompare(ListItem.Label,..) + ListItem.IsFolder</visible>
-    </item>
-  </extension>
-  <extension point="kodi.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en_GB">Add folders to Skin Shortcuts managed menus</summary>
-    <description lang="en_GB">Add folders to Skin Shortcuts managed menus directly from the context menu. Requires skin support.</description>
-    <license>GNU General Public License, v2</license>
-    <forum></forum>
-    <source>https://github.com/Ignoble61/context.skinshortcuts.addtomenu</source>
-  </extension>
-</addon>
-
 <addon id="metadata.album.universal"
        name="Universal Album Scraper"
        version="2.7.3"
@@ -926,7 +905,7 @@ Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/vie
 
 <addon id="metadata.common.themoviedb.org"
        name="The Movie Database Scraper Library"
-       version="2.17.4"
+       version="2.17.5"
        provider-name="Team Kodi">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
@@ -1241,7 +1220,7 @@ Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/vie
 
 <addon id="metadata.themoviedb.org"
        name="The Movie Database"
-       version="4.0.2"
+       version="4.0.3"
        provider-name="Team Kodi">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
@@ -1645,7 +1624,7 @@ Tip: for how to avoid extras beings scraped to library, see http://kodi.wiki/vie
 
 <addon id="metadata.universal"
        name="Universal Movie Scraper"
-       version="2.8.9"
+       version="2.8.11"
        provider-name="Olympia, Team Kodi">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
@@ -2250,28 +2229,6 @@ No Station Such Dedication
     <source>https://github.com/raptor2101/PodCatcher</source>
     <email>raptor2101@gmx.de</email>
   </extension>
-</addon>
-
-<addon id="plugin.audio.prime_music" name="Amazon Prime Music" version="0.5.2" provider-name="piet">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.mechanize" version="0.2.6"/>
-        <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Amazon Prime Music Add-on (DE)</summary>
-        <language></language>
-        <description lang="en">Amazon Prime Music Add-on (DE)</description>
-        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <source>https://github.com/</source>
-        <forum>http://www.kodinerds.net</forum>
-        <website>http://www.amazon.de</website>
-    </extension>
 </addon>
 
 <addon id="plugin.audio.pureradio" name="PureRadio.One" version="1.0.0" provider-name="cubitus">
@@ -3120,27 +3077,6 @@ Note: Clicking on an image result will give you a list of images from the page t
   </extension>
 </addon>
 
-<addon id="plugin.image.spacetelescope" name="Hubble Space Telescope Images" version="0.0.1" provider-name="Leopold">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.xbmcswift2" version="2.4.0" optional="false"/>
-    <import addon="script.module.beautifulsoup4" version="4.3.1" optional="false"/>
-    <import addon="script.module.html5lib" version="0.999" optional="false"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>image</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <language>en</language>
-    <summary>A catalog of images from the Hubble space telescope.</summary>
-    <description>The Hubble Space Telescope is a collaboration between ESA and NASA. It's a long-term, space-based observatory. The observations are carried out in visible, infrared and ultraviolet light. In many ways Hubble has revolutionised modern astronomy, by not only being an efficient tool for making new discoveries, but also by driving astronomical research in general.</description>
-    <source>https://github.com/LS80/plugin.image.spacetelescope.git</source>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <disclaimer>ESA/Hubble images, videos and web texts are released under the Creative Commons Attribution 3.0 Unported license and may on a non-exclusive basis be reproduced without fee provided they are clearly and visibly credited. More information is available at http://spacetelescope.org/copyright</disclaimer>
-  </extension>
-</addon>
-
 <addon id="plugin.image.windows-wallpaper" name="Windows Wallpaper" version="0.5.1" provider-name="Leopold">
   <requires>
     <import addon="xbmc.python" version="2.13.0"/>
@@ -3506,39 +3442,6 @@ Es wird immer das letzte gestartete Video heruntergeladen !
         <email></email>
     </extension>
 
-</addon>
-
-
-<addon id="plugin.program.newscenter" name="NewsCenter" version="0.0.9" provider-name="NewsCenter">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.feedparser" version="5.1.3"/>
-	<import addon="script.module.requests" version="2.3.0" />
-    </requires>
-    <extension point="xbmc.python.script" library="default.py" />
-    <extension point="xbmc.service" library="starter.py" start="startup" />
-
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">NewsCenter Plugin for Germany</summary>
-        <language>de</language>
-        <description  lang="en">Plugin is for Skinners to integrate a newscenter. Which contains a widget with rss news and multiple direct URLs provided as Property to watch directly Tagesschau, Tagesschau in 100s, Wettervorhersagevideo, Wetter in 60s. Auch die aktuelle Tabelle der 1. und 2. Bundesliga kann angezeigt werden.
-</description>
-        <description  lang="de">Dieses Plugin benötigt eine Skin Integration! Mit diesem Plugin können Nachrichten RSS als Widget erstellt werden. Zusätzlich erstellt das Plugin direktlinks zu:
-Tagesschau
-Tagesschau in 100 Sekunden
-Kinder Nachrichten Logo
-Wetter in 60 Sekunden
-Wettervorhersage von Meteogroup.
-Auch die aktuelle Tabelle der 1. und 2. Bundesliga kann angezeigt werden.
-</description>
-	<website>-</website>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <source>https://github.com/tobias-d-oe/plugin.program.newscenter</source>
-        <forum>http://goo.gl/fdU042</forum>
-        <email>-</email>
-        <website>-</website>
-    </extension>
 </addon>
 
 <addon id="plugin.program.oldiptvchanger" name="[COLOR blue]Old Simple Client IPTV Changer[/COLOR]" version="0.0.2"
@@ -3979,21 +3882,6 @@ Hierfür bitte README.txt im Ordner 'integration' beachten.
 	</extension>
 </addon>
 
-<addon id="plugin.video.adultempire" name="Adult Empire" version="2.1.10" provider-name="EmuZONE">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Streamt Porno Clips von Empflix.com</summary>
-        <description>Empflix.com features a variety of adult videos. This addon contains explicit adult material. You may only view this addon if you are at least 18 years of age, or at least the age of majority in the jurisdiction where you reside or from which you access this content. If you do not meet these requirements, then you do not have permission to use this addon.  All content is hosted by empflix.com.</description>
-        <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    <platform>all</platform>
-    </extension>
-</addon>
-
 <addon id="plugin.video.adulthideout" name="AdultHideout" version="0.7.6" provider-name="Vashiel">
     <requires>
     </requires>
@@ -4028,72 +3916,6 @@ adulthideout@yandex.com[/COLOR]
 		<mainsource>https://github.com/Vashiel/repository.adulthideout</mainsource>
 		<source></source>
     </extension>
-</addon>
-
-<addon id="plugin.video.amazon"
-       name="Amazon"
-       version="1.8.8"
-       provider-name="Sandmann79 + BlueCop + Romans I XVI">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.mechanize" version="0.2.6"/>
-    <import addon="script.module.amazon.database" version="0.1.1"/>
-    <import addon="script.module.pydes" version="2.0.1"/>
-    <import addon="script.module.pyxbmct" version="1.1.7"/>
-    <import addon="script.module.myconnpy" version="1.1.7"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-             library="default.py">
-	<provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Amazon Prime Video Streaming</summary>
-    <summary lang="de">Amazon Prime Instant Video</summary>
-    <description lang="en">Movies and Television Shows for German Prime Members.
-This Addon works only with German Amazon Accounts. For Non-German Accounts use Amazon VOD Addon from my repo.</description>
-    <description lang="de">Filme und Serien für Amazon Prime Mitglieder</description>
-    <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.
-This Addon uses pyDes by Todd Whiteman</disclaimer>
-    <disclaimer lang="de">Möglicherweise sind einge Teile dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation überprüfen.
-Diese Addon verwendet pyDes von Todd Whiteman</disclaimer>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>http://www.kodinerds.net/index.php/Thread/44211-Release-Amazon-Prime-Instant-Video</forum>
-    <source>https://github.com/Sandmann79/xbmc</source>
-  </extension>
-</addon>
-
-<addon id="plugin.video.amazon-test"
-       name="Amazon VOD"
-       version="0.4.5"
-       provider-name="Sandmann79">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.mechanize" version="0.2.6"/>
-    <import addon="script.module.pydes" version="2.0.1"/>
-    <import addon="script.module.pyxbmct" version="1.1.7"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-             library="default.py">
-	<provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Amazon Prime Video Streaming</summary>
-    <summary lang="de">Amazon Prime Instant Video</summary>
-    <description lang="en">Movies and Television Shows for Prime Members</description>
-    <description lang="de">Filme und Serien für Amazon Prime Mitglieder</description>
-    <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.
-This Addon uses pyDes by Todd Whiteman</disclaimer>
-    <disclaimer lang="de">Möglicherweise sind einge Teile dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation überprüfen.
-Diese Addon verwendet pyDes von Todd Whiteman</disclaimer>
-     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>http://www.kodinerds.net/index.php/Thread/44211-Release-Amazon-Prime-Instant-Video</forum>
-    <source>https://github.com/Sandmann79/xbmc</source>
-  </extension>
 </addon>
 
 <addon id="plugin.video.animaltv" name="Animal TV" provider-name="mhancoc7" version="0.3.1">
@@ -4431,7 +4253,7 @@ With Digi Storage Player you can easily browse through Media files ( music, movi
     </extension>
 </addon>
 
-<addon id="plugin.video.doku.com" name="Doku Mediathek" version="1.1.0" provider-name="EmuZONE">
+<addon id="plugin.video.doku5.com" name="Doku5" version="1.0.3" provider-name="itouch5000">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.requests" version="2.7.0"/>
@@ -4444,8 +4266,8 @@ With Digi Storage Player you can easily browse through Media files ( music, movi
         <platform>all</platform>
         <summary lang="en">The largest german documentary library on the net</summary>
         <description lang="en">Over 15,000 documentaries, documentaries, reports and lectures in full length.</description>
-        <summary lang="de">Die groesste Doku-Mediathek im Netz</summary>
-		<description lang="de">Uber 15.000 Dokumentationen, Dokumentafilme, Reportagen und Votrage in voller Lange.</description>
+        <summary lang="de">Die größte Doku-Mediathek im Netz</summary>
+		<description lang="de">Über 15.000 Dokumentationen, Dokumentafilme, Reportagen und Voträge in voller Länge.</description>
         <license>GPL 2.0</license>
         <assets>
             <icon>resources\icon.png</icon>
@@ -4526,21 +4348,6 @@ With Digi Storage Player you can easily browse through Media files ( music, movi
 - Fixed playback issues
         </news>
 	</extension>
-</addon>
-
-<addon id="plugin.video.empflix" name="Empflix" version="2.0.12" provider-name="xbmc-adult">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Stream adult videos from empflix.com</summary>
-        <description>Empflix.com features a variety of adult videos. This addon contains explicit adult material. You may only view this addon if you are at least 18 years of age, or at least the age of majority in the jurisdiction where you reside or from which you access this content. If you do not meet these requirements, then you do not have permission to use this addon.  All content is hosted by empflix.com.</description>
-        <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    <platform>all</platform>
-    </extension>
 </addon>
 
 <addon id="plugin.video.emuzone" name="[COLOR yellow]EmuZONE YouTUBE Kanal[/COLOR]" version="1.2.7" provider-name="EmuZONE">
@@ -4824,6 +4631,24 @@ https://www.youtube.com/user/GalileoOffiziell/
 	</extension>
 </addon>
 
+<addon id="plugin.video.idomix" name="[COLOR white]iDomiX[/COLOR] [COLOR red]Technik | Tutorials[/COLOR]" version="1.0.0" provider-name="Kodiman | HSK-DE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>powered by Kodiman</summary>
+    <description>YouTube: https://www.youtube.com/user/iDomiX/undefined
+Webseite: https://idomix.de/
+    </description>
+  </extension>
+</addon>
+
 <addon id="plugin.video.intergalacticfm"
        name="Intergalactic FM TV"
        version="0.0.5"
@@ -5010,6 +4835,39 @@ JAVStream V0.93.3 (8th October 2017)
   </extension>
 </addon>
 
+<addon id="plugin.video.kermodeandmayo" name="Kermode and Mayo's Film Review" version="0.5.3" provider-name="Leopold">
+  <requires>
+    <import addon="xbmc.python" version="2.23.0"/>
+    <import addon="script.module.kodiswift" version="0.0.8" optional="false"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.2" optional="false"/>
+    <import addon="script.module.requests" version="2.3.0" optional="false"/>
+    <import addon="script.module.pyrollbar" version="0.11.2" optional="false"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video audio</provides>
+  </extension>
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+      <item library="context.py">
+        <label>30010</label>
+        <visible>Container.Content(movies)</visible>
+      </item>
+    </menu>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>en</language>
+    <summary lang="en_gb">Mark Kermode joins Simon Mayo to give his verdict on the week's movies</summary>
+    <description lang="en_gb">This plugin provides access to the full episode podcasts and video clips from Kermode and Mayo's Film Review at bbc.co.uk and YouTube. The videos contain film reviews and interviews which are broadcast live on Fridays at 2pm on BBC Radio 5 live. "Kermode Uncut" is a twice-weekly video blog where Mark airs his personal views on the things that most fire him up about cinema.
+
+Outspoken, opinionated and never lost for words, Mark Kermode is the UK's leading film critic. Feted as one of the finest film reviewers of his generation as well as for his impeccably-coiffured quiff, Mark Kermode presents the film review on Radio 5 live with Simon Mayo in a broadcast partnership that has lasted nearly 20 years.</description>
+    <website>http://www.bbc.co.uk/programmes/b00lvdrj</website>
+    <forum>http://forum.kodi.tv/showthread.php?tid=187996</forum>
+    <source>https://github.com/LS80/plugin.video.kermodeandmayo.git</source>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+  </extension>
+</addon>
+
 <addon id="plugin.video.kino.dk" version="1.0.1" name="Kino.dk TV" provider-name="twinther">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -5074,6 +4932,20 @@ JAVStream V0.93.3 (8th October 2017)
         <forum>http://forum.xbmc.org/showthread.php?tid=132563</forum>
         <email>AddonScriptorDE at yahoo dot de</email>
         <website>http://www.lachschon.de</website>
+    </extension>
+</addon>
+
+<addon id="plugin.video.landschleicher" name="Landschleicher" version="0.1.6" provider-name="stemaj">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="de">1000 Landschleicher - das Archiv</summary>
+        <description lang="de">Seit dem 28. März 1993 besucht der Landschleicher jedes Wochenende einen Brandenburger Ort mit einer Einwohnerzahl unter 2.000. Zum 20. Jubiläum öffnete der Landschleicher sein Archiv und ermöglicht einen besonderen Blick auf die Geschichte des Landes Brandenburg. Die Landschleicher-Videos aus mittlerweile 21 Jahren erzählen die kleinen und großen Geschichten der kleinsten Orte des Landes und ihrer Bewohner.</description>
     </extension>
 </addon>
 
@@ -5383,6 +5255,41 @@ JAVStream V0.93.3 (8th October 2017)
     </extension>
 </addon>
 
+<addon id="plugin.video.netzdivision" name="[COLOR white]Netzdivision[/COLOR] [COLOR red]YouTube[/COLOR] [COLOR white]Chanel[/COLOR]" version="1.0.0" provider-name="Kodiman | HSK-DE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Netzdivision</summary>
+    <description>https://www.youtube.com/user/Kev93LP/undefined :
+https://www.facebook.com/netzdivision.netzdivision
+    </description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.neustarts" name="Neustarts" version="3.1.3" provider-name="stemaj">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="de">Deutsche Trailer von filmstarts.de</summary>
+        <summary lang="en">German trailers from filmstarts.de</summary>
+        <language>de</language>
+        <description lang="de">Deutsche Trailer von filmstarts.de</description>
+        <description lang="en">German trailers from filmstarts.de</description>
+    </extension>
+</addon>
+
 <addon id="plugin.video.nick_de" name="Nickelodeon.de" version="1.1.8" provider-name="L0RE">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -5539,6 +5446,22 @@ https://www.youtube.com/user/SemperVideo/
         <email>andreas at vogler dot name</email>
         <website>http://www.sesamstrasse.de</website>
     </extension>
+</addon>
+
+<addon id="plugin.video.shortfilms" name="Shortfilms" version="1.0.4" provider-name="Kodiman/HSK">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="plugin.video.youtube" version="5.1.20.6"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="addon.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Kurzfime</summary>
+    <description>Dank an Loki1979 und Rudolf Reiter</description>
+  </extension>
 </addon>
 
 <addon id="plugin.video.showroomlive" name="ShowRoom" version="0.3" provider-name="ptom">
@@ -5962,6 +5885,27 @@ https://www.facebook.com/venix.tech.3
     </extension>
 </addon>
 
+<addon
+  id="plugin.video.videodevil"
+  version="1.7.175"
+  name="VideoDevil"
+  provider-name="xbmc-adult">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos from different adult streaming sites</summary>
+    <description>This addon plays videos from YouPorn, Tube8, Boysfood, MoviesAnd, PornoTube, xHamster, KeezMovies and some other adult streaming sites. It contains explicit adult material. You may only view this addon if you are at least 18 years of age, or at least the age of majority in the jurisdiction where you reside or from which you access this content. If you do not meet these requirements, then you do not have permission to use this addon. </description>
+    <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.vimeo" name="Vimeo" version="4.1.4" provider-name="bromix">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
@@ -6308,6 +6252,28 @@ Siehe auch https://github.com/generia/plugin.video.zdf_de_2016
   </extension>
 </addon>
 
+<addon id="repository.anxdpanic" name="anxdpanic Add-on Repository" version="0.9.7" provider-name="anxdpanic">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0"/>
+    </requires>
+
+	<extension point="xbmc.addon.repository" name="anxdpanic Add-on Repository">
+        <dir>
+			<info compressed="false">https://raw.githubusercontent.com/anxdpanic/script.module.urlresolver/repository/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/anxdpanic/script.module.urlresolver/repository/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/anxdpanic/script.module.urlresolver/repository/zips/</datadir>
+        </dir>
+        <info compressed="false">https://raw.githubusercontent.com/anxdpanic/_repository/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/anxdpanic/_repository/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/anxdpanic/_repository/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install add-ons from anxdpanic's repository.</summary>
+		<description>Install add-ons from anxdpanic's repository.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.arneson" name="TIDAL2 Addons by arneson" version="0.1.2" provider-name="arneson">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -6496,6 +6462,30 @@ Siehe auch https://github.com/generia/plugin.video.zdf_de_2016
         <summary>[COLOR lime]H.S.K-DE PRPO[/COLOR]</summary>
         <description>Facebook Gruppe :
 Hardware - Software - Kodi - DE</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.hsk_forever" name="[COLOR lime]HSK FOREVER[/COLOR]" version="1.0.2" provider-name="[COLOR lime]SH Germania | KODIMAN | HSK-DE[/COLOR]">
+    <extension point="xbmc.addon.repository" name="HSK FOREVER REPOSITORY">
+		<info compressed="false">https://raw.githubusercontent.com/SHGermania/repository.hsk_forever/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/SHGermania/repository.hsk_forever/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/SHGermania/repository.hsk_forever/master</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR lime]HSK FOREVER REPOSITORY[/COLOR]</summary>
+        <description>[COLOR lime]
+
+Ein besonderer Dank geht an Guido Sasse,Painkiller 88,
+Loki 1979 und an Kodiman die mir stehts zur Seite standen.
+
+In diesem Sinne  HSK-FOREVER
+
+
+
+Kodimans Forum:
+https://www.kodiman.net/[/COLOR].
+</description>
         <platform>all</platform>
     </extension>
 </addon>
@@ -6751,6 +6741,634 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
         <website>https://xstream-kodi.github.io</website>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="resource.images.addonicons.color" name="Alternative Addon Icons" version="1.2.1" provider-name="Barney Stinsen">
+	<extension point="kodi.resource.images" compile="false" type="addonicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Alternative Addon Icons</summary>
+		<description lang="en">Alternative Addon Icons</description>
+		<platform>all</platform>
+		<license>Creative Commons Attribution-Share Alike 3.0 United States</license>
+	</extension>
+</addon>
+
+<addon id="resource.images.backgroundoverlays.basic" name="Background Overlays Pack - Basic" version="1.0.0" provider-name="marcelveldt, mgonzales">
+	<extension point="kodi.resource.images" compile="false" type="backgroundoverlays" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Pack of images that can be used as background overlay</summary>
+		<description lang="en">Pack of images that can be used as background overlay</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.busyspinners.basic" name="Animated Busy Spinners Pack" version="1.0.0" provider-name="marcelveldt">
+	<extension point="kodi.resource.images" compile="false" type="busyspinners" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Animated Busy Spinners Pack - Titan</summary>
+		<description lang="en">Animated Busy Spinners Pack - Titan</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.languageflags.colour" name="Language Flags Colour" version="0.0.4" provider-name="im85288">
+	<extension point="kodi.resource.images" compile="true" type="languageflags" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Langauge Flag Colour Icons</summary>
+		<description lang="en">Language flags in colour</description>
+		<platform>all</platform>
+		<license>Creative Commons Attribution 3.0</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/im85288/resource.images.languageflags.colour</source>
+	</extension>
+</addon>
+
+<addon id="resource.images.moviegenrefanart.panel" name="Movie Genre Fanart - Panel" version="0.0.2" provider-name="Wanilton">
+	<extension point="kodi.resource.images" compile="false" type="moviegenrefanart" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Movie Genre Fanarts in panel mode</summary>
+		<description lang="en">Movie Genre Fanarts in panel mode</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.moviegenreicons.arctic.zephyr" name="Movie Genre Icons - Arctic Zephyr" version="0.0.3" provider-name="braz">
+	<extension point="kodi.resource.images" compile="true" type="moviegenreicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Movie Genre Icons for Arctic Zephyr</summary>
+		<description lang="en">Movie Genre Icons for Arctic Zephyr. Icons courtesy of iconfinder.com and iconmonstr.com.</description>
+		<platform>all</platform>
+		<license>Creative Commons Attribution 3.0</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/bryanbrazil/resource.images.moviegenreicons.arctic.zephyr</source>
+	</extension>
+</addon>
+
+<addon id="resource.images.moviegenreicons.filmstrip" name="Movie Genre Icons - Filmstrip" version="0.0.6" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="false" type="moviegenreicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Filmstrip Movie Genre Icons</summary>
+		<description lang="en">Movie Genre Icons in a filmstrip style</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.moviegenreicons.white" name="Movie Genre Icons - White" version="0.0.6" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="moviegenreicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">White Movie Genre Icons</summary>
+		<description lang="en">Movie Genre Icons in black and white</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.moviegenreicons.xzener-flat" name="Movie Genre Icons - Xzener's Flat Icons" version="0.0.3" provider-name="Xzener, Gade">
+	<extension point="kodi.resource.images" compile="true" type="moviegenreicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Xcener's Flat Movie Genre Icons</summary>
+		<description lang="en">Transparent flat Movie Genre Icons made by Xzener.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.moviegenreicons.xzener-reflection" name="Movie Genre Icons - Xzener's Reflected Icons" version="0.0.3" provider-name="Xzener, Gade">
+	<extension point="kodi.resource.images" compile="true" type="moviegenreicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Xcener's Reflected Movie Genre Icons</summary>
+		<description lang="en">Transparent Movie Genre Icons with reflection made by Xzener.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.musicgenrefanart.coloured" name="Music Genre Fanart - Coloured" version="0.0.2" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="false" type="musicgenrefanart" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Coloured Music Genre Fanarts</summary>
+		<summary lang="pt_br">Fanarts Coloridos para Gêneros de Música</summary>
+		<description lang="en">Coloured Music Genre Fanarts</description>
+		<description lang="pt_br">Fanarts Coloridos para Gêneros de Música</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.musicgenreicons.grey" name="Music Genre Icons - Grey" version="0.0.6" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="musicgenreicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Grey Music Genre Icons</summary>
+		<description lang="en">Grey Music Genre Icons</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.musicgenreicons.poster" name="Music Genre Icons - Poster" version="0.0.7" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="musicgenreicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Music Genre Icons poster style</summary>
+		<description lang="en">Music Genre Icons in a poster style</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.musicgenreicons.text" name="Music Genre Icons - Text" version="0.1.0" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="musicgenreicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Music Genre Icons with text</summary>
+		<description lang="en">Music Genre Icons with text</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.recordlabels.white" name="Recordlabel Icons - White" version="0.0.7" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="recordlabels" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">White Recordlabel Icons</summary>
+		<description lang="en">White Recordlabel Icons</description>
+		<platform>all</platform>
+		<license>Creative Commons Attribution-Share Alike 3.0 United States</license>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinbackgrounds.clear" name="Skin Backgrounds - Clear Design" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin backgrounds Pack - Clear Design</summary>
+		<description lang="en">Skin backgrounds Pack - Clear Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinbackgrounds.darkwood" name="Skin Backgrounds - Darkwood Design" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Backgrounds Pack - Darkwood Design</summary>
+		<description lang="en">Skin Backgrounds Pack - Darkwood Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinbackgrounds.diamond" name="Skin Backgrounds - Diamond Design" version="1.0.2" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Backgrounds Pack - Diamond Design</summary>
+		<description lang="en">Skin Backgrounds Pack - Diamond Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinbackgrounds.phenominence" name="Skin Backgrounds - Phenominence Design" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Backgrounds Pack - Phenominence Design</summary>
+		<description lang="en">Skin Backgrounds Pack - Phenominence Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinbackgrounds.silver" name="Skin Backgrounds - Silver Design" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Backgrounds Pack - Silver Design</summary>
+		<description lang="en">Skin Backgrounds Pack - Silver Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinbackgrounds.titanium" name="Skin Backgrounds - Titanium" version="1.0.0" provider-name="marcelveldt">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Backgrounds Pack - Titanium</summary>
+		<description lang="en">Skin Backgrounds Pack - Titanium</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinbackgrounds.wallsquare" name="Skin Backgrounds - Wall Square" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Backgrounds Pack - Wall Square Design</summary>
+		<description lang="en">Skin Backgrounds Pack - Wall Square Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinbackgrounds.zigzag" name="Skin Backgrounds - ZigZag Design" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Backgrounds Pack - ZigZag Design</summary>
+		<description lang="en">Skin Backgrounds Pack - ZigZag Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.boss" name="Skin Icons - Boss Design" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Boss Design</summary>
+		<description lang="en">Skin Icons Pack - Boss Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.cd" name="Skin Icons - CD Design" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - CD Design</summary>
+		<description lang="en">Skin Icons Pack - CD Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.classicwhite" name="Skin Icons - Classic White Design" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Classic White Design</summary>
+		<description lang="en">Skin Icons Pack - Classic White Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.darkwood" name="Skin Icons - Darkwood Design" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Darkwood Design</summary>
+		<description lang="en">Skin Icons Pack - Darkwood Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.ring" name="Skin Icons - Ring Design" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Ring Design</summary>
+		<description lang="en">Skin Icons Pack - Ring Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.silver" name="Skin Icons - Silver Design" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Silver Design</summary>
+		<description lang="en">Skin Icons Pack - Silver Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.skyrim" name="Skin Icons - Skyrim Design" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Skyrim Design</summary>
+		<description lang="en">Skin Icons Pack - Skyrim Design</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.squares" name="Skin Icons - Squares" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Squares</summary>
+		<description lang="en">Skin Icons Pack - Squares</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.wide" name="Skin Icons - Wide" version="1.0.3" provider-name="marcelveldt">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Wide</summary>
+		<description lang="en">Skin Icons Pack - Wide</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinthemes.aeonmq" name="Skin Themes - Aeon MQ" version="0.0.2" provider-name="MarcosQui">
+	<extension point="kodi.resource.images" compile="false" type="skinthemes" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Themes for skin Aeon MQ 7</summary>
+		<summary lang="pt_br">Temas para skin Aeon MQ 7</summary>
+		<description lang="en">Compatible with skin Aeon MQ 7</description>
+		<description lang="pt_br">Compatível com skin Aeon MQ 7</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.studios.coloured" name="Studio Icons - Coloured" version="0.0.8" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="studios" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Coloured Studio Icons</summary>
+		<description lang="en">Coloured Studio Icons</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.studios.white" name="Studio Icons - White" version="0.0.10" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="studios" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">White Studio Icons</summary>
+		<description lang="en">White Studio Icons</description>
+		<platform>all</platform>
+		<license>Creative Commons Attribution-Share Alike 3.0 United States</license>
+	</extension>
+</addon>
+
+<addon id="resource.images.weatherfanart.multi" name="Weather Fanart - Multi" version="0.0.6" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="false" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Weather Fanart Multi</summary>
+		<description lang="en">Multiple Weather Fanart images for every weather condition</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.weatherfanart.prairie" name="Weather Fanart - Prairie" version="0.0.5" provider-name="Silverxxx,Team Kodi">
+	<extension point="kodi.resource.images" compile="false" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Little House On The Prairie Weather Fanart</summary>
+		<description lang="en">Weather Fanart based on variations of the Little House On The Prairie image.</description>
+		<platform>all</platform>
+		<forum>http://forum.kodi.tv/showthread.php?tid=51991</forum>
+	</extension>
+</addon>
+
+<addon id="resource.images.weatherfanart.single" name="Weather Fanart - Single" version="0.0.6" provider-name="Silverxxx,Team Kodi">
+	<extension point="kodi.resource.images" compile="false" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Weather Fanart Single</summary>
+		<description lang="en">A single Weather Fanart image for every weather condition</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.weathericons.3d-coloured" name="Weather Icons - 3D Coloured" version="0.0.6" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">3D Coloured Weather Icons</summary>
+		<description lang="en">Coloured Weather Icons in a 3D style</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.weathericons.3d-white" name="Weather Icons - 3D White" version="0.0.6" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">3D White Weather Icons</summary>
+		<description lang="en">White Weather Icons in a 3D style</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.weathericons.animated" name="Weather Icons - Animated" version="0.0.6" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Animated Weather Icons</summary>
+		<description lang="en">Animated Weather Icons</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.weathericons.cloud.animated" name="Weather Icons - Cloud Animated" version="2.0.0" provider-name="Kyo">
+	<extension point="kodi.resource.images" compile="true" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Custom Animated Weather Icons</summary>
+		<description lang="en">Custom Animated Weather Icons</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.weathericons.coloured" name="Weather Icons - Coloured" version="0.0.6" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Coloured Weather Icons</summary>
+		<description lang="en">Coloured Weather Icons</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.weathericons.flat" name="Weather Icons - Flat" version="0.0.6" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Flat Weather Icons</summary>
+		<description lang="en">Weather Icons in a flat style</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.weathericons.hd.animated" name="Weather Icons - HD Animated" version="1.0.0" provider-name="Kyo">
+	<extension point="kodi.resource.images" compile="true" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Custom Animated Weather Icons</summary>
+		<description lang="en">Custom Animated Weather Icons</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.weathericons.monstr" name="Weather Icons - Monstr" version="0.0.2" provider-name="braz">
+	<extension point="kodi.resource.images" compile="true" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Monstr Weather Icons</summary>
+		<description lang="en">Weather icon pack created from icons courtesy of iconmonstr.com</description>
+		<platform>all</platform>
+		<license>Creative Commons Attribution 3.0</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/braz96/resource.images.weathericons.monstr</source>
+	</extension>
+</addon>
+
+<addon id="resource.images.weathericons.outline" name="Weather Icons - Outline" version="0.0.6" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Outline Weather Icons</summary>
+		<description lang="en">Weather Icons in an outline style</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.weathericons.outline-hd" name="Weather Icons - Outline HD" version="0.0.3" provider-name="braz">
+	<extension point="kodi.resource.images" compile="true" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Outline HD Weather Icons</summary>
+		<description lang="en">Weather Icons in an outline style, based on the weather icons project by Erik Flowers. http://erikflowers.github.io/weather-icons/</description>
+		<platform>all</platform>
+		<license>Creative Commons Attribution 3.0</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/bryanbrazil/resource.images.weathericons.outline-hd</source>
+	</extension>
+</addon>
+
+<addon id="resource.images.weathericons.transparent" name="Weather Icons - Transparent" version="0.0.6" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Transparent Weather Icons</summary>
+		<description lang="en">Weather Icons in a slightly transparent style</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.weathericons.white" name="Weather Icons - White" version="0.0.6" provider-name="Team Kodi">
+	<extension point="kodi.resource.images" compile="true" type="weather" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">White Weather Icons</summary>
+		<description lang="en">White Weather Icons</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon
@@ -8134,63 +8752,6 @@ v.2.0.8
 	</extension>
 </addon>
 
-<addon id="script.lazytv"
-       name="LazyTV"
-       version="0.9.98"
-       provider-name="KodeKarnage">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-
-<extension point="xbmc.python.script"
-            library="default.py">
-            <provides>executable</provides>
-    </extension>
-
-    <extension point="xbmc.service" library="service.py" start="login"></extension>
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="af">LazyTV</summary>
-        <summary lang="ca">LazyTV</summary>
-        <summary lang="de">LazyTV</summary>
-        <summary lang="el">LazyTV</summary>
-        <summary lang="en">LazyTV</summary>
-        <summary lang="en_NZ">LazyTV</summary>
-        <summary lang="en_US">LazyTV</summary>
-        <summary lang="es">LazyTV</summary>
-        <summary lang="fr">LazyTV</summary>
-        <summary lang="fr_CA">LazyTV</summary>
-        <summary lang="gl">LazyTV</summary>
-        <summary lang="he">LazyTV</summary>
-        <summary lang="hu">LazyTV</summary>
-        <summary lang="it">LazyTV</summary>
-        <summary lang="lt">LazyTV</summary>
-        <summary lang="nl">LazyTV</summary>
-        <summary lang="no">LazyTV</summary>
-        <summary lang="pl">LazyTV </summary>
-        <summary lang="pt">LazyTV</summary>
-        <summary lang="pt_BR">LazyTV</summary>
-        <summary lang="sv">LazyTV</summary>
-        <description lang="el">Έχετε μια τεράστια συλλογή από τηλεοπτικές σειρές και δεν έχετε προλάβει να παρακολουθήσετε ούτε τα μισά επεισόδια. Γιατί μοιάζει με αγγαρεία το να καθίσετε να δείτε κάτι;&#10;Το LazyTV είναι εδώ για να εξαφανίσει τέτοιου είδους διλήμματα, και να σας επιτρέψει να ηρεμήσετε και να απολαύσετε τη συλλογή σας. Με ένα κλικ μπορείτε να κάνετε ζάπινγκ μεταξύ των σειρών σας, ή να έχετε ό,τι πιθανότατα θέλετε να δείτε να εμφανίζεται σε ένα παράθυρο.&#10;Εξάλλου, γιατί να χρειάζεται να επιλέξετε κάτι συγκεκριμένο; Το μόνο σίγουρο είναι ότι θέλετε να δείτε λίγη τηλεόραση!&#10;&#10;Σε αντίθεση με τις έξυπνες λίστες αναπαραγωγής ή τα διάφορα widget, το LazyTV δεν εμφανίζει απλά το πρώτο μη προβληθέν επεισόδιο μιας τηλ. σειράς. Εμφανίζει το πρώτο μη προβληθέν επεισόδιο ΑΜΕΣΩΣ ΜΕΤΑ το τελευταίο επεισόδιο που παρακολουθήσατε. Μια μικρή, αλλά εξαιρετικά σημαντική διαφορά.&#10;&#10;Το LazyTV έχει δυο κύριες λειτουργίες:&#10;Η πρώτη δημιουργεί και εκτελεί μια λίστα αναπαραγωγής με τυχαία επιλεγμένα επεισόδια. Και όχι ό,τι κι ό,τι, αλλά τα επόμενα επεισόδια που θεωρεί ότι επιθυμείτε να παρακολουθήσετε. Έχετε, επίσης, τη δυνατότητα να ενσωματώσετε και τις ταινίες σας (προβληθείσες και μη) για πλήρες ζάπινγκ. &#10;Η δεύτερη λειτουργία συμπληρώνει ένα παράθυρο με όλα τα επόμενα διαθέσιμα επεισόδια των τηλ. σειρών σας. Με ένα κλικ μπορείτε να δείτε το μενού προβολής, άμεσα.&#10;&#10;Μπορείτε να διαμορφώσετε την εμπειρία σας σε ακόμη μεγαλύτερο βαθμό, συνδυάζοντας οποιαδήποτε από τις κύριες λειτουργίες με μια λίστα αναπ/γής προεπιλεγμένων σειρών.&#10;Κάποιες εκπομπές, όπως κινούμενα σχέδια ή διάφορα σόου, δεν είναι απαραίτητο να προβληθούν με συγκεκριμένη σειρά, γι'αυτό το LazyTV σας δίνει τη δυνατότητα να παρακολουθήσετε τέτοιου είδους εκπομπές με τυχαία σειρά επεισοδίων.&#10;&#10;Το LazyTV διαθέτει δύο ακόμα μικρές λειτουργίες που εκτείνονται πέραν του ίδιου του πρόσθετου:&#10;Η πρώτη είναι η επιλογή να ειδοποιήστε σε περίπτωση που υπάρχει μη προβληθέν επεισόδιο πριν από αυτό που ετοιμάζεστε να παρακολουθήσετε. Αυτή η λειτουργία εξαιρεί τις τηλ. σειρές που μπορούν να προβληθούν με τυχαία σειρά επεισοδίων.&#10;Η δεύτερη επιλογή αφορά την εμφάνιση ειδοποίησης μετά την προβολή ενός επεισοδίου, ότι η επόμενη σειρά είναι διαθέσιμη, και σας ρωτά αν επιθυμείτε να την παρακολουθήσετε άμεσα.&#10;&#10;&#10;Το LazyTV περιλαμβάνει μια υπηρεσία με την οποία αποθηκεύει τις πληροφορίες των επόμενων επεισοδίων, και παρακολουθεί τις αναπαραγωγές για να προλαμβάνει αλλαγές στη βάση δεδομένων. Αυτή είναι η προσπάθειά μου να κάνω το πρόσθετο πιο γρήγορο στο Raspberry Pi. Το Pi απαιτεί μια "προθέρμανση": μια πλήρη ανανέωση των δεδομένων των επεισοδίων (που γίνεται κατά την εκκίνηση και κατά την ενημέρωση συλλογής), η οποία χρειάζεται σχεδόν 30 δευτερόλεπτα για μια συλλογή περίπου 100 σειρών*. Παρ'όλα αυτά, η λίστα με τις σειρές ανοίγει κανονικά, και η τυχαία αναπαραγωγή ξεκινά σε λιγότερο από 2 δευτερόλεπτα.&#10;&#10;*Η ίδια ενημέρωση χρειάζεται μόλις 2 δευτερόλεπτα για να γίνει στο laptop μου, με επεξεργαστή i5.</description>
-        <description lang="en">You have a huge library of TV shows and you havent viewed half of it. So why does it feel like such a chore to sit down and watch something?&#10;LazyTV is here to free you from your battles with indecision, instead letting you lean back and soak up content. With one click you can be channel-surfing your own library, or have what you probably want to watch pop up in a single window.&#10;Afterall, you know you want to watch TV, so why do you also have to decide what specifically to watch?&#10;&#10;Unlike a smart playlist or skin widget, LazyTV doesnt just provide the first unwatched episode of a TV show. It provides the first unwatched episode AFTER the last watched one in your library. A small, but important, distinction.&#10;&#10;LazyTV offers two main functions:&#10;The first creates and launches a randomised playlist of the TV episodes. And not just any episodes, but the next episode it thinks you would want to watch. You also have the option to blend in your movies (both the watched and the unwatched) to complete the channel-surfing experience.&#10;The second main function populates a window with the next available episode for each of your TV Shows. One click and your viewing menu is there, immediately.&#10;&#10;Combine either of the main functions with a playlist of preselected shows to customise your experience even further.&#10;Some TV shows, like cartoons or skit shows, can be viewed out of episodic order. So LazyTV gives you the ability to identify these shows and treat them differently. Those shows will be played in a random order.&#10;&#10;LazyTV also offers two minor functions that extend beyond the addon itself:&#10;The first is an option to be notified if you are about to watch an episode that has an unwatched episode before it. This function excludes the TV shows identified as able to be watched out of order.&#10;The second option posts a notification when you finish watching a TV episode telling you that the next show is available and asks if you want to view it now.&#10;&#10;&#10;LazyTV contains a service that stores the next episodes' information and monitors your player to pre-empt database changes. This is my attempt to make the addon more responsive on my Raspberry Pi. The Pi still takes a while to "warm-up"; a full refresh of the episode data (which occurs at start-up and on a library update) takes about 30 seconds for my ~100 show library*. However, the show list window opens and the random player starts in less than 2 seconds.&#10;&#10;*The same update takes 2 seconds on my laptop with its i5 processor.</description>
-        <description lang="en_US">You have a huge library of TV shows and you haven't viewed half of it. So why does it feel like such a chore to sit down and watch something?&#10;LazyTV is here to free you from your battles with indecision, instead letting you lean back and soak up content. With one click you can be channel-surfing your own library, or have what you probably want to watch pop up in a single window.&#10;After all, you know you want to watch TV, so why do you also have to decide what specifically to watch?&#10;&#10;Unlike a smart playlist or skin widget, LazyTV doesn't just provide the first unwatched episode of a TV show. It provides the first unwatched episode AFTER the last watched one in your library. A small, but important, distinction.&#10;&#10;LazyTV offers two main functions:&#10;The first creates and launches a randomized playlist of the TV episodes. And not just any episodes, but the next episode it thinks you would want to watch. You also have the option to blend in your movies (both the watched and the unwatched) to complete the channel-surfing experience.&#10;The second main function populates a window with the next available episode for each of your TV Shows. One click and your viewing menu is there, immediately.&#10;&#10;Combine either of the main functions with a playlist of preselected shows to customize your experience even further.&#10;Some TV shows, like cartoons or skit shows, can be viewed out of episodic order. So LazyTV gives you the ability to identify these shows and treat them differently. Those shows will be played in a random order.&#10;&#10;LazyTV also offers two minor functions that extend beyond the addon itself:&#10;The first is an option to be notified if you are about to watch an episode that has an unwatched episode before it. This function excludes the TV shows identified as able to be watched out of order.&#10;The second option posts a notification when you finish watching a TV episode telling you that the next show is available and asks if you want to view it now.&#10;&#10;&#10;LazyTV contains a service that stores the next episodes' information and monitors your player to pre-empt database changes. This is my attempt to make the addon more responsive on my Raspberry Pi. The Pi still takes a while to "warm-up"; a full refresh of the episode data (which occurs at start-up and on a library update) takes about 30 seconds for my ~100 show library*. However, the show list window opens and the random player starts in less than 2 seconds.&#10;&#10;*The same update takes 2 seconds on my laptop with its i5 processor.</description>
-        <description lang="es">Tienes una gran colección de Series de TV y no has visto ni la mitad de ellas. ¿Cómo sería sentarse y ver algo?&#10;LazyTV está aquí para liberarte de tu lucha contra la indecisión, y te va a dejar recostarte tranquilo y ver algo. Con un simple click podrás hacer zapping entre tu propia colección, o mucho mejor, te dirá que ver en una ventanita.&#10;Después de todo, sabes que sólo quieres ver la tele ¿También tienes que decidir qué quieres ver?&#10;&#10;Al contrario que una lista inteligente, o una skin, LazyTV no solo te dice el primer episodio sin ver de una serie. Te dice cuál es el siguiente episodio que tienes que ver después de lo último que viste. Es una pequeña, pero muy importante, diferencia.&#10;&#10;LazyTV ofrece dos funciones principales:&#10;La primera es crear y lanzar una lista aleatoria de episodios de tus series. Y no sólo cualquier episodio, sino el siguiente episodio que cree que quieres ver. Además, tienes la opción de meter tambien las películas (vistas o no vistas) para completar la sensación de zapping.&#10;La segunda función principal es rellenar una ventana con los siguientes episodios disponibles para cada serie de TV. Con un click y toda la información está ahí. ¡Inmediatamente!&#10;&#10;Puedes combinar ambas funciones en una lista de series preseleccionadas para adaptar mucho mejor tu experiencia.&#10;Algunas series, como los dibujos o los programas satíricos, pueden ser vistos de manera aleatoria, sin orden. LazyTV te da la opción de identificar esos programas y tratarlos de manera diferente. Estos programas se reproducirán en orden aleatorio.&#10;&#10;LazyTV también incluye dos funciones menores que aumentan la capacidad del addon:&#10;La primera es la opción de notificarte si vas a ver un episodio y esa serie tiene algún episodio anterior que no has visto. Aquí so obvian los programas sin orden estricto.&#10;La segunda te notifica cuando terminas de ver un episodio y también tienes el siguiente. Te pregunta si quieres verlo.&#10;&#10;&#10;LazyTV contiene un servicio que almacena la información de los episodios y monitoriza las reproducciones para prever cambios en la base de datos. Estos lo hago para intentar hacer el addon más ligero en mi Raspberry Pi. La Pi todavía se tira un tiempo hasta que arranca; cuando hay una actualización de la base de datos (arranque o manual) se puede tirar 30 segundos en colección de más o menos 100 series*. De todas maneras, la lista de episodios se abre y el reproductor aleatorio empieza en menos de 2 segundos.&#10;&#10;*El mismo escenario tarda 2 segundos en mi portátil con un i5.</description>
-        <description lang="fr_CA">Vous avez une vidéothèque énorme de séries télé et vous n'en avez pas regardé la moitié. Alors pourquoi cela semble-t-il être une telle corvée de s’asseoir et regarder quelque chose?&#10;LazyTV est là pour vous libérer de vos batailles avec l'indécision, vous laissant plutôt vous installer confortablement et absorber du contenu. En un clic vous pouvez surfer les chaînes de votre vidéothèque ou laisser ce que vous voudriez certainement regarder se présenter à vous dans une fenêtre.&#10;Après tout, vous savez que vous voulez regarder la télé, alors pourquoi avoir aussi à décider spécifiquement quoi regarder?&#10;&#10;À la différence d'une liste de lecture intelligente ou d'un widget d'habillage, LazyTV ne vous donne pas juste le premier épisode d'une série télé. Il vous propose le premier épisode non regardé APRÈS le dernier regardé dans votre vidéothèque. Une distinction petite mais importante.&#10;&#10;LazyTV offre deux fonctions principales :&#10;La première crée et lance une liste de lecture aléatoire des épisodes télé. Et pas juste n'importe lesquels, mais ceux qu'il pense que vous voudriez regarder. Vous avez aussi l'option d'y mélanger vos films (regardés ou non) pour compléter l'expérience de surf des chaînes.&#10;La seconde fonction principale remplit une fenêtre avec le prochaine épisode de chacune de vos séries télé. Un clic et votre menu de visionnement est là, immédiatement.&#10;&#10;Combinez l'une ou l'autre des deux fonctions principales à une liste de lecture d'émissions présélectionnées pour personnaliser encore plus votre expérience.&#10;Certaines émissions télé comme les dessins animés et les sketches peuvent être regardées sans suivre l'ordre des épisodes. Alors LazyTV vous donne la possibilité d'identifier ces émissions et de les traiter différemment. Elles seront lues en ordre aléatoire.&#10;&#10;LazyTV offre aussi deux fonctions mineures qui dépassent l'addiciel lui-même :&#10;La première est une option vous alertant si vous allez regarder un épisode qui en a un autre non regardé avant. Cette fonction exclut les émissions identifiées comme pouvant être regardées dans le désordre.&#10;La seconde option indique, quand vous finissez de regarder un épisode télé, si l'épisode suivant est disponible et vous demande si vous souhaitez le regarder présentement.&#10;&#10;LazyTV comprend un service qui stocke les informations du prochain épisode et surveille votre lecteur pour anticiper les changements dans la base de données. C'est ma tentative de rendre l'addiciel plus réactif sur mon Raspberry Pi. Le Pi prend quand même du temps à « chauffer »; un rafraîchissement complet des données des épisodes (qui a lieu au démarrage et à la mise à jour de la vidéothèque) prend environ 30 secondes pour ma vidéothèque de ~100 émissions*. Cependant, la fenêtre de liste des émissions s'ouvre et le lacture aléatoire commence en moins de 2 secondes.&#10;&#10;* La même mise à jour prend 2 secondes sur mon portable avec son processeur i5</description>
-        <description lang="it">Avete una vasta libreria di spettacoli televisivi e tu non ne hai visto nemmeno la metà. Ecco perché diventa complicato sedersi e guardare qualcosa ? &#10;LazyTV è qui per liberarvi dalle vostre  indecisione, e lasciarvi a godersi i contenuti . Con un clic nella vostra libreria , è possibile avere quello che probabilmente si vuole guardare con un pop-up in una finestra .&#10;Dopotutto , si sa che si desidera guardare la TV , perché si hanno delle cose preferite da guardare&#10;&#10;A differenza di una smart playlist o un widget , LazyTV non si limita a fornire il primo episodio disponibile di uno show televisivo Esso fornisce il primo episodio disponibile dopo l'ultimo guardato nella tua libreria . Una piccola, ma importante differenza &#10;&#10;LazyTV offre due funzioni principali : .&#10;la prima crea e lancia una playlist randomizzato gli episodi televisivi. E non solo tutti gli episodi , ma l'episodio successivo che si suppone si voglia vedere . Hai anche la possibilità di fondere nei vostri film (sia visti che non visti ) per completare l'esperienza .&#10;La seconda funzione principale popola una finestra con il prossimo episodio disponibile per ciascuno dei vostri programmi TV . Un clic e il vostro menu di visualizzazione è lì , subito .&#10;&#10;Combina una delle principali funzioni con una playlist di spettacoli preselezionati per personalizzare la vostra esperienza ancora di più .&#10;alcuni spettacoli televisivi , come i cartoni animati o spettacoli , possono essere visualizzati in ordine di episodio . Così LazyTV ti dà la possibilità di identificare questi spettacoli e di trattarli in modo diverso . Tali spettacoli verranno riprodotti in ordine casuale&#10;&#10;LazyTV offre anche due funzioni minori che si estendono oltre l'addon stesso : &#10;La prima è la possibilità di essere avvisati se si sta a guardare un episodio di una serie che ha episodi non visti prima .&#10;La seconda è un opzione che notifica,alla fine della visione di un Episodio TV se il prossimo spettacolo è disponibile e chiede se lo si desidera guardare.&#10;&#10;&#10;LazyTV contiene un servizio che memorizza le informazioni sulle prossime puntate . Questo è il mio tentativo di rendere l'addon più reattivo sul mio Raspberry Pi . Il Pi vuole un po di tempo in più; un aggiornamento completo dei dati di episodi ( che si verifica all'avvio e all'aggiornamento della libreria) richiede circa 30 secondi per il mia libreria con 100 spettacoli .&#10;Tuttavia la finestra con la lista degli episodi si apre è il video parte in meno di 2 secondi&#10;Lo stesso aggiornamento richiede 2 secondi sul mio portatile con l' i5 .</description>
-        <description lang="lt">Turite didžiulę TV laidų bibliotekoje ir dar neperžiūrėjote jos bent pusę. Tai kodėl prisėsti ir kažką pažiūrėti atrodo kaip sunkus darbas?&#10;LazyTV yra čia, kad išlaisvintų jus nuo neapsisprendimo ir leistų jums atsilošti ir pasinerti į turinį. Vienu paspaudimu galite naršyti biblioteką kaip televizijos kanalus ar galbūt norite pamatyti viską vieninteliame ekrane.&#10;Galų gale jūs žinote, kad norite žiūrėti televiziją, tai kodėl jūs turite konkrečiai nuspręsti ką norite žiūrėti?&#10;&#10;Kitaip nei išmanusis grojaraštis ar teminės išvaizdos valdiklis, LazyTV ne tik pateikia jums pirmą neperžiūrėtą TV laidos epizodą. Jis pateikia pirmą neperžiūrėtą epizodą PO paskutinio žiūrėto iš jūsų bibliotekos. Nedidelis, bet svarbus skirtumas.&#10;&#10;LaxyTV siūlo dvi pagrindines funkcijas:&#10;Pirma yra sukurti ir paleisti atsitiktinai sumaišytą TV epizodų grojaraštį. Ir ne tik bet kokių epizodų, o kito epizodo, kurį jo nuomone jūs norite peržiūrėti. Jūs taip turite parinktį sulieti jūsų filmus (tiek žiūrėtus, tiek nežiūrėtus), kad galėtumėte juos naršyti taip, lyg naršytumėte įprastus televizijos kanalus.&#10;Antra pagrindinė funkcija užpildo langą kiekvienos TV laidos kitu galimu epizodu. Vienas paspaudimas ir jūsų peržiūros meniu paruoštas, nedelsiant.&#10;&#10;Sujunkite bet kurią iš pagrindinių funkcijų su iš anksto parinktų laidų grojaraščių ir dar labiau pritaikykite viską savo poreikiams.&#10;Kai kurios TV laidos, tokios kaip animaciniai filmai ar humoro laidos, gali būti žiūrimo ne eilės tvarka. Taigi LazyTV suteikia jums galimybę idetifikuoti šias laidas ir elgis su jomis kitaip. Šios laidos bus atkurtos atsitiktine tvarka.&#10;&#10;LazyTV taip pat siūlo dvi nedideles funkcijas, kurios išeina už paties priedo ribų.&#10;Pirma parinktis, kurią reikia paminėti, yra kai jūs norite peržiūrėti epizodą, kuris prieš jį turi neperžiūrėtą epizodą. Ši funkcija išskiria TV laidas, kurios pažymėtos kaip galimos žiūrėti ne eilės tvarka.&#10;Antra parinktis parodo pranešimą, kai baigiate žiūrėti TV epizodą, informuojantį jus, kad yra galima kita laida ir paklausia ar norite ją peržiūrėti dabar.&#10;&#10;&#10;LazyTV turi paslaugą, kuri saugo kito epizodo informaciją ir stebi jūsų grotuvą, kad užbėgtų už akių duomenų bazės pokyčiams. Tai yra bandymas padaryti, kad priedas geriau reaguotų ant mano Pasberry Pi įrenginio. Pi vis dar reikalingas laikas apšilimui; Pilnas epizodų duomenų atnaujinimas (kuris vyksta paleidimo metu ir atnaujinant biblioteką) trunka apie 30 sekundžių mano ~100 laidų bibliotekai*. Tačiau laidos langas atsidaro ir atsitiktinis atkūrimas prasideda per mažiau nei 2 sekundes.&#10;&#10;*Tas pats atnaujinimas užtrunka mažiau nei 2 sekundes mano nešiojamame kompiuteryje su i5 procesoriumi.</description>
-        <description lang="nl">Je hebt een enorme bibliotheek van TV-series en je hebt nog niet de helft bekeken. Dus waarom voelt dat als een te groot karwei om te gaan zitten en iets te bekijken?&#10;LazyTV is hier om je te bevrijden van je gevecht met besluiteloosheid, in plaats daarvan, laat je achterover leunen en geniet van alle content. met één klik kunt u kanaal surfen in jouw eigen bibliotheek, of wat je waarschijnlijk wilt kijken laten verschijnen in één enkel pop-up venster&#10;immers, je weet dat je tv wilt kijken, dus waarom moet je ook beslissen naar wat je concreet wilt kijken.&#10;&#10;in tegenstelling tot een slimme afspeellijst of de skin widget, zorgt LazyTV niet alleen voor de eerste niet-bekeken aflevering van een TV-serie. het biedt ook de eerste niet-bekeken aflevering na de LAATST bekeken aflevering in jou bibliotheek. Een klein, maar belangrijk onderscheid.&#10;&#10;LazyTV biedt 2 hoofdfuncties:&#10;&#10;De eerste creëert en lanceert een gerandomiseerde afspeellijst van de tv-afleveringen. En niet zomaar een aflevering, maar de volgende aflevering die denkt dat je zo willen zien om te bekeken. je hebt ook de mogelijkheid om je te mengen in jou films (zowel de bekeken als de niet-bekeken) om de kanaal-surf ervaring te complementeren.&#10;De tweede belangrijkste functie vult een venster met de volgende beschikbare afleveringen voor elk van uw TV-series. Eén klik en uw weergavemenu is er, Gelijk.&#10;&#10;Combineer één van de belangrijkste functies met een afspeellijst van voorgeselecteerde series om uw ervaring nog verder aan te passen.&#10;&#10;sommige TV-series, zoals cartoons of sketch afleveringen, kunnen worden bekeken uit episodische volgorde. zodoende geeft Lazy-tv u de mogelijkheid om deze series te identificeren en anders te behandelen. Die shows zullen worden gespeeld in willekeurige volgorde.&#10;&#10;LazyTV biedt ook twee kleine functies die verder gaan dan de add-on zelf:&#10;De eerste is een optie om te worden geïnformeerd als u op het punt staat om een aflevering die een niet bekeken aflevering heeft voordat u de volgende aflevering bekijkt. Deze functie sluit de tv-series Geïdentificeerd als staat niet in chronologische volgorde om bekeken te worden.&#10;&#10;De tweede optie geeft een notificatie wanneer u klaar bent met het kijken naar een aflevering en je te vertellen dat de volgende aflevering beschikbaar is en vraagt of je het nu wilt bekijken.&#10;&#10;&#10;LazyTV bevat een dienst die informatie van volgende afleveringen opslaat en controleert uw speler voor uit te lopen op wijzigingen in de database. Dit is mijn poging om de add-on beter te laten inspelen op mijn Raspberry Pi. het duurt voor de PI nog een tijdje om "op te warmen," Een volledige vernieuwing van de afleveringsgegevens (die optreedt bij het opstarten en tijdens een bibliotheekupdate) dit duurt ongeveer 30 seconden voor mijn 100 afleveringenbibliotheek*. Echter, de afleveringenlijst opent en de willekeurige speler begint in minder dan 2 seconden.&#10;&#10;*Dezelfde update duurt 2 seconden op mijn laptop met een i5 processor.</description>
-        <description lang="pt_BR">You have a huge library of TV shows and you havent viewed half of it. So why does it feel like such a chore to sit down and watch something?&#10;LazyTV is here to free you from your battles with indecision, instead letting you lean back and soak up content. With one click you can be channel-surfing your own library, or have what you probably want to watch pop up in a single window.&#10;Afterall, you know you want to watch TV, so why do you also have to decide what specifically to watch?&#10;&#10;Unlike a smart playlist or skin widget, LazyTV doesnt just provide the first unwatched episode of a TV show. It provides the first unwatched episode AFTER the last watched one in your library. A small, but important, distinction.&#10;&#10;LazyTV offers two main functions:&#10;The first creates and launches a randomised playlist of the TV episodes. And not just any episodes, but the next episode it thinks you would want to watch. You also have the option to blend in your movies (both the watched and the unwatched) to complete the channel-surfing experience.&#10;The second main function populates a window with the next available episode for each of your TV Shows. One click and your viewing menu is there, immediately.&#10;&#10;Combine either of the main functions with a playlist of preselected shows to customise your experience even further.&#10;Some TV shows, like cartoons or skit shows, can be viewed out of episodic order. So LazyTV gives you the ability to identify these shows and treat them differently. Those shows will be played in a random order.&#10;&#10;LazyTV also offers two minor functions that extend beyond the addon itself:&#10;The first is an option to be notified if you are about to watch an episode that has an unwatched episode before it. This function excludes the TV shows identified as able to be watched out of order.&#10;The second option posts a notification when you finish watching a TV episode telling you that the next show is available and asks if you want to view it now.&#10;&#10;&#10;LazyTV contains a service that stores the next episodes' information and monitors your player to pre-empt database changes. This is my attempt to make the addon more responsive on my Raspberry Pi. The Pi still takes a while to "warm-up"; a full refresh of the episode data (which occurs at start-up and on a library update) takes about 30 seconds for my ~100 show library*. However, the show list window opens and the random player starts in less than 2 seconds.&#10;&#10;*The same update takes 2 seconds on my laptop with its i5 processor.</description>
-        <description lang="sv">Du har ett massivt bibliotek med TV-avsnitt och du har inte tittat på hälften av det. Så varför känns det så jobbigt att sätta sig ner för att titta på något?&#10;LazyTV har kommit för att befria dig från kampen mot obeslutsamhet, istället tillåts du att luta dig bakåt och suga upp innehållet. Med ett klick kan du kanalsurfa i ditt eget bibliotek eller låta det du förmodligen vill se visas i ett enda fönster.&#10;Du vet ju att du vill se på TV så varför måste du bestämma specifikt vad du skall se på?&#10;&#10;Till skillnad från en smart spellista eller ett skaltillägg, ger LazyTV dig inte bara det första icke visade avsnittet från en TV-serie. Det ger dig det första icke visade avsnittet EFTER det senast visade avsnittet i ditt bibliotek. En liten, men ack så viktig, skillnad.&#10;&#10;LazyTV erbjuder två huvudfunktioner:&#10;Den första skapar och startar en slumpmässig spellista av avsnitten. Inte bara vilka avsnitt som helst, utan det avsnitt den tror att du vill titta på. Du har också möjligheten att blanda in dina filmer (både visade och inte visade) för att komplettera kanalsurfupplevelsen. Den andra funktionen fyller ett fönster med det kommande avsnittet för varje TV-serie du har i ditt bibliotek. Ett klick och menyn finns där, omedelbart.&#10;&#10;Kombinera någon av funktionerna med en spellista av förvalda serier eller skräddarsy upplevelsen ännu mer.&#10;Vissa TV-serier, som tecknat eller sketcher, behöver inte visas i avsnittsföljd. LazyTV ger dig möjligheten att identifiera dessa program och behandla dem annorlunda. Dessa avsnitt kommer att spelas upp i slumpmässig följd.&#10;&#10;LazyTV erbjuder också två mindre funktioner som sträcker sig utanför tillägget:&#10;Den första är möjligheten att visa en notifiering om du är på väg att se ett avsnitt där du inte har tittat på det tidigare avsnittet. Funktionen inkluderar inte de TV-avsnitt som identifierats som möjliga att se i slumpmässig ordning.&#10;Den andra funktionen visar en notifiering när du slutat se på ett avsnitt med meddelandet om att nästa avsnitt finns tillgängligt och frågar om du vill se det nu.&#10;&#10;LazyTV innehåller en tjänst som lagrar de kommande avsnittens information och övervakar din spelare att föregripa databasändringar. Detta är mitt försök att göra tillägget mer responsivt på min Raspberry Pi. Raspberry Pi tar en stund att "värma upp"; en komplett uppdatering av avsnittsdata (som sker vid uppstart och biblioteksuppdatering) tar ungefär 30 sekunder för mitt bibliotek med ca 100 program*. Avsnittslistan och den slumpmässiga uppspelningen startar under två sekunder.&#10;&#10;*Samma uppdatering tar 2 sekunder på min laptop med i5 processor.</description>
-        <language>en</language>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-        <forum>http://forum.xbmc.org/showthread.php?tid=170975</forum>
-        <website>http://wiki.xbmc.org/index.php?title=Add-on:LazyTV</website>
-        <email>subliminal.karnage at gmail dot com</email>
-        <source>https://github.com/KODeKarnage/script.lazytv/</source>
-    </extension>
-</addon>
-
 <addon id="script.loungeripper" name="Lounge Ripper" version="0.1.26" provider-name="Birger Jesch">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -8284,6 +8845,20 @@ v.2.0.8
     <email></email>
     <source></source>
   </extension>
+</addon>
+
+<addon id="script.module.addon.signals"
+	name="Addon Signals"
+	version="0.0.3"
+	provider-name="Rick Phillips (ruuk)">
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Inter-addon signalling</summary>
+		<description lang="en">Provides signal/slot mechanism for inter-addon communication</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+		<source>https://github.com/ruuk/script.module.addon.signals</source>
+	</extension>
 </addon>
 
 <addon id="script.module.amazon.database"
@@ -8562,6 +9137,24 @@ v.2.0.8
    </extension>
 </addon>
 
+<addon id="script.module.kodiswift" name="kodiswift" provider-name="Aaron Frase (Sinap)" version="0.0.8">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+  </requires>
+  <extension library="lib" point="xbmc.python.module"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">A fork of the xbmcswift2 project</summary>
+    <description lang="en">A micro framework to enable rapid development of Kodi plugins.</description>
+    <platform>all</platform>
+    <license>GNU General Public License v3 (GPL-3)</license>
+    <source>https://github.com/afrase/kodiswift</source>
+    <email>afrase91@gmail.com</email>
+    <language/>
+    <website/>
+    <forum/>
+  </extension>
+</addon>
+
 <addon id="script.module.mechanize"
 	name="Mechanize"
 	version="0.2.6"
@@ -8757,6 +9350,27 @@ If you want to use the generic handling, contact me.
             <icon>icon.png</icon>
         </assets>
     </extension>
+</addon>
+
+<addon id="script.module.pyrollbar"
+       name="pyrollbar"
+       version="0.13.17"
+       provider-name="rollbar">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" version="2.3.0" optional="false"/>
+    <import addon="script.module.six" version="1.9.0" optional="false"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Error tracking and logging from Python to Rollbar</summary>
+    <description>Python notifier for reporting exceptions, errors, and log messages to Rollbar.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://github.com/rollbar/pyrollbar</source>
+    <website>https://rollbar.com/docs/notifier/pyrollbar</website>
+  </extension>
 </addon>
 
 <addon id="script.module.python.twitch" name="python-twitch for Kodi" version="1.1.0" provider-name="A Talented Community">
@@ -9063,6 +9677,19 @@ If you want to use the generic handling, contact me.
 		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
+	</extension>
+</addon>
+
+<addon id="script.module.urlresolver.xxx" version="1.0.09" name="Adult Resolver SMU Extension" provider-name="jsergio, Echo Coder">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+        	<import addon="script.module.urlresolver" version="3.0.38" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 
@@ -9373,18 +10000,6 @@ v0.31
     <description lang="hu">A szkript képes szerkeszteni az XBMC beépített RSS forrás készletét</description>
     <description lang="de">Skript zum Bearbeiten des XBMC internen RSS Tickers</description>
   </extension>
-</addon>
-
-<addon id="script.salts.themepak" version="0.0.12" name="SALTS Themepak" provider-name="k3l3vra">
-    <requires>
-        <import addon="kodi.resource" version="1.0.0"/>
-    </requires>
-    <extension point="kodi.resource.images" compile="false" type="themepak" />
-    <extension point="xbmc.addon.metadata">
-        <summary>Themes for the SALTS Addon</summary>
-        <description>Themes for SALTS are maintained separately to make distribution of the the addon itself easier/faster.</description>
-        <platform>all</platform>
-    </extension>
 </addon>
 
 <addon id="script.screensaver.animexx" name="Anime Fanartsaver" version="0.9.3" provider-name="L0RE">
@@ -10083,86 +10698,6 @@ v0.31
 	</extension>
 </addon>
 
-<addon id="service.libraryautoupdate"
-    name="Library Auto Update" version="1.0.1" provider-name="robweber">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-  </requires>
-  <extension point="xbmc.python.script" library="manual.py">
-     <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="default.py" start="login">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="be">Update your Kodi Video and Music Libraries on a timer. Timer runs as an Kodi service so you never miss an update.</summary>
-    <summary lang="bg">Обновява библиотеките в XBMC (за видео и музика) чрез брояч. Той се стартира като XBMC услуга, затова никога няма да изпуснете нито едно обновяване.</summary>
-    <summary lang="ca">Actualitza les llibreries de vídeo i música de l'XBMC amb un temporitzador. El temporitzador arranca com un servei de l'XBMC, per tant mai es perdrà una actualització.</summary>
-    <summary lang="da">Opdater dine XBMC video- og musikbiblioteker ved hjælp af en timer. Timeren kører som en XBMC service, så du aldrig glipper en opdatering</summary>
-    <summary lang="de">Update deine XBMC Video- und Musiklibrariers mit einem Timer. Der Timer läuft als ein XBMC service, sodass Du niemals ein Update verpasst.</summary>
-    <summary lang="el">Ενημερώστε τις συλλογές ταινιών και μουσικής σας με χρονοδιακόπτη. Ο χρονοδιακόπτης εκτελείται σαν υπηρεσία του XBMC ούτως ώστε να μη χάνετε ποτέ καμία ενημέρωση.</summary>
-    <summary lang="en">Update your Kodi Video and Music Libraries on a timer. Timer runs as Kodi service so you never miss an update.</summary>
-    <summary lang="en_NZ">Update your XBMC Video and Music Libraries on a timer. Timer runs as an XBMC service so you never miss an update.</summary>
-    <summary lang="en_US">Update your XBMC Video and Music Libraries on a timer. Timer runs as an XBMC service so you never miss an update.</summary>
-    <summary lang="es">Actualice sus librerías de Video y Musica de XBMC con un temporizador. El temporizador se ejecuta como un servicio para que nunca se pierda una actualización.</summary>
-    <summary lang="es_MX">Actualiza tus bibliotecas de video y música de XBMC en base a un temporizador. El temporizador se ejecuta como un servicio de XBMC para que nunca te pierdas una actualización</summary>
-    <summary lang="fr">Mettez à jour votre vidéo médiathèques XBMC et votre bibliothèques musicales avec une minuterie. La minuterie fonctionne comme un service XBMC afin que vous ne manquez jamais une mise à jour.</summary>
-    <summary lang="fr_CA">Mettre à jour les bibliothèques de vidéos et de musique sur une minuterie. La minuterie fonctionne comme un service de XBMC afin que vous ne manquez jamais une mise à jour.</summary>
-    <summary lang="gl">Actualizar as súas Bibliotecas de Vídeo e Música mediante un temporizador. Un temporizador execútase no XBMC como un servizo de maneira que nunca esquecerá unha actualización.</summary>
-    <summary lang="he">עדכן את ספריות הוידאו והמוזיקה של XBMC בעזרת טיימר. הטיימר ירוץ כשירות XBMC כך שלא תפספס עדכון.</summary>
-    <summary lang="hr">Ažurirajte svoju ​​XBMC Videoteku i Fonoteku u zakazano vrijeme. Zakazano vrijeme radi kao XBMC usluga, tako da nikada nećete propustiti ažuriranje.</summary>
-    <summary lang="hu">Az XBMC videó és zene könyvtárak időzített frissítése. Az időzítő az XBMC szolgáltatásaként fut, így nem marad le egyetlen frissítésről sem.</summary>
-    <summary lang="id">Perbarui Pustaka Video dan Musik XBMC Anda dalam interval waktu. Timer dijalankan sebagai layanan XBMC sehingga Anda tak akan kelewatan hal baru.</summary>
-    <summary lang="is">Uppfæra Kvikmynda og Tónlistarsöfnin þín á XBMC á ákveðnum tímum. Tímasetningin keyrir sem þjónusta á XBMC svo þú missir aldrei af uppfærslu.</summary>
-    <summary lang="it">Aggiorna le tue librerie Video e Musicali in un momento definito. Il timer sarà eseguito come servizio di XBMC così non perderai nessun aggiornamento.</summary>
-    <summary lang="ko">XBMC 비디오, 음악 라이브러리를 타이머로 자동 업데이트 하세요. 타이머는 XBMC 서비스로 실행되므로 업데이트를 잊어버리는 일은 없습니다.</summary>
-    <summary lang="lt">Atnaujinkite savo XBMC vaizdo ir muzikos biblioteką nustatytu laiku. Laikmatis veikia kaip XBMC paslauga, todėl jūs niekada nepraleisite atnaujinimo.</summary>
-    <summary lang="nl">Werk je XBMC video en muziek bibliotheken periodiek bij. De timer werkt als een XBMC service zodat je geen enkele update mist.</summary>
-    <summary lang="no">Oppdater dine XBMC Video og Musikk bibliotek basert på en timer. Timern kjører som en XBMC tjeneste slik at du aldri mister en oppdatering.</summary>
-    <summary lang="pl">Automatycznie aktualizuj swoją bibliotekę filmów i albumów muzycznych. Usługa jest częścią XBMC, więc nigdy nie przegapisz niezbędnych aktualizacji.</summary>
-    <summary lang="pt">Actualize as suas bibliotecas de vídeo e música do XBMC com um temporizador. Ele actua como um serviço do XBMC para que nunca perca uma actualização.</summary>
-    <summary lang="pt_BR">Atualize sua coleção de vídeos e músicas no XBMC com agendamentos. Agendamentos rodam como serviço no XBMC, para que você nunca mais se esqueça de atualizar.</summary>
-    <summary lang="ru">Обновляет вашу медиатеку по таймеру. Таймер работает как сервис XBMC, поэтому вы никогда не забудете об обновлении.</summary>
-    <summary lang="sk">Aktualizujte Vašu XBMC Video a Hudobnú knižnicu podľa časovača. Časovač beží ako XBMC služba, takže nikdy nezmeškáte aktualizáciu.</summary>
-    <summary lang="sv">Uppdatera ditt XBMC video och musikbibliotek schemalagt. Schemaläggaren körs som en XBMC-service så du aldrig missar en uppdatering.</summary>
-    <summary lang="zh">定时更新你的XBMC视频和音乐资料库。定时器以XBMC服务的方式运行以保证不会错过更新。</summary>
-    <description lang="be">This is an Kodi Service that will update your music and video libraries on a timer. You can select a different interval to scan your media databases (Audio,Video,Both) or you can set a cron-style timer for greater control. If you are playing an audio or video file when the timer starts it can skip the library update process until it is completed so that you're media experience is not interrupted. Updating a specific Video Path, and Cleaning the Music/Video libraries is now supported.</description>
-    <description lang="bg">Услугата ще обновява видео и музикалната библиотека в XBMC през определен интервал от време. Можете да променяте интервала за сканиране (на източниците на видео, аудио или и за двата вида информация). Можете да зададете брояч в стил Cron (за запознатите с Linux), който Ви осигурява по-голям контрол. Ако се случи, че гледате/слушате файл от библиотека за която се е задействал брояч сканирането ще се отложи до момента в който не приключите активността. Също така се поддържа и обновяване на определени папки и почистване на библиотеките.</description>
-    <description lang="ca">Aquest és un servei de XBMC que actualitza les teves biblioteques de vídeo i música amb un temporitzador. Podeu seleccionar un interval diferent per analitzar les bases de dades multimèdia (àudio, vídeo, ambdós) o pot establir un temporitzador d'estil cron per a un major control. Si està reproduint a l'arxiu d'àudio o de vídeo quan s'inicia el temporitzador es pot ometre el procés d'actualització de la biblioteca fins que acabi per tant de tindre una experiència multimèdia ininterrompuda. Ara es compatible amb l'actualització d'un camí de vídeo específic, i la neteja de les biblioteques de música i vídeo.</description>
-    <description lang="da">Dette er en XBMC service, der opdaterer dine musik- og videobiblioteker ved hjælp af en timer. Du kan vælge forskellige intervaller for skanningen af din mediedatabase (lyd, video, begge) eller du kan vælge en cron-baseret timer for øget kontrol. Hvis du afspiller en lyd- eller videofil, når timeren begynder, kan den springe over opdatering af biblioteket indtil emnet er færdigafspillet, så din medieoplevelse ikke afbrydes. Opdatering af specifikke videostier og oprydning i musik/videobibliotekerne er nu understøttet.</description>
-    <description lang="de">Dies ist ein XBMC Service, der deine Musik und Video Bibliothek in bestimmten Abständen automatisch aktualisiert. Du kannst verschiedene Intervalle für das Scannen deiner Mediendatenbanken (Audio, Video oder beides) verwenden oder einen eigenen Cron Ausdruck für noch mehr Kontrolle benutzen. Wenn du gerade Musik oder ein Video abspielst kannst du den Timer des automatischen Updates überspringen, so dass dein Film Erlebnis nicht unterbrochen wird. Die Aktualisierung von konkreten Pfaden und Aufräumen der Musik/Video Bibliotheken wird nun unterstützt</description>
-    <description lang="el">Αυτή είναι μία Υπηρεσία του XBMC που ενημερώνει τις συλλογές ταινιών και μουσικής σας με χρονοδιακόπτη. Μπορείτε να επιλέξετε διαφορετικό χρονικό διάστημα για σάρωση των πολυμέσων σας (Μουσική, Βίντεο, Και Τα Δυο) ή μπορείτε να ορίσετε ένα χρονοδιακόπτη τύπου cron για καλύτερο έλεγχο. Αν αναπαράγεται μία ταινία ή ένα τραγούδι όταν αρχίσει ο χρονοδιακόπτης μπορεί να αναβληθεί η διαδικασία της ενημέρωσης της συλλογής μέχρις ότου τελειώσει, προκειμένου να μην επηρεαστεί η αναπαραγωγή. Πλέον υποστηρίζεται η ενημέρωση συγκεκριμένης Διαδρομής Βίντεο, καθώς και Εκκαθάριση των συλλογών Ταινιών/Μουσικής.</description>
-    <description lang="en">This is a Kodi Service that will update your music and video libraries on a timer. You can select a different interval to scan your media databases (Audio,Video,Both) or you can set a cron-style timer for greater control. If you are playing an audio or video file when the timer starts it can skip the library update process until it is completed so that you're media experience is not interrupted. Updating a specific Video Path, and Cleaning the Music/Video libraries is now supported.</description>
-    <description lang="en_NZ">This is an XBMC Service that will update your music and video libraries on a timer. You can select a different interval to scan your media databases (Audio,Video,Both) or you can set a cron-style timer for greater control. If you are playing an audio or video file when the timer starts it can skip the library update process until it is completed so that you're media experience is not interrupted. Updating a specific Video Path, and Cleaning the Music/Video libraries is now supported.</description>
-    <description lang="en_US">This is an XBMC Service that will update your music and video libraries on a timer. You can select a different interval to scan your media databases (Audio,Video,Both) or you can set a cron-style timer for greater control. If you are playing an audio or video file when the timer starts it can skip the library update process until it is completed so that you're media experience is not interrupted. Updating a specific Video Path, and Cleaning the Music/Video libraries is now supported.</description>
-    <description lang="es">Este es un servicio de XBMC que actualizara sus librerías de música y video con un temporizador. Puede elegir intervalos diferentes para escanear sus bases de datos (video, música, ambas) o puede elegir un temporizador del estilo "cron" para un mayor control. Si esta reproduciendo audio o video cuando el temporizador se ejecuta, omitirá la actualización hasta que acabe la reproducción, para que no interrumpa su experiencia multimedia. Actualizar una ruta especifica y limpiar las bases de datos de música y video esta ahora soportado.</description>
-    <description lang="es_MX">Esto es un servicio de XBMC que actualiza tus bibliotecas de música y video en base a un temporizador. Puedes seleccionar diferentes intervalos para escanear tus bases de datos de medios (Audio, Video, Ambas) o puedes configurar un temporizador de estilo Cron para un mayor control. Si estas reproduciendo audio o video cuando el temporizador empieza, puede saltarse la actualización de bibliotecas hasta que esta termine, evitando de esta manera una interrupción en la reproducción de medios. Actualizar una ruta específica de video y limpiar bibliotecas de Música/Video se encuentra ahora soportado</description>
-    <description lang="fr">Il s'agit d'un service de XBMC qui mettra à jour vos bibliothèques musicale et vidéo sur une minuterie. Vous pouvez sélectionner plusieurs intervalles pour scanner vos bases de données multimédia (Audio,Vidéo,Les deux) ou vous pouvez régler une minuterie pour un meilleur contrôle. Si vous jouez un fichier audio ou vidéo lorsque la minuterie démarre, le processus de mise à jour bibliothèque peut être ignoré jusqu'à ce que la lecture soit terminée afin que votre expérience multimédia ne soit pas interrompue. Mise à jour d’un chemin vidéo spécifique, et nettoyage des bibliothèques de musique/vidéo est maintenant supporté.</description>
-    <description lang="fr_CA">Ceci est un service XBMC qui mettra à jour automatiquement votre audiothèque et votre vidéothèque d'après une minuterie. Vous pouvez sélectionner un intervalle différent  pour balayer votre base de données multimédias (audio, vidéo, les deux) ou vous pouvez créer une minuterie de style cron pour un plus grand contrôle. Si vous lisez un fichier audio ou vidéo lorsque le minuteur commence, le service peut ignorer le processus de balayage de vos médiathèques jusqu'à ce que vous ayez terminé afin de ne pas interrompre votre écoute. Mettre à jour un chemin vidéo spécifique et nettoyer votre audiothèque et votre vidéothèque est maintenant pris en charge.</description>
-    <description lang="gl">É un servizo de XBMC que actualizará as súas bibliotecas de vídeo e música mediante un temporizador. Pode seleccionar un intervalo diferente para escanear a súa base de datos (Son,Vídeo, Ambos) ou pode estabelecer un temporizador ao estilo de cron para un maior control. O temporizador pode omitir a actualización da biblioteca mentres está a reproducir unha canción ou vídeo até que remate. Agora soporta a actualización dun camiño de vídeo especifico e a limpeza das bibliotecas de Música/Video.</description>
-    <description lang="he">זהו שירות XBMC היעדכן את ספריות הוידאו ומוזיקה שלך לפי טיימר. ביכולתך לבחור תדירות שונה לסריקת מסדי הנתונים (אודיו, וידאו, שניהם) או להגדיר טיימר דמוי Cron לשליטה טובה יותר. כאשר מנוגן קובץ אודיו או וידאו הטיימר מסוגל לדלג על תהליך העדכון עד לאחר תום הניגון כך שחווית המדיה שלך לא תיפגם. נוספה תמיכה לעדכון נתיב וידאו ספציפי וניקוי ספריות המוזיקה/וידאו.</description>
-    <description lang="hr">Ovo je XBMC usluga koja će ažurirati vašu Fonoteku i Videoteku u zakazano vrijeme. Možete odabrati neko drugo razdoblje pretraživanja vaše medijske baze podataka (glazba, video, obadvoje) ili možete postaviti cron-stil zakazano vrijeme za veću kontrolu. Ako se reproducira glazba ili video datoteka kada se zakazano vrijeme pokrene, ažuriranje ne započinje dok reprodukcija ne završi zato da se reprodukcija medija ne prekida. Ažuriranje određene Video putanje, i čišćenje Fonoteke i Videoteke sada je podržano.</description>
-    <description lang="hu">Ez egy automatikus XBMC szolgáltatás, amely időzítetten frissíti a zenei és videó adatbázisokat. A különböző adatbázisokhoz eltérő időzítés választható vagy a teljesebb irányítás érdekében cron stílusú időzítés is használható. Amennyiben éppen lejátszik valamit, a frissítés elhalasztódik a lejátszás utánra, hogy ne zavarja a lejátszást. Már támogatott az egyedi videó frissítés és a zene/videó adatbázis tisztítás is.</description>
-    <description lang="id">Ini adalah Layanan XBMC yang akan memperbarui pustaka musik dan video Anda dalam interval waktu. Anda dapat memilih interval yang berbeda untuk memindai basis data media (Audio, Video, Keduanya) atau Anda dapat mengeset timer ala cron untuk kontrol yang lebih luas. Apabila Anda memutar berkas audio atau video saat timer dimulai, ia dapat melewati proses pembaruan pustaka sampai pemutaran selesai sehingga pengalaman media Anda tidak terganggu. Memperbarui Lokasi Video spesifik, serta Membersihkan pustaka Musik/Video kini dapat dilakukan.</description>
-    <description lang="is">Þetta er XBMC þjónusta sem uppfærir tónlistar- og kvikmyndasöfnin þín á ákveðnum tímum. Þú getur valið mismunandi tímabil til að skanna miðlunar gagnasöfn þín. (Tónlist, Kvikmyndir, Bæði) eða þú getur still cron tímasetningu til að hafa frekari stjórnun. Ef þú ert að keyra hljóð eða mynd þegar tíminn kemur þá bíður hann með uppfærslu þangað til að þú ert búinn til að trufla ekki afspilunina. Stuðningur er nú við uppfærslur á tilgreindum slóðum og Tiltekt á tónlistar/myndefnis söfnum.</description>
-    <description lang="it">Questo è un servizio di XBMC che aggiornerà le tue librerie video e musicali a d una scadenza predefinita. Puoi impostare vari intervalli per scansionare i tuoi db (audio, video o entrambi) o puoi impostare un timer per un miglior controllo. Se stai eseguendo file video o audio quando la scansione sarà rimandata fin quando non avrai finito, così che non sarai interrotto. L'aggiornamento un percorso specifico e pulizia dele librerie Video e Musicali sono ora supportati </description>
-    <description lang="ko">음악과 비디오 라이브러리 업데이트를 예약 실행하는 XBMC 서비스입니다. 미디어 데이터베이스(오디오, 비디오, 모두)를 각각 다른 간격으로 업데이트하도록 선택하거나 cron 스타일의 타이머를 설정할 수 있습니다. 타이머가 시작될 때 오디오나 비디오를 재생하고 있다면 재생을 완료할 때까지 라이브러리 업데이트 프로세스를 생략할 수 있습니다. 지정한 비디오 경로 업데이트, 음악/비디오 라이브러리 정리도 지원합니다.</description>
-    <description lang="lt">Tai XBMC paslauga, kuri atnaujins jūsų muzikos ir vaizdo bibliotekas nurodytu laiku. Jūs galite nurodyti skirtingus laiko intervalus medija duomenų bazių skenavimui (garso, vaizdo, abiejų) arba galite nustatyti 'Cron' stiliaus laikmatį geresnei kontrolei. Jei laikmatis suveikia tuo metu, kai atkuriamas garso ar vaizdo failas, bibliotekos atnaujinimo procesas gali būti pristabdytas kol baigsis atkurimas, kad jūsų laikmatis gali praleisti bibliotekos atnaujinimo procesą tam, kad gaėltumėte nepertraukiamai mėgautis medija turiniu. Konkretaus kelio iki vaizdo failų atnaujinimas ir muzikos/vaizdo bibliotekos valymas dabar jau palaikoma.</description>
-    <description lang="nl">Dit is een XBMC service die je muziek en video bibliotheek periodiek bijwerkt. Je kan een interval instellen per media bibliotheek (audio, video of beide) of je kan een timer in cron-stijl instellen voor meer controle. Als je een audio of video file afspeelt wanneer een geplande update start, kan het bijwerken worden uitgesteld tot het bestand is afgespeeld om je media-beleving niet te onderbreken. Een specifieke video locatie bijwerken en de muziek/videobibliotheken opschonen, zijn nu ondersteund. </description>
-    <description lang="no">Dette er en XBMC tjeneste som vil oppdatere dine video og musikk bibliotek basert på en timer. Du kan velge mellom forskjellige intervall for skanning av media databasene dine (audio, video eller begge) eller du kan sette en cron liknende timer for mer kontroll. Hvis du spiller en audio, eller video, fil når timern starter kan oppdateringen stoppes slik at den ikke forstyrrer seansen din. Oppdatering av spesifikke video mapper og rensking av musikk/video bibliotek støttes.</description>
-    <description lang="pl">Jest to usługa XBMC, która aktualizuje twoją kolekcję muzyki oraz wideo. Pozwala określić odstęp czasu w jakim twoja biblioteka będzie skanowana lub dla lepszej kontroli ustawić formułę cron. Jeżeli odtwarzasz muzykę lub film, to aktualizacja kolekcji rozpocznie się po zakończeniu odtwarzania. Obsługiwana jest aktualizacja podanej ścieżki wideo oraz czyszczenie bibliotek muzyki i wideo.</description>
-    <description lang="pt">Este é um serviço do XBMC que actualizará as suas bibliotecas de música e vídeo por temporizador. Pode seleccionar intervalos de tempo para analisar as suas bases de média (áudio, vídeo, ambas) ou pode definir um temporizador cron para maior controlo. Se estiver a reproduzir um ficheiro áudio ou vídeo quando o temporizador inicia, este pode adiar a actualização da biblioteca até a reprodução estar concluída, para não interromper. Agora pode também actualizar uma localização de vídeo específica e limpar as bibliotecas áudio/vídeo.</description>
-    <description lang="pt_BR">Este é um serviço XBMC que irá atualizar a sua coleção de vídeos e músicas através de agendador de atividade. Você pode selecionar um intervalo diferente para escanear seus bancos de dados de mídia (áudio, vídeo, tanto) ou você pode definir um temporizador estilo cron  para maior controle. Se você estiver reproduzindo um arquivo de áudio ou vídeo quando o cronômetro iniciar, ele pode pular o processo de atualização da biblioteca até que seja concluída, de modo que sua experiência de mídia não é interrompido. Atualizar um caminho de vídeo específico, e de limpeza das bibliotecas de música / vídeo é agora suportado.</description>
-    <description lang="ru">Это сервис, который обновляет вашу медиатеку по таймеру. Вы можете выбрать разные периоды для сканирования  ваших баз (Аудио, Видео, и то и то) или установить таймер по-времени для большего контроля. Если запущено проигрывание аудио или видео файла, когда срабатывает таймер, он может отменить процесс обновления до тех пор, пока Вы не закончите прослушивание или просмотр чего-либо. &#10;Выборочное обновление папок с Видео, очистка медиатеки теперь также поддерживается.</description>
-    <description lang="sk">Toto je XBMC služba, ktorá aktualizuje Vašu XBMC Hudobnú a Video knižnicu podľa časovača. Môžete zvoliť rôzne intervaly aktualizácie databáz (Hudba,Video,oboje) alebo pre väčšiu kontrolu zadáte časovač podobný Cron-u. Pokiaľ práve prehrávate hudobný alebo video súbor počas štartu časovača, môže byť aktualizácia odložená, aby nebol Váš mediálny zážitok narušený. Aktualizácia špecifických ciest a upratovanie Hudobnej/Video databázy je tiež podporované. </description>
-    <description lang="sv">Detta är en XBMC-service som schemalagt kommer att uppdatera ditt musik och videobibliotek. Du kan välja olika intervall att skanna dina mediadatabaser (Musik,Video,Båda) eller så kan du ange ett cron-inspirerad schemaläggare för bättre kontroll. Om du spelare en musik eller videofil när schemaläggaren startar, kan det hoppa över biblioteksuppdateringen till uppspelningen är klar så mediaupplevelsen inte avbryts. Uppdatering av en specifik videosökväg och rensning av musik/videobiblioteken stödjs nu.</description>
-    <description lang="zh">这是一个定时更新你的音乐和视频资料库的XBMC服务程序。你可以设置不同的时间间隔来扫描媒体库（音频、视频或二者），或者设置一个cron类型的定时器来获得更好的控制。如果定时动作开始时你正在播放一个音频或视频文件，它会跳过此次更新直到播放完毕以避免影响你欣赏媒体。现在已支持更新指定的视频路径以及清理音视频资料库。</description>
-    <language></language>
-    <license>The MIT License</license>
-    <forum>http://forum.xbmc.org/showthread.php?tid=119520</forum>
-    <source>https://github.com/robweber/xbmclibraryautoupdate</source>
-  </extension>
-</addon>
-
 <addon id="service.rytecepgdownloader" name="Rytec EPG Downloader" version="17.10.20" provider-name="Jin">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
@@ -10500,6 +11035,125 @@ v5.2.14 (2017-01-23)
   </extension>
 </addon>
 
+<addon id="service.xbmc.versioncheck"
+       name="Version Check"
+      version="0.3.26"
+      provider-name="Team Kodi">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="be">Kodi Version Check checks if you are running latest released version.</summary>
+        <summary lang="bg">Проверява дали ползвате най-новата версия на Kodi.</summary>
+        <summary lang="ca">Kodi Version Check comprova si està utilitzant la última versió publicada.</summary>
+        <summary lang="cs">Kontrola verze Kodi, zkontroluje, zda používáte nejnovější vydanou verzi.</summary>
+        <summary lang="da">Kodi undersøger om du benytter den nyeste version.</summary>
+        <summary lang="de">Kodi Versionsprüfung prüft, ob die neuste Version von Kodi installiert ist.</summary>
+        <summary lang="el">Ο Έλεγχος Έκδοσης Kodi εξετάζει αν έχετε την πιο πρόσφατη έκδοση του προγράμματος.</summary>
+        <summary lang="en">Kodi Version Check checks if you are running latest released version.</summary>
+        <summary lang="en_NZ">Kodi Version Check checks if you are running latest released version.</summary>
+        <summary lang="en_US">Kodi Version Check checks if you are running latest released version.</summary>
+        <summary lang="es">Kodi Version Check comprueba si está ejecutando la última versión de Kodi.</summary>
+        <summary lang="es_MX">Comprobador de Version de Kodi  comprueba si se esta ejecutando ultima version publicada.</summary>
+        <summary lang="fi">Kodi Version Check tarkistaa onko käyttämäsi uusin versio.</summary>
+        <summary lang="fr">Le contrôle de version de Kodi vérifie si la dernière version sortie est utilisée.</summary>
+        <summary lang="fr_CA">Le contrôleur de version Kodi vérifie si vous utilisez la dernière version parue.</summary>
+        <summary lang="gl">Kodi Version Check verifica se está a executar a última versión.</summary>
+        <summary lang="he">בודק גרסת Kodi מוודא אם אתה מריץ את הגרסה הרשמית האחרונה.</summary>
+        <summary lang="hr">Kodi provjeritelj inačice provjerava imate li posljednju inačicu izdanja.</summary>
+        <summary lang="hu">Az Kodi verzió ellenőrző megvizsgálja, hogy a legújabb kiadást futtatja-e.</summary>
+        <summary lang="id">Kodi Version Check mengecek apakah Anda menggunakan versi rilis terbaru.</summary>
+        <summary lang="is">Kodi Version Check athugar hvort þú sért að keyra nýjustu viðurkennda útgáfu.</summary>
+        <summary lang="it">Kodi Version Check verifica se hai l'ultima versione rilasciata</summary>
+        <summary lang="ko">Kodi Version Checks는 최신 정식 릴리즈 버전을 사용중인지 검사해줍니다.</summary>
+        <summary lang="lt">Kodi Version Check patikrina ar naudojate naujausią versiją.</summary>
+        <summary lang="nl">Kodi versie-check controleert of je de laatst beschikbare versie hebt.</summary>
+        <summary lang="no">Kodi Versjonsettersyn sjekker om du kjører den sist utgitte versjonen.</summary>
+        <summary lang="pl">Dodatek Version Check sprawdza czy używasz najnowszej wersji Kodi.</summary>
+        <summary lang="pt">O Kodi Version Check verifica se a sua versão de lançamento do Kodi está actualizada.</summary>
+        <summary lang="pt_BR">Kodi Version Check verifica se você está executando a versão mais recente.</summary>
+        <summary lang="ro">Verificare versiune Kodi verifică dacă folosiți ultima versiune lansată.</summary>
+        <summary lang="ru">Kodi Version Check проверяет если вы используете последнюю версию</summary>
+        <summary lang="sk">Kodi Kontrola verzií overuje, či používate najnovšiu vydanú verziu.</summary>
+        <summary lang="sl">Preverjanje različice Kodi preveri, če imate nameščeno nazadnje izdano različico.</summary>
+        <summary lang="sv">Kodi Version Check kontrollerar om du använder den senaste versionen.</summary>
+        <summary lang="tr">Kodi Sürüm Kontrol yayınlanmış son sürümü kullanıp kullanmadığınızı kontrol eder.</summary>
+        <summary lang="zh">Kodi 版本检查检查你使用的是否为最新发布的版本。</summary>
+        <description lang="be">Kodi Version Check only supports a number of platforms/distros as releases may differ between them. For more information visit the kodi.tv website.</description>
+        <description lang="bg">Kodi Version Check поддържа няколко платформи/дистрибуции. За повече информация посетете страницата www.kodi.tv</description>
+        <description lang="ca">Kodi Version Check només és compatible amb una sèrie de plataformes / distribucions ja que les ultimes versions poden ser diferents entre elles. Per obtenir més informació, visiteu el lloc web kodi.tv.</description>
+        <description lang="cs">Kontrola verze Kodi podporuje pouze několik platforem/distribucí a verze mezi nimi se můžou lišit. Pro více informací navštivte webové stránky kodi.tv.</description>
+        <description lang="da">Kodi kan kun undersøge for opdateringer for visse platforme/udgaver, da der kan være forskel. For mere information, besøg kodi.tv.</description>
+        <description lang="de">Kodi Versionsprüfung unterstützt nur ein paar Plattformen/Distributionen, da sich die jeweiligen Veröffentlichungen unterscheiden können. Für weitere Informationen besuchen Sie die kodi.tv-Webseite.</description>
+        <description lang="el">Ο Έλεγχος Έκδοσης Kodi υποστηρίζει μόνο ορισμένα λειτουργικά συστήματα/διανομές, καθώς οι εκδόσεις διαφέρουν για το καθένα. Για περισσότερες πληροφορίες επισκεφθείτε το kodi.tv</description>
+        <description lang="en">Kodi Version Check only supports a number of platforms/distros as releases may differ between them. For more information visit the kodi.tv website.</description>
+        <description lang="en_NZ">Kodi Version Check only supports a number of platforms/distros as releases may differ between them. For more information visit the kodi.tv website.</description>
+        <description lang="en_US">Kodi Version Check only supports a number of platforms/distros as releases may differ between them. For more information visit the kodi.tv website.</description>
+        <description lang="es">Kodi Version Check solo soporta un número limitado de plataformas/distribuciones, ya que los lanzamientos pueden diferir entre ellos. Para más información, visite la web de kodi.tv.</description>
+        <description lang="fi">Kodi Version Check tukee vain joitain alustoja/distroja koska julkaisut saattavat poiketa toisistaan. Saadaksesi lisätietoa, vieraile kodi.tv:ssä.</description>
+        <description lang="fr">Le contrôle de version de Kodi ne prend en charge qu'un certain nombre de plate-formes/distributions car les versions peuvent varier entre elles. Pour plus d'informations, consulter le site Web kodi.tv.</description>
+        <description lang="fr_CA">Le contrôleur de version Kodi ne prend en charge qu'un certain nombre de plate-formes/distributions car les versions peuvent varier entre elles. Pour plus d'informations, visitez le site Web kodi.tv.</description>
+        <description lang="gl">Kodi Version Check só soporta un número limitado de plataformas/distribucións, xa que os lanzamentos poden diferir entre eles. Para máis información visitar o sitio web de kodi.tv.</description>
+        <description lang="he">בודק גרסת Kodi תומך רק במספר פלטפורמות/הפצות מאחר שסימון הגרסאות שונה בין אחת לשניה. למידע נוסף בקר באתר kodi.tv.</description>
+        <description lang="hr">Kodi provjeritelj inačice samo podržava broj platformi/distribucija koliko to dopuštaju pojedina izdanja. Za više informacija posjetite kodi.tv web stranicu.</description>
+        <description lang="hu">Az Kodi verzió-ellenőrző csak néhány platformot / disztribúciót támogat, mert a kiadások között különbségek lehetnek. További információkért keresse fel az kodi.tv oldalt.</description>
+        <description lang="id">Kodi Version Check hanya mendukung beberapa platform/distro karena rilisnya mungkin berbeda-beda. Untuk informasi lebih lanjut kunjungi situs kodi.tv.</description>
+        <description lang="it">Kodi Version Check supporta un numero di piattaforme e distribuzioni diverse tra loro. Per più informazioni visita il sito kodi.tv</description>
+        <description lang="ko">Kodi Versio Check는 일부 플랫폼/배포본만을 지원합니다. 자세한 정보는 kodi.tv 웹사이트에서 확인하세요</description>
+        <description lang="lt">Kodi Version Check palaiko tik kelias platformas/distribucijas, nes leidimai tarp jų gali skirtis. Norėdami gauti daugiau informacijos, apsilankykite Kodi.tv puslapyje.</description>
+        <description lang="nl">Kodi versie check ondersteunt alleen een aantal platforms/distro`s omdat uitgaven verschillen tussen hen. Voor meer informatie bezoek de kodi.tv website.</description>
+        <description lang="no">Kodi Versjonsettersyn støtter kun noen plattformer/distribusjoner fordi utgivelser kan være forskjellige mellom dem. Besøk kodi.tv for mer informasjon.</description>
+        <description lang="pl">Dodatek Version Check wspiera tylko część platform i dystrybucji. Więcej informacji na stronie kodi.tv</description>
+        <description lang="pt">O Kodi Version Check suporta apenas algumas plataformas/distribuições, porque os lançamentos podem não ser sempre idênticos. Para mais informação, visite o site kodi.tv.</description>
+        <description lang="pt_BR">Verificador de versões do Kodi somente suporta algumas plataformas/distros em que os lançamentos podem diferenciar entre si. Para maiores informações visite o website kodi.tv.</description>
+        <description lang="ru">Проверка новых версий Kodi поддерживается только на ряде платформ/дистрибутивов и они могут различаться между собой. Для получения доп. информации посетите сайт kodi.tv</description>
+        <description lang="sl">Preverjanje različice Kodi podpira le nekatere platforme/distribucije, saj se izdaje med njimi lahko zelo razlikujejo. Za več informacij obiščite spletišče kodi.tv</description>
+        <description lang="sv">Kodi Version Check stöder endeast ett antal plattformar/distributioner eftersom utgivningar kan skilja mellan dessa. För mer information besök kodi.tv webplatsen.</description>
+        <description lang="tr">Kodi Sürüm Kontrol sürümler arasında değişiklik olduğu için sadece birkaç platform/dağıtım destekler. Daha fazla bilgi için kodi.tv web sitesini ziyaret edin.</description>
+        <description lang="zh">Kodi 版本检查只支持部分平台/发行版，它们之间的版本可能会有所不同。欲了解更多信息，请访问 kodi.tv 网站。</description>
+        <disclaimer lang="be">Feel free to use this script. For information visit kodi.tv</disclaimer>
+        <disclaimer lang="bg">Ползвайте скрипта свободно. За повече информация посетете www.kodi.tv</disclaimer>
+        <disclaimer lang="ca">Sigues lliure d'utilitzar aquest script. Per més informació visita kodi.tv</disclaimer>
+        <disclaimer lang="cs">Neváhejte použít tento skript. Pro více informací navštivte kodi.tv</disclaimer>
+        <disclaimer lang="da">Du er velkommen til at bruge dette script. For information, besøg kodi.tv</disclaimer>
+        <disclaimer lang="de">Zögern Sie nicht, dieses Skript zu verwenden. Für Informationen besuchen Sie kodi.tv</disclaimer>
+        <disclaimer lang="el">Χρησιμοποιήστε αυτό το script ελεύθερα. Για πληροφορίες επισκεφθείτε το kodi.tv</disclaimer>
+        <disclaimer lang="en">Feel free to use this script. For information visit kodi.tv</disclaimer>
+        <disclaimer lang="en_NZ">Feel free to use this script. For information visit kodi.tv</disclaimer>
+        <disclaimer lang="en_US">Feel free to use this script. For information visit kodi.tv</disclaimer>
+        <disclaimer lang="es">Puede usar libremente este programa. Para más información, visite kodi.tv</disclaimer>
+        <disclaimer lang="es_MX">Sientase libre de utilizar este script. Para mas información visita kodi.tv</disclaimer>
+        <disclaimer lang="fr">Utiliser ce script si désiré. Pour plus d'informations, consulter le site kodi.tv</disclaimer>
+        <disclaimer lang="fr_CA">N'hésitez pas à utiliser ce script. Pour plus d'informations visitez kodi.tv</disclaimer>
+        <disclaimer lang="gl">Síntase libre de usar este script, para máis información visitar kodi.tv.</disclaimer>
+        <disclaimer lang="he">תרגיש חופשי להשתמש בסקריפט זה. למידע נוסף בקר ב-kodi.tv</disclaimer>
+        <disclaimer lang="hr">Slobodno koristite ovu skriptu. Za više informacija posjetite kodi.tv</disclaimer>
+        <disclaimer lang="hu">Használja bátran ezt a szkriptet! Információkért keresse fel az kodi.tv oldalt!</disclaimer>
+        <disclaimer lang="id">Jangan sungkan menggunakan script ini. Untuk informasi hubungi kodi.tv</disclaimer>
+        <disclaimer lang="it">Usa liberamente lo script. Per informazioni visita kodi.tv</disclaimer>
+        <disclaimer lang="ko">이 스크립트를 자유롭게 사용하세요. 관련 정보는 kodi.tv를 방문하세요.</disclaimer>
+        <disclaimer lang="lt">Galite laisvai naudoti šį scenarijų. Apsilankykite kodi.tv, norėdami gauti daugiau informacijos.</disclaimer>
+        <disclaimer lang="nl">Gebruik dit script vrijblijvend. Voor meer informatie bezoek kodi.tv</disclaimer>
+        <disclaimer lang="no">Du har fri tillatelse til å benytte dette skriptet. Besøk kodi.tv for informasjon</disclaimer>
+        <disclaimer lang="pl">Zapraszamy do używania tego dodatku. Więcej informacji na stronie kodi.tv</disclaimer>
+        <disclaimer lang="pt">Esteja à vontade para usar este script. Para mais informação, visite kodi.tv.</disclaimer>
+        <disclaimer lang="pt_BR">Sinta-se livre para usar este script. Para maiores informações visite kodi.tv</disclaimer>
+        <disclaimer lang="ro">Simțiți-vă liberi să folosiți acest script. Pentru informații vizitați kodi.tv</disclaimer>
+        <disclaimer lang="ru">Используйте этот скрипт на свое усмотрение. Для информации посетите kodi.tv</disclaimer>
+        <disclaimer lang="sl">Izvolite uporabiti ta skript. Za dodatne informacije obiščite kodi.tv</disclaimer>
+        <disclaimer lang="sv">Använd gärna detta skript. För information, besök kodi.tv</disclaimer>
+        <disclaimer lang="tr">Bu betiği kullanmaktan çekinmeyin. Daha fazla bilgi için kodi.tv adresini ziyaret edin</disclaimer>
+        <disclaimer lang="zh">可放心使用此脚本，更多信息访问 kodi.tv</disclaimer>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forum.xbmc.org/showthread.php?tid=160228</forum>
+        <website>http://xbmc.org</website>
+        <email></email>
+        <source>https://github.com/XBMC-Addons/service.xbmc.versioncheck</source>
+    </extension>
+</addon>
+
 <addon
   id="skin.aeon.nox.5"
   version="5.8.6"
@@ -10586,9 +11240,9 @@ v5.2.14 (2017-01-23)
 
 <addon
   id="skin.confluence.EmuZONE2017"
-  version="2.5.9.010"
+  version="2.5.9.011"
   name="Confluence - EmuZONE 2017"
-  provider-name="The[COLOR tan] Highway [/COLOR], YggDraz1l">
+  provider-name="[COLOR tan]YggDraz1l[/COLOR]">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
     <import addon="script.artistslideshow" version="1.8.0"/>
@@ -10608,6 +11262,31 @@ v5.2.14 (2017-01-23)
     <platform>all</platform>
         <website>http://www.husham.com</website>
   </extension>
+</addon>
+
+<addon id="skin.horizonzv.isengard" name="Horizonz V" version="1.9.0.7" provider-name="blauesgruen">
+	<requires>
+		<import addon="xbmc.gui" version="5.10.0"/>
+		<!-- <import addon="script.image.resource.select" version="0.0.5"/>
+		<import addon="service.library.data.provider" version="0.1.2"/>
+		<import addon="resource.images.languageflags.colour" version="0.0.3"/>
+		<import addon="script.artwork.downloader" version="12.0.29"/>
+		<import addon="script.artistslideshow" version="1.8.6"/>
+		<import addon="script.globalsearch" version="6.0.1"/>
+		<import addon="plugin.audio.radio_de" version="2.3.1"/>
+		<import addon="resource.images.weathericons.outline" version="0.0.4"/>
+		<import addon="script.extendedinfo" version="3.1.1"/>
+		<import addon="resource.images.weatherfanart.multi" version="0.0.5"/> -->
+	</requires>
+	<extension point="xbmc.gui.skin" defaultthemename="textures.xbt" debugging="false" effectslowdown="0.75">
+		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>Skin von blauesgruen / Initiator mad-max</summary>
+		<description>Konzept:[CR]- einen AEON Skin schaffen der auch auf schwächeren Systemen läuft[CR]- logische und intuitive Bedienung[CR]- ein ansprechendes Aussehen im Alu-/Glasdesign, gut lesbar[CR]- alles ganz anders zu machen ;)[CR]bisher unterstützte Addons:[CR]- Artwork Downloader (Artworks für Filme)[CR]- CDArt Manager (Artworks für Music)[CR]- Script Extended Infos[CR]- GlobalSearch[CR]- SkinWidgets (ermöglicht die Darstellung von "zuletzt hinzugefügten", "zufällig gewählten" und "empfohlenen" Elementen)[CR]Kontakt und Fehlermeldungen:[CR]- www.kodinerds.net "Horizonz V"[CR]DANKE AN DIE COMMUNITY BEI XBMCNERDS/KODINERDS FUER DIE UNTERSTÜTZUNG !!!</description>
+		<disclaimer>Ursprünglich basierte der Skin auf den Mockups von xb2iris Skin "Horizonz".</disclaimer>
+	</extension>
 </addon>
 
 <addon
@@ -10718,6 +11397,311 @@ v5.2.14 (2017-01-23)
     <description lang="zh_TW">MilkDrop是來自於Winamp音樂播放器的視覺效果插件。在您在聽音樂時，MilkDrop通過節奏偵測觸發的無數夢幻的效果，帶您穿越聆聽中的音樂饗宴，也給您帶來豐富的聲音和視覺效果的奇幻旅程。</description>
     <platform>windx</platform>
   </extension>
+</addon>
+
+<addon
+  id="weather.metoffice"
+  version="1.0.2"
+  name="Met Office"
+  provider-name="powlo">
+  <requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.pytz" version="2014.2"/>
+	<import addon="script.module.pil"/>
+  </requires>
+  <extension point="xbmc.python.weather" library="src/metoffice/default.py"/>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="en">UK weather forecast from the Met Office.</summary>
+	<description lang="en">UK weather forecast provided by Met Office (http://www.metoffice.gov.uk/)</description>
+	<platform>all</platform>
+    <language>en</language>
+    <license>GNU GPL v2</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=166362</forum>
+    <website>http://www.metoffice.gov.uk/datapoint/</website>
+    <source>https://github.com/powlo/weather.metoffice</source>
+    <email></email>
+    <disclaimer lang="en">In using this addon you agree to the terms and conditions specified under the Met Office Datapoint terms and conditions. http://www.metoffice.gov.uk/datapoint/terms-conditions. Data provided by Met Office Datapoint is covered by the Open Government License. http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/. Use at your own risk. The authors accept no liability.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="weather.openweathermap.extended" name="OpenWeatherMap Extended" version="3.2.7" provider-name="ronie">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+		<import addon="script.openweathermap.maps" version="0.0.12"/>
+	</requires>
+	<extension point="xbmc.python.weather" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="bg">Синоптична прогноза от openweathermap.org</summary>
+		<summary lang="cs">Předpověď počasí z openweathermap.org</summary>
+		<summary lang="cy">Rhagolygon y tywydd gan openweathermap.org</summary>
+		<summary lang="de">Wettervorhersage von openweathermap.org</summary>
+		<summary lang="el">Πρόγνωση καιρού από το openweathermap.org</summary>
+		<summary lang="en">Weather forecast from openweathermap.org</summary>
+		<summary lang="en_NZ">Weather forecast from openweathermap.org</summary>
+		<summary lang="en_US">Weather forecast from openweathermap.org</summary>
+		<summary lang="es">Predicción meteorológica de openweathermap.org</summary>
+		<summary lang="fi">Sääennuste openweathermap.org :sta</summary>
+		<summary lang="fr">Prévisions météo d'openweathermap.org</summary>
+		<summary lang="fr_CA">Prévisions météorologiques de openweathermap.org</summary>
+		<summary lang="gl">Previsión meteorolóxica de openweathermap.org</summary>
+		<summary lang="he">תחזית מזג אויר מאת openweathermap.org</summary>
+		<summary lang="hr">Vremenska prognoza s openweathermap.org</summary>
+		<summary lang="hu">Időjárás előrejelzés az openweathermap.org oldalról</summary>
+		<summary lang="is">Veðurspá frá openweathermap.org</summary>
+		<summary lang="it">Previsioni meteo da openweathermap.org</summary>
+		<summary lang="ko">openweathermap.org 날씨 예보</summary>
+		<summary lang="lt">Orų prognozė iš openweathermap.org</summary>
+		<summary lang="nl">Weersvoorspelling van openweathermap.org</summary>
+		<summary lang="pl">Prognoza pogody z serwisu openweathermap.org</summary>
+		<summary lang="pt">Previsão meteorológica a partir de openweathermap.org</summary>
+		<summary lang="pt_BR">Previsão do Clima por openweathermap.org</summary>
+		<summary lang="ro">Previziuni meteo de la openweathermap.org</summary>
+		<summary lang="ru">Прогноз погоды от openweathermap.org</summary>
+		<summary lang="sl">Vremenska napoved openweathermap.org</summary>
+		<summary lang="sr_RS">Временска прогноза са openweathermap.org</summary>
+		<summary lang="sv">Väderprognos från openweathermap.org</summary>
+		<summary lang="tr">Hava durumu - openweathermap.org</summary>
+		<description lang="bg">Синоптична прогноза, предоставена от OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="cs">Předpověď počasí poskytnuta OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="de">Wettervorhersage bereitgestellt durch OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="el">Η πρόγνωση καιρού παρέχεται από το OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="en">Weather forecast provided by OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="en_NZ">Weather forecast provided by OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="en_US">Weather forecast provided by OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="es">Predicción meteorológica proporcionada por OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="fi">Sääennusteen tarjoaa OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="fr">Prévisions météo fournies par OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="fr_CA">Prévisions météorologiques fournies OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="gl">Previsión meteorolóxica fornecida por OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="he">תחזית מזג האויר מסופקת ע"י OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="hr">Vremenska prognoza dostupna od strane OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="hu">Az időjárás előrejelzést biztosítja az OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="is">Veðurspá kemur frá OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="it">Previsioni meteo fornite da OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="ko">OpenWeatherMap (http://openweathermap.org/) 에서 제공하는 날씨 예보</description>
+		<description lang="lt">Orų prognozė pateikta OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="nl">Weersvoorspelling voorzien door OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="pl">Prognoza pogody dostarczana przez serwis OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="pt">Previsão metereológica fornecida por OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="pt_BR">Previsão do Tempo provida por OpenWeatherMap&#10;(http://openweathermap.org/)</description>
+		<description lang="ro">Prognoză meteo oferită de OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="ru">Прогноз погоды предоставлен OpenWeatherMap&#10;(http://openweathermap.org/)</description>
+		<description lang="sl">Vremensko napoved zagotavlja OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="sr_RS">Временску прогнозу омогућио OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="sv">Väderprognos tillhandahållen av OpenWeatherMap (http://openweathermap.org/)</description>
+		<description lang="tr">OpenWeatherMap tarafından sağlana hava durumu tahmini (http://openweathermap.org/)</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=207110</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/ronie/weather.openweathermap.extended/</source>
+	</extension>
+</addon>
+
+<addon id="weather.unlocked" name="Weather Unlocked" version="0.0.7" provider-name="MetalChris">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+	</requires>
+	<extension point="xbmc.python.weather" library="addon.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Current Conditions and Forecast from Weather Unlocked</summary>
+		<description lang="en">Weather forecast provided by Weather Unlocked</description>
+		<disclaimer lang="en"></disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<forum></forum>
+		<source></source>
+	</extension>
+</addon>
+
+<addon id="weather.wunderground" name="Weather Underground" version="5.0.2" provider-name="ronie">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+	</requires>
+	<extension point="xbmc.python.weather" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="af">Weer voorspelling vanaf wunderground.com</summary>
+		<summary lang="am">የአየር ንብረት ከ wunderground.com</summary>
+		<summary lang="ar">توقعات الطقس من wunderground.com</summary>
+		<summary lang="be">Прагноз надвор'я з wunderground.com</summary>
+		<summary lang="bg">Синоптична прогноза от wunderground.com</summary>
+		<summary lang="ca">Previsió del temps de wunderground.com</summary>
+		<summary lang="cs">Předpověď počasí z wunderground.com</summary>
+		<summary lang="cy">Rhagolygon tywydd gan wunderground.com</summary>
+		<summary lang="da">Vejrudsigt fra wunderground.com</summary>
+		<summary lang="de">Wettervorhersage von wunderground.com</summary>
+		<summary lang="el">Πρόγνωση καιρού από το wunderground.com</summary>
+		<summary lang="en">Weather forecast from wunderground.com</summary>
+		<summary lang="en_NZ">Weather forecast from wunderground.com</summary>
+		<summary lang="en_US">Weather forecast from wunderground.com</summary>
+		<summary lang="es">Predicción meteorológica de wunderground.com</summary>
+		<summary lang="es_AR">Pronóstico meteorológico de wunderground.com</summary>
+		<summary lang="es_MX">Pronóstico de wunderground.com</summary>
+		<summary lang="et">Ilmaennustus portaalist wunderground.com</summary>
+		<summary lang="eu">Eguraldi iragarpena wunderground.com-etik</summary>
+		<summary lang="fi">Sääennusteet wunderground.com-sivustolta</summary>
+		<summary lang="fo">Veðurforsøgn frá wunderground.com</summary>
+		<summary lang="fr">Prévisions météo fournies par wunderground.com</summary>
+		<summary lang="fr_CA">Prévisions météo de wunderground.com</summary>
+		<summary lang="gl">Predición meteorolóxica de wunderground.com</summary>
+		<summary lang="he">תחזית מזג האויר מאת wunderground.com</summary>
+		<summary lang="hr">Prognoza vremena s wunderground.com</summary>
+		<summary lang="hu">Időjárás előrejelzés a wunderground.com-tól</summary>
+		<summary lang="is">Veðurspá frá wunderground.com</summary>
+		<summary lang="it">Meteo fornito da wunderground.com</summary>
+		<summary lang="ja">wunderground.com 天気予報</summary>
+		<summary lang="ka">ამინდის პროგნოზი wunderground.com-გან</summary>
+		<summary lang="ko">wunderground.com 날씨예보</summary>
+		<summary lang="lt">Orų prognozė nuo/iš wunderground.com</summary>
+		<summary lang="lv">Laika prognoze no wunderground.com</summary>
+		<summary lang="mk">Временска прогноза од wunderground.com</summary>
+		<summary lang="ms">Ramalan cuaca dari wunderground.com</summary>
+		<summary lang="my">wunderground.com မှ ရာသီဥတုခန့်မှန်းချက်</summary>
+		<summary lang="nl">Weersvoorspelling van wunderground.com</summary>
+		<summary lang="no">Værvarsel fra wunderground.com</summary>
+		<summary lang="pl">Prognoza pogody serwisu wunderground.com</summary>
+		<summary lang="pt">Previsão meteorológica a partir de wunderground.com</summary>
+		<summary lang="pt_BR">Previsão do tempo por wunderground.com</summary>
+		<summary lang="ro">Starea vremii de la wunderground.com</summary>
+		<summary lang="ru">Прогноз погоды от wunderground.com</summary>
+		<summary lang="sk">Predpoveď počasia z wunderground.com</summary>
+		<summary lang="sl">Vremenska napoved, ki jo zagotavlja wunderground.com</summary>
+		<summary lang="sq">Parashikimi i motit nga wunderground.com</summary>
+		<summary lang="sv">Väderprognos från wunderground.com</summary>
+		<summary lang="ta_IN">Wunderground.com இருந்து வானிலை முன்னறிவிப்பு</summary>
+		<summary lang="th">พยากรณ์อากาศจาก wunderground.com</summary>
+		<summary lang="tr">Hava durumu wunderground.com sitesinden alınır</summary>
+		<summary lang="uk">Прогноз погоди з wunderground.com</summary>
+		<summary lang="uz">wunderground.com dan ob-havo ma'lumoti</summary>
+		<summary lang="vi">Dự báo thời tiết từ wunderground.com</summary>
+		<summary lang="vi_VN">Dự báo thời tiết từ wunderground.com</summary>
+		<summary lang="zh">来自wunderground.com的天气预报</summary>
+		<summary lang="zh_TW">weatherground.com 上的天氣預報</summary>
+		<description lang="af">Weer voorspelling verskaf deur Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="am">የአየር ንብረት የሚቀርበው በ Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="ar">توقعات الطقس من تقديم Weather Underground&#10;(http://www.wunderground.com/)</description>
+		<description lang="be">Прагноз надвор'я створаны Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="bg">Синоптична прогноза с данните от Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="ca">Previsió del temps proporcionada per Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="cs">Předpověď počasí poskytnuta stránkou Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="cy">Rhagolygon tywydd gan Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="da">Vejrudsigten leveres af Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="de">Wettervorhersage bereitgestellt durch Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="el">Η πρόγνωση καιρού παρέχεται από το Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="en">Weather forecast provided by Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="en_NZ">Weather forecast provided by Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="en_US">Weather forecast provided by Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="es">Predicción meteorológica proporcionada por Weather Underground&#10;(http://www.wunderground.com/)</description>
+		<description lang="es_AR">Pronóstico meteorológico proporcionado por Weather Underground&#10;(http://www.wunderground.com/)</description>
+		<description lang="es_MX">Pronóstico del tiempo por Weather Underground&#10;(http://www.wunderground.com/)</description>
+		<description lang="et">Ilma ennustab Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="fi">Sääennusteet Weather Underground -sivuston tarjoamina (http://www.wunderground.com/)</description>
+		<description lang="fo">Veðurforsøgnin er latin av Weather Underground (http://www.wunderground.com)</description>
+		<description lang="fr">Prévisions météo fournies par Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="fr_CA">Prévisions météo fournies par Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="gl">Predición meteorolóxica provista por Weather Underground&#10;(http://www.wunderground.com/)</description>
+		<description lang="he">תחזית מזג האויר ניתנת ע"י Weather Underground (http://www.wunderground.com</description>
+		<description lang="hr">Prognozu vremena omogućava Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="hu">Az előrejelzést a Weather Underground (http://www.wunderground.com/) szolgáltatja </description>
+		<description lang="is">Veðurspá frá Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="it">Meteo fornito da Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="ja">Weather Underground (http://www.wunderground.com/) 提供の天気予報</description>
+		<description lang="ka">ამინდის პროგნოზი მოწოდებულია Weather Underground-ის მიერ (http://www.wunderground.com/)</description>
+		<description lang="ko">Weather Underground (http://www.wunderground.com/)가 제공하는 날씨예보</description>
+		<description lang="lt">Orų prognozė teikiama (pateikiama) iš Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="lv">Laika prognozi piedāvā Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="mk">Временска прогноза обезбедена од Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="ms">Ramalan cuaca disediakan oleh Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="my">ရာသီဥတုခန့်မှန်းချက်ကို Weather Underground (http://www.wunderground.com/) မှထောက်ပံ့ပေးထားပါသည်။</description>
+		<description lang="nl">Weersvoorspelling voorzien door Weather Underground&#10;(http://www.wunderground.com/)</description>
+		<description lang="no">Værvarsel fra Weather Underground (http://www.wunderground.com)</description>
+		<description lang="pl">Prognoza pogody jest dostarczona dzięki uprzejmości serwisu: (http://www.wunderground.com/)</description>
+		<description lang="pt">Previsão meteorológica fornecida por Weather Underground&#10;(http://www.wunderground.com/)</description>
+		<description lang="pt_BR">Previsão do tempo por Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="ro">Starea vremii furnizată de Weather Underground &#10;(http://www.wunderground.com/)</description>
+		<description lang="ru">Прогноз погоды предоставлен компанией Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="sk">Predpoveď počasia poskytovaná od Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="sl">Vremenska napoved, ki jo zagotavlja Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="sq">Parashikimi i motit i pajisur nga Weahter Underground&#10;(http://www.wunderground.com/)</description>
+		<description lang="sv">Väderprognos tillhandahållen av Weather Underground&#10;(http://www.wunderground.com/)</description>
+		<description lang="ta_IN">வானிலை முன்னறிவிப்பு வழங்குபவர் வானிலை அண்டர்கிரவுண்டு (http://www.wunderground.com/)</description>
+		<description lang="th">พยากรณ์อากาศโดย Weather Underground &#10;(http://www.wunderground.com/)</description>
+		<description lang="tr">Hava durumu Weather Underground (http://www.wunderground.com/)  tarafından sağlanır</description>
+		<description lang="uk">Прогноз погоди надано Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="uz">Ob-havo ma'lumoti Weather Underground (http://www.wunderground.com/) tomonidan taqdim etilgan</description>
+		<description lang="vi">Dự báo thời tiết từ Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="vi_VN">Dự báo thời tiết được cung cấp bởi Weather Underground (http://www.wunderground.com/)</description>
+		<description lang="zh">由Weather Underground（http://www.wunderground.com/）提供的天气预报</description>
+		<description lang="zh_TW">天氣預報由 Weather Underground (http://www.wunderground.com/) 所提供</description>
+		<disclaimer lang="af">Die gebruik van hierdie byvoegsel impliseer dat U saamstem met die Terme van Diens uiteengesit op http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="am">ይህን ተጨ-ማሪ ሲጠቀሙ ለ ግልጋሎቱ እና ለ ውሉ ተስማምተው ነው ለሚቀጥለው ድህረ ገጽ http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="ar">استعمالك لهذه الإضافة يعني انك وافقت على شروط الإستخدام الموجودة على الرابط http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="be">Выкарыстаньне гэтага дадатку пацьвярджае што вы згодны з Умовамі Выкарыстаньня што знаходзяцца на http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="bg">Употребявайки добавката Вие се съгласявате с условията за ползване на услугата, които се намират на http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="ca">L'ús d'aquest complement implica que vostè ha acceptat els termes de servei ubicats a http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="cs">Používáním tohoto rozšíření schvalujete podmínky užívání umístěné na http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="cy">Mae defnyddio'r ategyn yma'n awgrymu eich bod yn cytuno i'r Amodau Gwasanaeth sydd yn http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="da">Brug af denne addon indebærer, at du har erklæret dig enig i vilkårene for tjenesten, der findes på http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="de">Mit Benutzung dieses Addons bestätigen Sie die Nutzungsbedingungen, zu finden unter http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="el">Χρήση αυτού του πρόσθετου συνεπάγεται την αποδοχή των Όρων Χρήσης της Υπηρεσίας (Terms of Service) οι οποίοι βρίσκονται στο http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="en">Use of this add-on implies that you have agreed to the Terms of Service located at http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="en_NZ">Use of this add-on implies that you have agreed to the Terms of Service located at http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="en_US">Use of this add-on implies that you have agreed to the Terms of Service located at http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="es">Al usar este complemento, aceptas los términos de uso de http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="es_AR">Al usar este complemento, aceptas los términos de uso de http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="es_MX">El uso de este add-on implica que usted esta de acuerdo con los Términos de Servicio localizados en http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="et">Selle lisamooduli kasutamine viitab sellele, et te olete nõustunud kasutajatingimustega aadressil http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="eu">Gehigarri hau erabiltzeak http://www.wunderground.com/weather/api/d/terms.html -en aurkitzen diren zerbitzu baldintzak onartzen inplikatzen du.</disclaimer>
+		<disclaimer lang="fi">Tämän lisäosan käyttäminen tarkoittaa, että olet hyväksynyt osoitteessa http://www.wunderground.com/weather/api/d/terms.html sijaitsevat käyttöehdot</disclaimer>
+		<disclaimer lang="fo">Nýtsla av hesi víðkan merkir at tú góðtekur treytirnar sum finnast á http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="fr">L'utilisation de cette extension implique votre acceptation des Conditions Générales d'Utilisation disponibles sur http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="fr_CA">L'utilisation de cet addiciel implique que vous avez accepté les conditions générales d'utilisation situées à http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="gl">Empregar este Engadido implica que vostede aceptou os termos de servizo localizados en http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="he">שימוש בתוסף זה משתמע שאישרת את תנאי השימוש אשר ממוקמים בכתובת הבאה http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="hr">Upotreba ovog dodatka podrazumijeva da se slažete s Pravilima korištenja koja se nalaze na http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="hu">A kiegészítő használatával elfogadod a következő feltételeket: http://www.wunderground.com/weather/api/d/terms.html&#10;&#10;    </disclaimer>
+		<disclaimer lang="is">Notkun á þessari viðbót gefur til kynna að þú hafir samþykkt skilmálana sem finna má á http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="it">Usando questo add-on accetti i Termini di Servizio consultabili su http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="ja">このアドオンを使うと、http://www.wunderground.com/weather/api/d/terms.html にある規約に合意したものと見なされます</disclaimer>
+		<disclaimer lang="ka">ამ ჩადგმის გამოყენება ადასტურებს იმას, რომ თქვენ ეთანხმებით  მოხმარების წესებს, რომელიც განთავსებულია მისამართზე http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="ko">이 애드온을 사용하는 것은 http://www.wunderground.com/weather/api/d/terms.html 에 있는 서비스 약관에 동의함을 의미합니다</disclaimer>
+		<disclaimer lang="lt">Naudodami šį priedą jūs sutinate(-kote) su paslaugų teikimo sąlygomis esančiomis http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="lv">Šī pielikuma izmantošana nozīmē, ka esat piekritis servisa noteikumiem, kas atrodas http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="mk">Користење на овој додаток имплицира дека се согласувате со условите за користење кои се наоѓаат на http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="ms">Guna tambahan ini menunjukkan anda setuju dengan Terma Perkhidmatan pada&#10;http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="my">ဒီ add-on ကိုသုံးခြင်းသည် http://www.wunderground.com/weather/api/d/terms.html တွင်ရှိသော Terms of Service ကိုသဘောတူညီဟု သတ်မှတ်သည်</disclaimer>
+		<disclaimer lang="nl">Het gebruik van deze add-on impliceert dat je akkoord gaat met de service-voorwaarden op http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="no">Bruken av dette tillegget betinger at du har godkjent brukervilkårene på http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="pl">Korzystanie z zasobów jest równoważne z akceptacją regulaminu dostępnego pod adresem: http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="pt">O uso deste Add-on implica o seu acordo com os Termos do Serviço. Pode encontrá-los em http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="pt_BR">Usar este add-on implica que você concorda com os termos de uso localizados em http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="ro">Folosirea acestui plugin implică acceptarea Termenilor și Serviciilor aflate la adresa http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="ru">Используя это дополнение, вы соглашаетесь с условиями предоставления услуг, доступными по адресу http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="sk">Používaním tohto doplnku súhlasíte s podmienkami používania služby umiestnenými na http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="sl">Z uporabo vtičnika se strinjate s Pogoji uporabe, ki se nahajajo na http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="sq">Përdorimi i kësaj shtesës nënkupton që ke lexuar Termat e Shërbimit të lokalizuar tek http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="sv">Användning av detta tillägg innebär att ni har accepterat användarvillkoren som går att hitta på&#10;http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="ta_IN">விதிமுறைகள் ஒப்பு கொண்டீர் என்று தெரிகிறது http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="th">ในการใช้บริการโปรแกรมเสริมนี้หมายความว่าคุณได้ยอมรับเงื่อนไขในการให้บริการโดย http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="tr">Bu eklentinin kullanımı aynı zamanda http://www.wunderground.com/weather/api/d/terms.html adresindeki Kullanım Koşullarını da kabul ettiğiniz anlamına gelir.</disclaimer>
+		<disclaimer lang="uk">Скориставшись цією надбудовою, ви тим самим погоджуєтеся з умовами використання: http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="vi">Khi sử dụng add-on này đồng nghĩa với việc bạn đồng ý với các điều khoản sử dụng dịch vụ của nhà cung cấp tại địa chỉ http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="vi_VN">Sử dụng add-on này hàm ý rằng bạn đã đồng ý với các điều khoản của dịch vụ có ở http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="zh">使用此扩展功能意味着你同意此连接下的服务条款：http://www.wunderground.com/weather/api/d/terms.html</disclaimer>
+		<disclaimer lang="zh_TW">使用這個附加元件代表你同意 http://www.wunderground.com/weather/api/d/terms.html 所載之使用者條款</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+		<forum>http://forum.xbmc.org/showthread.php?tid=116668</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/XBMC-Addons/weather.wunderground/</source>
+	</extension>
 </addon>
 
 <addon id="weather.yahoo" name="Yahoo! Weather" version="3.3.3" provider-name="ronie">

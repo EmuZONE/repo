@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.confluence.EmuZONE2017"
-  version="2.5.9.010"
+  version="2.5.9.011"
   name="Confluence - EmuZONE 2017"
-  provider-name="The[COLOR tan] Highway [/COLOR], YggDraz1l">
+  provider-name="[COLOR tan]YggDraz1l[/COLOR]">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
     <import addon="script.artistslideshow" version="1.8.0"/>
