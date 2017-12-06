@@ -3100,6 +3100,25 @@ Note: Clicking on an image result will give you a list of images from the page t
   </extension>
 </addon>
 
+<addon id="plugin.image.xgirlz" name="xGirlz PixXx" version="1.1.1" provider-name="EmuZONE">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>image</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <disclaimer>Hot Babes and Naked Pussys from all around the World. Big Boobs, wet Pussys ready for Fuck!</disclaimer>
+        <summary lang="en">Display Hot XXX Pictures from the EmuZONE Database</summary>
+        <description lang="en">Hot Babes and Naked Pussys from all around the World. Big Boobs, wet Pussys ready for Fuck!</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <language/>
+        <website>http://worldofwarcry.de/xbmc</website>
+        <email>emuzone@outlook.com</email>
+    </extension>
+</addon>
+
 <addon id="plugin.library.node.editor" name="Library Node Editor" version="0.0.4" provider-name="Unfledged, Team-Kodi">
     <requires>
 		<import addon="xbmc.python" version="2.20.0"/>
