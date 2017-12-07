@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.audio.mp3pm"
+       name="[COLOR blue]Mp3pm Music[/COLOR]"
+	   version="1.0.1"
+	   provider-name="[COLOR blue]YggDraz1l[/COLOR]">
+    <requires>
+        <import addon="xbmc.python" version="2.7.8" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>[COLOR blue]Mp3pm Music Plugin[/COLOR]</summary>
+        <language>de</language>
+        <description>[COLOR blue]Mp3pm Webseite: http://worldofwarcy.de/xbmc/mp3pm/
+
+Achtung !
+Für Schäden jeglicher Art die aus der Verwendung
+des Addons entstehen könnten,übernehmen die Entwickler keine Haftung !
+Die Verwendung des Addons unterliegt der alleinigen Verantwortung des Nutzers und dessen handeln ![/COLOR]</description>
+        <platform>all</platform>
+    </extension>
+</addon>
