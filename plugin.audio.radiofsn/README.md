@@ -1,6 +1,6 @@
 ![alt text][logo]
 
-[logo]: radiofsn.png
+[logo]: radiofsn.jpg
 
 <h3>RADIO FSN</h3>
 <p></p>
