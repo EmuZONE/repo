@@ -2150,10 +2150,10 @@ No Station Such Dedication
   </extension>
 </addon>
 
-<addon id="plugin.audio.mp3pm"
-       name="[COLOR blue]Mp3pm Music[/COLOR]"
-	   version="1.0.1"
-	   provider-name="[COLOR blue]YggDraz1l[/COLOR]">
+<addon id="plugin.audio.mp3pn"
+       name="[COLOR blue]Mp3pm[/COLOR]"
+	   version="1.0.0"
+	   provider-name="[COLOR blue]Loki1979 | SH Germania[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="2.7.8" />
     </requires>
@@ -2162,9 +2162,10 @@ No Station Such Dedication
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary>[COLOR blue]Mp3pm Music Plugin[/COLOR]</summary>
+        <summary>[COLOR blue]Mp3pm[/COLOR]</summary>
         <language>de</language>
-        <description>[COLOR blue]Mp3pm Webseite: http://worldofwarcy.de/xbmc/mp3pm/
+        <description>[COLOR blue]Mp3pm Webseite :
+http://mp3pn.biz/
 
 Achtung !
 Für Schäden jeglicher Art die aus der Verwendung
