@@ -2194,7 +2194,7 @@ Die Verwendung des Addons unterliegt der alleinigen Verantwortung des Nutzers un
     </extension>
 </addon>
 
-<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2017.09.09" provider-name="qahanik, kinkin, art by Marquerite">
+<addon id="plugin.audio.mp3streams" name="[COLOR lime]MP3 Streams Pro[/COLOR]" version="5.7.7" provider-name="[COLOR lime]EmuZONE[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.t0mm0.common" version="1.1.0"/>
@@ -2207,9 +2207,9 @@ Die Verwendung des Addons unterliegt der alleinigen Verantwortung des Nutzers un
     <extension point="xbmc.service" library="playerMP3.py" start="startup" />
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary>A music streaming collection</summary>
-        <description>Browse, stream or download your favourite songs and albums</description>
-        <news>fixed by qahanik (thank you very much!) / changed versioning to date-format / fixed album downloading / minor cosmetic cleanups</news>
+        <summary>Riesige MP3 Datenbank</summary>
+        <description>Suche und hoere einzelne Titel oder Komplette Alben aus der riesigen MP3 Datenbank</description>
+        <news>Download Option repariert</news>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
@@ -5562,6 +5562,35 @@ https://www.youtube.com/user/SemperVideo/
 		<language>en</language>
 		<email>ptom98@gmail.com</email>
 	</extension>
+</addon>
+
+<addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2017.11.28" provider-name="eracknaphobia">
+  <requires>
+      <import addon="xbmc.python" version="2.25.0"/>
+      <import addon="script.module.adobepass" version="2017.3.20"/>
+      <import addon="script.module.requests" version="2.9.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="simpsons.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Simpsons World</summary>
+    <description lang="en_GB">Simpsons World has every episode of the series accessible to authenticated FX subscribers</description>
+    <disclaimer lang="en_GB"></disclaimer>
+    <news>
+- Fixed Invalid XML issue
+    </news>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=310272</forum>
+    <source>https://github.com/eracknaphobia/plugin.video.simpsonsworld</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
+  </extension>
 </addon>
 
 <addon id="plugin.video.soggysandwich" name="Soggysandwich" version="0.4" provider-name="ptom">
@@ -8963,6 +8992,22 @@ v.2.0.8
 		<license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
 		<source>https://github.com/ruuk/script.module.addon.signals</source>
 	</extension>
+</addon>
+
+<addon id="script.module.adobepass" name="adobepass" version="2017.3.20" provider-name="eracknaphobia">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>en</language>
+    <summary lang="en_GB">Simplify authentication to services that use adobe pass</summary>
+    <description lang="en_GB">Simplify Logins authentication services that use adobe pass</description>
+    <disclaimer lang="en_GB"></disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <source>https://github.com/eracknaphobia/script.module.adobepass</source>
+  </extension>
 </addon>
 
 <addon id="script.module.amazon.database"
