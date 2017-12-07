@@ -7643,6 +7643,28 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
+<addon id="screensaver.flipclock" name="Flip Clock" version="1.0.0" provider-name="Lunatixz">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+    </requires>
+	<extension point="xbmc.ui.screensaver" library="default.py"/>
+    <extension point="xbmc.python.script"  library="default.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Flip clock screensaver.</summary>
+        <description lang="en_GB">Flip clock screensaver.</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+        <platform>all</platform>
+        <source>https://github.com/Lunatixz/XBMC_Addons/tree/master/screensaver.flipclock</source>
+        <news></news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>screenshot01.png</screenshot>
+            <screenshot>screenshot02.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="screensaver.plugin.slideshow" name="Plugin Slideshow" version="0.0.17" provider-name="Rick Phillips (ruuk)">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
@@ -11322,8 +11344,8 @@ v5.2.14 (2017-01-23)
 
 <addon
   id="skin.confluence.EmuZONE2017"
-  version="2.5.9.011"
-  name="Confluence - EmuZONE 2017"
+  version="2.6.0"
+  name="[COLOR lime]Confluence - EmuZONE 2017[/COLOR]"
   provider-name="[COLOR tan]YggDraz1l[/COLOR]">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
@@ -11338,11 +11360,11 @@ v5.2.14 (2017-01-23)
     <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Ported from Confluence v2.5.9 - v.2.5.9 updated by husham.com to allow KODI v16 install and to fix dependicies issue</summary>
-    <description>25 shortcuts for videos, 10 for the rest.  Debug graph included.  This skin may be a work in progress, but aims to bring useful customizations while holding onto the main feel of it's pretacessor, Confluence.</description>
-  	<disclaimer>By using this, you take reponsibility for anything that happens.</disclaimer>
+    <summary>Modifizierte Version des Standard Skins Confluence</summary>
+    <description>25 Shortcuts fuer Videos, 15 fuer Programme und Musik sowie 10 fuer Bilder Addons.  Eine Debug Grafik ist inklusieve. Dieses Skin vereinfacht die Bedienung von Kodi ungemein und sieht dazu einfach klasse aus.</description>
+  	<disclaimer>Durch das Verwenden dieses Skins entstehen keine Nachteile.</disclaimer>
     <platform>all</platform>
-        <website>http://www.husham.com</website>
+        <website>http://www.worldofwarcry.de</website>
   </extension>
 </addon>
 
@@ -12071,6 +12093,20 @@ v5.2.14 (2017-01-23)
     <source>https://github.com/peppy6582/webinterface.ptvlmanager</source>
     <forum>http://forum.kodi.tv/showthread.php?tid=225746</forum>
   </extension>
+</addon>
+
+<addon id="xbmc.python" version="2.25.0" provider-name="Team Kodi">
+  <backwards-compatibility abi="2.1.0"/>
+  <requires>
+    <import addon="xbmc.core" version="0.1.0"/>
+  </requires>
+  <extension-point id="script" schema="script.xsd"/>
+  <extension-point id="subtitles" schema="script.xsd"/>
+  <extension-point id="lyrics" schema="script.xsd"/>
+  <extension-point id="weather" schema="script.xsd"/>
+  <extension-point id="library" schema="script.xsd"/>
+  <extension-point id="plugin" schema="pluginsource.xsd"/>
+  <extension-point id="context.item" schema="contextitem.xsd"/>
 </addon>
 
 <addon id="xbmc.repo.elmerohueso" name="elmerohueso's Add-on Repository" version="1.0" provider-name="elmerohueso">
