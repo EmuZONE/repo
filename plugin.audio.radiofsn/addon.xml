@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.radiofsn" name="[COLOR yellow]Radio FSN: Rock[/COLOR]" version="1.0.0" provider-name="[COLOR lime]EmuZONE[/COLOR]">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+       <summary>RadioFSN Online Stream</summary>
+        <description>RadioFSN ist ein rechtsextremes Medienportal aus der Oberpfalz mit bundesweiter Wirkung. FSN wurde 2006 von dem Neonazi Patrick Schroeder gegruendet und 2012 um den Live-TV-Streaming-Kanal FSN.TV erweitert. 2014 untersagte die Bayerische Landeszentrale fuer neue Medien den Streaming-Betrieb wegen fehlender Lizenz. Mittlerweile produziert und streamt FSN jedoch wieder Sendungen. Der Geschaeftsmann Patrick Schroeder ist seit 2004 NPD-Politiker und in der Szene der Freien Kameradschaften aktiv.</description>
+        <platform>all</platform>
+        <language>de</language>
+        <license></license>
+        <website>http://worldofwarcry.de</website>
+        <source>http://github.com/EmuZONE/repo/plugin.audio.radiofsn/</source>
+        <email>emuzone@outlook.com</email>
+    </extension>
+</addon>
