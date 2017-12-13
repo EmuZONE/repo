@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.emuzone" name="[COLOR lime]EMUZONE REPOSITORY[/COLOR]" version="2.1.2" provider-name="EmuZONE">
+<addon id="repository.emuzone" name="[COLOR yellow]EMUZONE [COLOR lime]AddOn REPOSITORY[/COLOR]" version="2.1.2" provider-name="EmuZONE">
 	<extension point="xbmc.addon.repository" name="EmuZONE">
 		<info compressed="true">https://raw.githubusercontent.com/emuzone/repo/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/emuzone/repo/master/addons.xml.md5</checksum>
