@@ -6488,7 +6488,7 @@ Siehe auch https://github.com/generia/plugin.video.zdf_de_2016
 	</extension>
 </addon>
 
-<addon id="repository.emuzone" name="[COLOR yellow]EMUZONE [COLOR lime]AddOn REPOSITORY[/COLOR]" version="2.1.2" provider-name="EmuZONE">
+<addon id="repository.emuzone" name="[COLOR skyblue]EMUZONE[/COLOR] [COLOR white]ADDON[/COLOR] [COLOR skyblue]REPOSITORY[/COLOR]" version="2.1.3" provider-name="EmuZONE">
 	<extension point="xbmc.addon.repository" name="EmuZONE">
 		<info compressed="true">https://raw.githubusercontent.com/emuzone/repo/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/emuzone/repo/master/addons.xml.md5</checksum>
