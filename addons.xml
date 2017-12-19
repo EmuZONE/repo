@@ -4950,6 +4950,22 @@ Outspoken, opinionated and never lost for words, Mark Kermode is the UK's leadin
   </extension>
 </addon>
 
+<addon id="plugin.video.kinderkino" name="[COLOR yellow]KINDER-KINO[/COLOR]" version="1.2.7" provider-name="EmuZONE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Online Kinderfilme</summary>
+    <description>Kinder-Kino ist eine Auswahl von Kinderfilmen und Animes absolot Gratis zum ansehen.</description>
+  </extension>
+</addon>
+
 <addon id="plugin.video.kino.dk" version="1.0.1" name="Kino.dk TV" provider-name="twinther">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -5862,6 +5878,22 @@ Orginal Code was from AddonScriptorDE</disclaimer>
         <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="plugin.video.tvshows" name="[COLOR skyblue]TV-Show BoxSets[/COLOR]" version="1.0.1" provider-name="EmuZONE REPO">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Komplette Staffeln</summary>
+    <description>TV Serien Komplette Staffeln</description>
+  </extension>
 </addon>
 
 <addon id='plugin.video.twitch' version='2.0.2' name='Twitch' provider-name='A Talented Community'>
