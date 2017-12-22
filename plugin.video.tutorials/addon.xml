@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.tutorials" name="[COLOR yellow]EmuZONE Tutorials[/COLOR]" version="1.2.7" provider-name="EmuZONE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Online Tutorial Videos</summary>
+    <description>Anleitungen und Tutorials zu verschiedenen Themen wie zB. dem RPG Maker oder Visual Basic.</description>
+  </extension>
+</addon>

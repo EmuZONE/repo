@@ -4675,6 +4675,22 @@ https://www.youtube.com/user/GalileoOffiziell/
   </extension>
 </addon>
 
+<addon id="plugin.video.gigatv" name="[COLOR yellow]Giga Games TV[/COLOR]" version="1.0.7" provider-name="EmuZONE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Giga Games Sendungen</summary>
+    <description>Alle Sendungen von Giga Games</description>
+  </extension>
+</addon>
+
 <addon id="plugin.video.giga_de" name="GIGA.de" version="2.2.1" provider-name="L0RE">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -5878,6 +5894,22 @@ Orginal Code was from AddonScriptorDE</disclaimer>
         <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="plugin.video.tutorials" name="[COLOR yellow]EmuZONE Tutorials[/COLOR]" version="1.2.7" provider-name="EmuZONE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Online Tutorial Videos</summary>
+    <description>Anleitungen und Tutorials zu verschiedenen Themen wie zB. dem RPG Maker oder Visual Basic.</description>
+  </extension>
 </addon>
 
 <addon id="plugin.video.tvshows" name="[COLOR skyblue]TV-Show BoxSets[/COLOR]" version="1.0.1" provider-name="EmuZONE REPO">
