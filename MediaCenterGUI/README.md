@@ -1,1 +1,29 @@
-![Alt text](https://raw.githubusercontent.com/EmuZONE/repo/master/MediaCenterGUI/mcgui.png?raw=true "MediaCenter GUI")
+
+[COLOR red]Faszination Universum:[/COLOR] Eine Frage der Zeit*https://youtu.be/sCo2M_n28KE
+[COLOR red]Dokus:[/COLOR] Mystery *https://www.youtube.com/watch?v=2gkeVu12w9k&list=PLp56sTYNKgtNC5oXZ0bedXCH-aRbnRQoR
+[COLOR red]Dokus:[/COLOR] Das Universum *https://www.youtube.com/watch?v=jqxENMKaeCU&list=PLp56sTYNKgtPvP2C5oGOGoHcqFQxfkkjl
+[COLOR red]Filme:[/COLOR] Komplette Filme *https://www.youtube.com/watch?v=-lSk4yAJAvw&list=PLp56sTYNKgtPRmq_1eGZUTr0khLpdF3iY
+[COLOR red]Filme:[/COLOR] Horrorkino *https://www.youtube.com/watch?v=3wUUZw5pyKg&list=PL9ACBB4D32754A64A
+[COLOR red]Musik:[/COLOR] Konzerte *https://www.youtube.com/watch?v=yOd4xwArZOA&list=PLp56sTYNKgtNoRX0dXIcYNehJjlPOsemA
+[COLOR red]Games:[/COLOR] Gametrailer *https://www.youtube.com/watch?v=DxMOFNYJrTo&list=PLp56sTYNKgtMYi85oZaT3Ra8YmfvdPJYm
+[COLOR lime]Gamestar:[/COLOR] Rueckblicke *https://www.youtube.com/watch?v=1m-UoDVWvvE&list=PL982596827ED1C43D
+[COLOR lime]Gamestar:[/COLOR] Raumschiff Gamestar *https://www.youtube.com/watch?v=nx9WNlzflko&list=PLE9D8EBC2E18C5F95
+[COLOR lime]Gamestar:[/COLOR] Vorschau / Preview *https://www.youtube.com/watch?v=ZlsGUtPwn8I&list=PL1DF0DE6464531227
+[COLOR yellow]Giga Games:[/COLOR] Top Montag *https://www.youtube.com/watch?v=oX6YrrfAC-8&list=PLp56sTYNKgtPXAZwTTzhOxLtsBpA73pGV
+[COLOR yellow]Giga Games:[/COLOR] Sendungen 2004 *https://www.youtube.com/watch?v=6Pk0oMNSJz4&list=PLGmM5N4tJNOWpwfcYUfDgY-qG0UWpt2bA
+[COLOR yellow]Giga Games:[/COLOR] Sendungen 2003 *https://www.youtube.com/watch?v=6B8viGeOZ9Q&list=PLGmM5N4tJNOVUZuMWsX0lggkVuyvuMf16
+[COLOR yellow]Giga Games:[/COLOR] Sendungen 2002 *https://www.youtube.com/watch?v=m4ujXQhc5ss&list=PLGmM5N4tJNOXPstJ_6t_StHy1VD2pB9lu
+[COLOR yellow]Giga Games:[/COLOR] Sendungen 2001 *https://www.youtube.com/watch?v=wgsFoNmBJpc&list=PLGmM5N4tJNOXSPzz5Uy8Ao7iTNwQTYlSN
+[COLOR yellow]Giga Games:[/COLOR] Sendungen 2000 *https://www.youtube.com/watch?v=RSoaoDwGeXI&list=PLGmM5N4tJNOUMkZ6afjC_5RmWYE94P2f0
+[COLOR yellow]Giga Games:[/COLOR] Giga Buch 2 - DVD1 *https://www.youtube.com/watch?v=yq8zzIq8Bz0&list=PLGmM5N4tJNOWTDttE4TFRt9FqqoJdxASZ
+[COLOR yellow]Giga Games:[/COLOR] Giga Buch 2 - DVD2 *https://www.youtube.com/watch?v=udO8joS4s1M&list=PLGmM5N4tJNOV9K4aeZuDEPVLMQw0lhpcG
+[COLOR yellow]AlexiBexi:[/COLOR] Produkt Tests *https://www.youtube.com/watch?v=Udgop10O8Ys&index=0&list=PL122F29509196E0E6
+[COLOR lime]Lets Play:[/COLOR] The Evil Within 2 *https://www.youtube.com/watch?v=EvyB7d6tLUc&list=PLGWGc5dfbzn-sLYkynYyhrWc__R9wyxbo
+[COLOR lime]Lets Play:[/COLOR] Resident Evil 7 *https://www.youtube.com/watch?v=JT84WcntM14&list=PLGWGc5dfbzn8wTctbH4qX0nSWS5GzpEje
+[COLOR lime]Lets Play:[/COLOR] Friday the 13th *https://www.youtube.com/watch?v=GzTquRy6IW0&list=PLGWGc5dfbzn-oV5CVAnikPRTCs2LxCsrX
+[COLOR lime]Lets Play:[/COLOR] Dead by Daylight *https://www.youtube.com/watch?v=AHDE69Wgj_w&list=PLGWGc5dfbzn-Yf2GRrcOK4HUGXm2vCTUG
+[COLOR lime]Lets Play:[/COLOR] The Forest (Staffel 1) *https://www.youtube.com/watch?v=KS12fYYAfoY&list=PLGWGc5dfbzn_gRVGX1604EaM7WrBjXl1J
+[COLOR lime]Lets Play:[/COLOR] The Forest (Staffel 2) *https://www.youtube.com/watch?v=nyNW4nfsgtU&list=PLGWGc5dfbzn-Hw5Ujed0OR2dEcvHSllpd
+[COLOR lime]Lets Play:[/COLOR] Destiny 2 *https://www.youtube.com/watch?v=pMQ6W_9UWZI&list=PLGWGc5dfbzn_MJsywIeahvNeLcqFxzdMn
+[COLOR lime]Lets Play:[/COLOR] Until Dawn *https://www.youtube.com/watch?v=cts068Xt65o&list=PLGWGc5dfbzn_IkrXrjefw1QZxYKdu2m_Z
+[COLOR lime]RocketBeansTV:[/COLOR] Retro Klub *https://www.youtube.com/watch?v=b0knVY3OivM&list=PLfU2RMxoOiSBK8O57xd6fN2xapTN_lRtW
