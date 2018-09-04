@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="context.artwork.downloader.auto" name="Download All Artwork - Artwork Downloader" version="1.0.1" provider-name="rmrector">
 	<requires>
@@ -2167,6 +2167,31 @@ No Station Such Dedication
     <summary lang="en">Mozart's Musical Dice Game</summary>
     <description lang="en">Compose and play a random one-minute waltz using Mozart's Musical Dice Game (Musikalisches Würfelspiel)</description>
   </extension>
+</addon>
+
+<addon id="plugin.audio.audiobooks"
+       name="[COLOR blue]Audio Books[/COLOR]"
+	   version="2.3.1"
+	   provider-name="[COLOR blue]EmuZONE[/COLOR]">
+    <requires>
+        <import addon="xbmc.python" version="2.7.8" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>[COLOR blue]Audio Books[/COLOR]</summary>
+        <language>de</language>
+        <description>[COLOR blue]Audio Books :
+https://github.com/emuzone/
+
+Achtung !
+FÃ¼r SchÃ¤den jeglicher Art die aus der Verwendung
+des Addons entstehen könnten,Ã¼bernehmen die Entwickler keine Haftung !
+Die Verwendung des Addons unterliegt der alleinigen Verantwortung des Nutzers und dessen handeln ![/COLOR]</description>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="plugin.audio.mp3pn"

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.audio.audiobooks"
+version="2.3.1"
+name="Audio Books"
+provider-name="EmuZONE">
+<requires>
+  <import addon="xbmc.python" version="2.25.0"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>audio</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">Audio Books for Free</summary>
+  <description lang="en_GB">Bekannte Hoerbuecher komplett kostenlos.</description>
+  <disclaimer lang="en_GB">Bekannte Hoerbuecher komplett kostenlos.</disclaimer>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+    <screenshot>resources\screenshot-01.jpg</screenshot>
+    <screenshot>resources\screenshot-02.jpg</screenshot>
+    <screenshot>resources\screenshot-03.jpg</screenshot>    
+  </assets>
+  <news>Ann1ka I Love U</news>
+</extension>
+</addon>
