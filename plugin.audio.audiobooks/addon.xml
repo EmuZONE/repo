@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="plugin.audio.audiobooks"
-version="2.3.1"
-name="Audio Books"
-provider-name="EmuZONE">
+version="2.3.2"
+name="[COLOR red]Audio Books[/COLOR]"
+provider-name="EmuZONE - [COLOR black]THE[/COLOR] [COLOR white]FOURTH[/COLOR] [COLOR red]REICH[/COLOR]">
 <requires>
-  <import addon="xbmc.python" version="2.25.0"/>
+  <import addon="xbmc.python" version="2.1.0"/>
 </requires>
 <extension point="xbmc.python.pluginsource" library="main.py">
   <provides>audio</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
-  <summary lang="en">Audio Books for Free</summary>
-  <description lang="en_GB">Bekannte Hoerbuecher komplett kostenlos.</description>
-  <disclaimer lang="en_GB">Bekannte Hoerbuecher komplett kostenlos.</disclaimer>
+  <summary lang="de">Riesige Bibliothek von Audio Books und Hoerspielen</summary>
+  <description lang="de_DE">Riesige Datenbank bestehend aus Audio Books der Bereiche: [COLOR lime]Sachbuecher[/COLOR], [COLOR lime]Krimi[/COLOR], [COLOR lime]Horror[/COLOR], [COLOR lime]Fantasy[/COLOR] und selbstverstaendlich gibt es auch ein Wiedersehen mit: [COLOR lime]Ein Fall fuer TKKG[/COLOR], [COLOR lime]Die drei Fragezeichen[/COLOR], [COLOR lime]Fuenf Freunde auf Abenteuern[/COLOR], [COLOR lime]Alf[/COLOR] und vielem mehr.</description>
+  <disclaimer lang="de_DE">Defend Europe / Fight the Muslim Evil</disclaimer>
   <assets>
     <icon>icon.png</icon>
-    <fanart>fanart.jpg</fanart>
-    <screenshot>resources\screenshot-01.jpg</screenshot>
-    <screenshot>resources\screenshot-02.jpg</screenshot>
-    <screenshot>resources\screenshot-03.jpg</screenshot>    
+    <fanart>fanart.jpg</fanart>    
   </assets>
   <news>Ann1ka I Love U</news>
 </extension>
