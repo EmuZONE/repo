@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.hsk_forever" name="[COLOR lime]HSK FOREVER[/COLOR]" version="1.0.2" provider-name="[COLOR lime]SH Germania | KODIMAN | HSK-DE[/COLOR]">
+    <extension point="xbmc.addon.repository" name="HSK FOREVER REPOSITORY">
+		<info compressed="false">https://raw.githubusercontent.com/SHGermania/repository.hsk_forever/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/SHGermania/repository.hsk_forever/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/SHGermania/repository.hsk_forever/master</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR lime]HSK FOREVER REPOSITORY[/COLOR]</summary>
+        <description>[COLOR lime]
+
+Ein besonderer Dank geht an Guido Sasse,Painkiller 88,
+Loki 1979 und an Kodiman die mir stehts zur Seite standen.
+
+In diesem Sinne  HSK-FOREVER
+
+
+
+Kodimans Forum:
+https://www.kodiman.net/[/COLOR].
+</description>
+        <platform>all</platform>
+    </extension>
+</addon>
