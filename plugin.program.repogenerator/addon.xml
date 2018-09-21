@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon 
     id="plugin.program.repogenerator" 
-    name="[COLOR lime]Repository Generator[/COLOR]"
+    name="[COLOR red]Repository Generator[/COLOR]"
 	version="1.2.4" 
     provider-name="[COLOR gold]EmuZONE[/COLOR]">
     <requires>
@@ -22,6 +22,6 @@ Der Kodi Repository Generator ist auf das Addon -
 Kodi Addon Zipper EmuZONE abgestimmt !
 
 Hardware - Software - Kodi - DE
-https://www.facebook.com/groups/hskde/</description>	
+https://www.facebook.com/groups/emuzone/</description>	
 	</extension>
 </addon>
