@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.landschleicher" name="Landschleicher" version="0.1.6" provider-name="stemaj">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="de">1000 Landschleicher - das Archiv</summary>
+        <description lang="de">Seit dem 28. März 1993 besucht der Landschleicher jedes Wochenende einen Brandenburger Ort mit einer Einwohnerzahl unter 2.000. Zum 20. Jubiläum öffnete der Landschleicher sein Archiv und ermöglicht einen besonderen Blick auf die Geschichte des Landes Brandenburg. Die Landschleicher-Videos aus mittlerweile 21 Jahren erzählen die kleinen und großen Geschichten der kleinsten Orte des Landes und ihrer Bewohner.</description>
+    </extension>
+</addon>

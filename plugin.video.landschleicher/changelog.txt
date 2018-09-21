@@ -1,0 +1,36 @@
+v0.0.1
+- first version
+v0.0.2
+- icon added
+v0.0.3
+- blocked videos removed
+- better fanart and icon
+- sorting moved to settings
+- description and date to video info
+v0.0.4
+- try to handle incompleteRead exception
+- fixed missing actual year entry
+- added videoquality settings
+v0.0.5
+- fix missing import
+v0.0.6
+- error handling and notifications
+v0.0.7
+- fixed missing response.read
+v0.0.8
+- try to fix
+v0.1.0
+- changes on rbb site
+v0.1.1
+- error handling and notifications
+v0.1.2
+- repo test
+v0.1.3
+- error handling no response
+- sorting in years from new to old
+v0.1.4
+- try to fix by removing socket
+v0.1.5
+- changes while rbb site does not include 2016
+v0.1.6
+- other changes while misfunctional rbb site
