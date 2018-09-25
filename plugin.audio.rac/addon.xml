@@ -1,1 +1,22 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.audio.rac"
+version="2.3.2"
+name="[COLOR red]RAC Music[/COLOR]"
+provider-name="EmuZONE - [COLOR black]THE[/COLOR] [COLOR white]FOURTH[/COLOR] [COLOR red]REICH[/COLOR]">
+<requires>
+  <import addon="xbmc.python" version="2.1.0"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>audio</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="de">Great RAC Music Libary</summary>
+  <description lang="de_DE">Enjoy the famoust Sond of Rock Against Communism and other White Music.</description>
+  <disclaimer lang="de_DE">Defend Europe / Fight the Muslim Evil</disclaimer>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>    
+  </assets>
+  <news>Defend Europe!</news>
+</extension>
+</addon>
