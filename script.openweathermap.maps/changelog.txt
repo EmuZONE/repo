@@ -1,8 +1,12 @@
-v0.0.16
-- fix clear property
+v0.2.2
+- make script compatible with multiple weather addons
 
-v0.0.15
-- revert previous commit
+v0.2.1
+- move repo to gitlab
+- fix fetching of failed images
+
+v0.2.0
+- re-enable
 
 v0.0.14
 - use arg instead of accessing main settings
