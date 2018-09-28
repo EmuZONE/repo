@@ -1,11 +1,55 @@
-v3.2.7
+v5.0.2
+- fix compatibility issue with script.openweathermap.maps
+
+v5.0.1
+- move repo to gitlab
+
+v5.0.0
+- personal api key is now required
+
+v4.4.2
+- new api keys
+
+v4.4.1
+- disable maps by default again
+- make personal api key mandetory for maps
+
+v4.4.0
+- re-enable maps
+
+v4.3.1
+- don't crash when an invalid api key is used
+
+v4.3.0
+- remove maps functionality
+
+v4.2.3
+- handle location search timeout
+
+v4.2.2
+- fix geoip bug
+
+v4.2.1
 - gracefully handle api errors
 
-v3.2.6
+v4.2.0
+- disable weather maps
+
+v4.1.1
+- fix geoip support
+
+v4.1.0
+- add geoip support
+
+v4.0.2
+- pass zoom factor to script
+
+v4.0.1
 - fix bug when hourly wind is none
 
-v3.2.5
-- don't capitalize forecast text
+v4.0.0
+- remove simplejson support
+- fix potential error when forecast is None
 
 v3.2.4
 - fix capitalization
