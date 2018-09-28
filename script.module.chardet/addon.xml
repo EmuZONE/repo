@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.module.chardet"
        name="chardet"
-       version="2.2.1"
-       provider-name="Valentin-Costel Hăloiu">
+       version="3.0.4"
+       provider-name="Dan Blanchard">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.25.0"/>
   </requires>
   <extension point="xbmc.python.module"
              library="lib" />
   <extension point="xbmc.addon.metadata">
-    <summary>Universal encoding detector</summary>
-    <description>Packed for XBMC from https://github.com/erikrose/chardet</description>
+    <summary lang="en_GB">Universal encoding detector</summary>
+    <description lang="en_GB">Packed for Kodi from https://github.com/chardet/chardet</description>
     <license>LGPL</license>
     <platform>all</platform>
-    <source>https://github.com/erikrose/chardet/commits/master</source>
+    <language></language>
+    <forum></forum>
+    <website>https://chardet.readthedocs.io/en/latest/</website>
+    <source>https://github.com/beenje/script.module.chardet</source>
+    <email>beenje AT gmail.com</email>
   </extension>
 </addon>
