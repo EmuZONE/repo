@@ -1,3 +1,74 @@
+[B]2.0.X[/B]
+- Significantly improved Python 3 compatibility:
+  > Only absolute imports are used
+  > Added compat module to allow several modules imports compatibility
+  > Several other related tweaks
+- Improved youtube module to allow more results from video lists and playlists
+  > Tweaks and cosmetics added as well
+- Several enhancements into directory module:
+  > UTF-8 encoding optional via exception into quoted queries
+  > Added parameters for more manifest types and adaptive types
+  > Several other enhancements into resolve function
+  > New m3u playlist maker function
+  > isPlayable parameter made available for disabling auto playable assignment based on isFolder
+- Added login support for client.request module
+- Improved ssl verification on client module
+- Improved redirection handler
+- Added parse_headers function which converts a response/request headers string into dictionary
+- Simplified random agent picking, addition of mobile agents function
+- Added ordereddict conditional into compat module
+- Added busy function to activate busydialog
+- Removed conditional and accompanying function for optional resolvers
+- Added headers parameter into spoofer function and improved it
+- Various other efficiency tweaks
+
+[B]1.4.1[/B]
+- Added parameters with default arguments (table) into bookmarks module
+
+[B]1.4.0[/B]
+- Added some functions in control module
+- Added m3u8 parser sublib
+- Added iso8601 module
+- Adapted library to dual python 2/3 compatibility (untested, though)
+- Removed optional requests import
+- Replaced downloader module with a function adapted from tknorris's shared modules
+- Removed unicode logging ability from log module
+- Removed parsedom(2) module, legacy client.parsedom is now used only
+
+[B]1.3.5[/B]
+- New convert function in youtube module
+- New strip accents function in cleantitle module
+- Cosmetics
+
+[B]1.3.4[/B]
+- Cosmetics
+
+[B]1.3.3[/B]
+- Addonmedia function gets optional media subfolder parameter
+- Removed input dialog function, way more flexible calling dialog class directly
+
+[B]1.3.2[/B]
+- Added try/except block for inputstream adaptive
+
+[B]1.3.1[/B]
+- Replaced json method for getting xbmc.python version to infolabel
+
+[B]1.3.0[/B]
+- New json-rpc methods introduced
+- LFed a few modules
+- Reorganised imports in control module
+- Add dash urlquote_plus
+- Removed live dash parameter from directory.resolve
+- Improved dash conditional
+- Various cosmetics
+
+[B]1.2.10[/B]
+- Resolve method in directory has got the live parameter for DASH
+- Sortmethods have unsorted as default parameter/method
+
+[B]1.2.9[/B]
+- Added DASH parameters in directory.resolve function (optional)
+
 [B]1.2.8[/B]
 - Log function tweaks
 
