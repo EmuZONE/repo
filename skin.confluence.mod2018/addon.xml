@@ -5,6 +5,7 @@
 		<import addon="plugin.video.xstream" version="3.4.4"/>
 		<import addon="plugin.video.exodus" version="4.1.07"/>
 		<import addon="weather.yahoo" version="4.3.1"/>
+		<import addon="visualization.spectrum" version="1.1.1"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="1.0">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />

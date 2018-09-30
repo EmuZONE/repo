@@ -4300,6 +4300,31 @@ adulthideout@yandex.com[/COLOR]
   </extension>
 </addon>
 
+<addon id="plugin.video.annikaxxx"
+version="1.0.1"
+name="[COLOR red]Annikas Fickstube[/COLOR]"
+provider-name="[COLOR lime]YggDraz1l[/COLOR]">
+<requires>
+  <import addon="xbmc.python" version="2.1.0"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">Massig Porno Clips und Filme</summary>
+  <description lang="en_GB">Eine vielzahl an Privaten Fick-Filmen und Professionell Produzierten Porno Filmen.</description>
+  <disclaimer lang="en_GB"></disclaimer>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+    <screenshot>resources\screenshot-01.jpg</screenshot>
+    <screenshot>resources\screenshot-02.jpg</screenshot>
+    <screenshot>resources\screenshot-03.jpg</screenshot>
+  </assets>
+  <news>Updated with latest artwork metadata</news>
+</extension>
+</addon>
+
 <addon id="plugin.video.ardmediathek_de" name="ARD Mediathek" version="4.0.0" provider-name="AddonScriptorDE, membrane">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -4823,18 +4848,17 @@ With Digi Storage Player you can easily browse through Media files ( music, movi
   </extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="4.1.07" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="4.1.10" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="repository.exodus" />
+		<import addon="repository.emuzone" />
 		<import addon="script.module.exodus" />
 		<import addon="script.exodus.artwork" version="1.0.0" />
 		<import addon="script.exodus.metadata" version="1.0.0" />
 		<import addon="script.module.urlresolver" version="3.0.0" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" version="1.0.0" />
-		<import addon="plugin.program.indigo" />
-		<import addon="repository.xbmchub" />
+		<import addon="repository.kodinerds" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="exodus.py">
 		<provides>video</provides>
@@ -4842,16 +4866,12 @@ With Digi Storage Player you can easily browse through Media files ( music, movi
 	<extension point="xbmc.service" library="service.py" start="startup" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Exodus</summary>
-		<description lang="en">Please visit [COLOR blue]www.tvaddons.co[/COLOR] for Exodus support and assistance! Kindly note that Exodus is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-		<description lang="de">Bitte besuche [COLOR blue]www.tvaddons.co[/COLOR] für Unterstützung und Fragen zu Exodus! Beachte dabei, dass Exodus nicht offizieller Teil des Media Players ist den du gerade verwendest und daher nicht von dem offiziellen Support-Kanäle abgedeckt wird, dieses Addon hat nichts zu tun mit dem Media-Player selbst, noch ist es dafür beabsichtigt, es handelt sich hierbei lediglich um ein Drittanbieter-Anwendung die dem System hinzugefügt wurde.</description>
+        <description lang="de">Dies ist eine von allem Unrat befreite Version des beliebten Streaming Addons. Es wird weder das nervige Indigo sowie nutzlose Repositories Installiert.</description>
 		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
-		<description lang="fr">SVP visitez [COLOR blue]www.tvaddons.co[/COLOR] pour avoir de l'aide sur Exodus. Prenez note qu'Exodus n'est pas une partie intégrante de votre outil de visionnement multimedia et SVP ne le mentionnez pas dans les media sociaux officiels, cet addiciel n'a rien a voir avec votre lecteur multimedia lui même, c'est simplement un addiciel qui a été ajouté à votre système.</description>
-		<disclaimer lang="fr">L'auteur n'héberge pas ou ne distribue pas le contenu qui vous est affiché avec cet addiciel. L'auteur n'a pas d'alliance avec les distributeurs de contenu.</disclaimer>
-		<platform>all</platform>
+        <platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum>https://www.tvaddons.co/forums/</forum>
-		<website>https://www.tvaddons.co/</website>
+		<forum>https://github.com/emuzone/</forum>
+		<website>https://github.com/emuzone/</website>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -7276,7 +7296,13 @@ Siehe auch https://github.com/generia/plugin.video.zdf_de_2016
 	</extension>
 </addon>
 
-<addon id="repository.emuzone" name="[COLOR red]EMUZONE[/COLOR] [COLOR white]ADDON[/COLOR] [COLOR red]REPOSITORY[/COLOR]" version="2.1.5" provider-name="EmuZONE">
+<addon id="repository.emuzone" name="[COLOR red]EMUZONE[/COLOR] [COLOR white]ADDON[/COLOR] [COLOR red]REPOSITORY[/COLOR]" version="2.1.7" provider-name="EmuZONE">
+	<requires>
+		<import addon="xbmc.gui" version="5.12.0"/>
+		<import addon="plugin.video.xstream"/>
+		<import addon="plugin.video.exodus"/>
+		<import addon="weather.yahoo" version="4.3.1"/>
+	</requires>
 	<extension point="xbmc.addon.repository" name="EmuZONE">
 		<info compressed="true">https://raw.githubusercontent.com/emuzone/repo/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/emuzone/repo/master/addons.xml.md5</checksum>
@@ -9610,6 +9636,25 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
+<addon id="script.module.commoncore" name="CommonCore" provider-name="tvaddons" version="1.2.5">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.myconnpy" />
+    </requires>
+    <extension library="lib" point="xbmc.python.module" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">CommonCore</summary>
+        <description lang="en">Not your grandmother's math.</description>
+        <disclaimer lang="en" />
+        <platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum>http://tvaddons.co/forums</forum>
+        <website>http://www.tvaddons.co/</website>
+    </extension>
+</addon>
+
 <addon id="script.module.dateutil"
        name="dateutil"
        version="2.5.3"
@@ -9631,6 +9676,18 @@ You can clone the project and host it in your own server.
     <source>https://github.com/Razzeee/script.module.dateutil</source>
     <email></email>
   </extension>
+</addon>
+
+<addon id="script.module.echo" name="Echo Libraries" version="1.00.003" provider-name="Echo Coder">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Forked from TK Norris Shared Module. Reusable Modules used by several of Echo's addons</summary>
+	</extension>
 </addon>
 
 <addon id="script.module.elementtree"
@@ -9827,6 +9884,25 @@ You can clone the project and host it in your own server.
     <source>https://github.com/prof-membrane/plugin.video.libmediathek3</source>
     <summary lang="en">Supplementary lib for Mediathek add-ons.</summary>
     <description lang="en">This lib is a mini framework. It is used in following "Mediathek" Scrapers: 3sat, ARD, BR, Das Erste, MDR, SR, SWR, WDR, ZDF. It is also used in the add-ons Funk Mediathek, NHL Videocenter and Phoenix Mediathek.</description>
+  </extension>
+</addon>
+
+<addon id="script.module.liveresolver"
+     name="LiveResolver"
+     version="0.1.49"
+     provider-name="natko1412">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.addon.common" version="2.0.0" />
+
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
+    <description lang="en"></description>
   </extension>
 </addon>
 
@@ -10226,6 +10302,39 @@ If you want to use the generic handling, contact me.
   </extension>
 </addon>
 
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.16" provider-name="jsergio">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
+		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+		<import addon="plugin.video.gdrive" optional="true" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+	</extension>
+</addon>
+
+<addon id="script.module.resolveurl.xxx" version="2.0.02" name="Adult Resolver SMR Extension" provider-name="jsergio, Echo Coder">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.resolveurl" version="5.0.00" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="script.module.routing" name="Plugin routing" version="0.2.0" provider-name="takoi">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
@@ -10306,6 +10415,60 @@ If you want to use the generic handling, contact me.
     <license>MIT</license>
     <source>https://pypi.python.org/pypi/six</source>
     <website>https://pypi.python.org/pypi/six</website>
+  </extension>
+</addon>
+
+<addon id="script.module.streamlink.base" name="Streamlink Library" version="2018.07.03" provider-name="Streamlink Devs, Twilight0">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+    <import addon="script.module.futures" version="2.2.0"/>
+    <import addon="script.module.streamlink.crypto" version="1.4.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="resources/lib/"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Streamlink Library</summary>
+    <description>Streamlink Library for Kodi</description>
+    <platform>all</platform>
+    <license>Simplified BSD</license>
+    <source>https://github.com/Twilight0/script.module.streamlink.base/</source>
+    <language>en</language>
+    <!--<assets>-->
+      <!--<icon>resources/icon.png</icon>-->
+    <!--</assets>-->
+    <news>+ 2018.07.03
+- Plugins updates
+- Various other tweaks pulled from upstream</news>
+  </extension>
+</addon>
+
+<addon id="script.module.streamlink.crypto" name="streamlink.crypto" version="1.4.0" provider-name="Streamlink.crypto">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python implementation of the cryptographic libraries required by Streamlink</summary>
+    <source>https://github.com/Twilight0/script.module.streamlink.crypto</source>
+    <platform>all</platform>
+    <license>MIT</license>
+  </extension>
+</addon>
+
+<addon id="script.module.streamlink.plugins" name="Streamlink Plugins" version="1.0.3" provider-name="Twilight0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+  </requires>
+  <extension point="xbmc.service"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Streamlink Plugins</summary>
+    <description>Copy your custom streamlink plugins in this Kodi plugin.</description>
+    <platform>all</platform>
+    <license>GNU GPL, version 2</license>
+    <source>https://github.com/Twilight0/script.module.streamlink.plugins</source>
+    <!--<website></website>-->
+    <!--<language></language>-->
   </extension>
 </addon>
 
@@ -10426,19 +10589,41 @@ If you want to use the generic handling, contact me.
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Libraries" version="1.2.8" provider-name="Twilight0">
-	<requires>
-		<import addon="xbmc.python" version="2.24.0"/>
-		<import addon="script.module.requests" optional="true"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Tulip Helper module</summary>
-		<description lang="en">Tulip Routine Libraries are based on Lambda's "lamlib". It has some additions, most being in control module.</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<source>https://github.com/Twilight0/script.module.tulip</source>
-	</extension>
+<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.0.21" provider-name="Twilight0">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Tulip Helper module</summary>
+        <description lang="en">Tulip Routine Libraries are based on Lambda's "lamlib". It has some additions, most being in control module.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <source>https://github.com/Twilight0/script.module.tulip</source>
+        <news>[B]2.0.X[/B]
+- Significantly improved Python 3 compatibility:
+  > Only absolute imports are used
+  > Added compat module to allow several modules imports compatibility
+  > Several other related tweaks
+- Improved youtube module to allow more results from video lists and playlists
+  > Tweaks and cosmetics added as well
+- Several enhancements into directory module:
+  > UTF-8 encoding optional via exception into quoted queries
+  > Added parameters for more manifest types and adaptive types
+  > Several other enhancements into resolve function
+  > New m3u playlist maker function
+  > isPlayable parameter made available for disabling auto playable assignment based on isFolder
+- Added login support for client.request module
+- Improved ssl verification on client module
+- Improved redirection handler
+- Added parse_headers function which converts a response/request headers string into dictionary
+- Simplified random agent picking, addition of mobile agents function
+- Added ordereddict conditional into compat module
+- Added busy function to activate busydialog
+- Removed conditional and accompanying function for optional resolvers
+- Added headers parameter into spoofer function and improved it
+- Various other efficiency tweaks</news>
+    </extension>
 </addon>
 
 <addon id="script.module.unidecode" name="unidecode" version="0.4.16" provider-name="Tomaz Solc (Tomaz.solc@tablix.org)">
@@ -10455,6 +10640,21 @@ If you want to use the generic handling, contact me.
 		<license>GNU General Public License v.2</license>
 		<website>https://pypi.python.org/pypi/Unidecode</website>
 		<source>https://pypi.python.org/pypi/Unidecode</source>
+	</extension>
+</addon>
+
+<addon id="script.module.unshortenit" name="Unshortenit Module" version="0.3.0" provider-name="Jeff Kehler, Twilight0">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.requests" version="2.12.4"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Unshortenit Module</summary>
+		<description lang="en">Unshortenit Module to reveal links from popular url shortener services</description>
+		<platform>all</platform>
+		<license>MIT</license>
+		<source>https://pypi.python.org/pypi/unshortenit/0.3.0</source>
 	</extension>
 </addon>
 
@@ -10501,36 +10701,25 @@ If you want to use the generic handling, contact me.
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="4.0.09" provider-name="Eldorado, tknorris, jsergio, tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.23" provider-name="tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
 		<import addon="script.module.python.twitch" optional="true" />
 		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+		<import addon="plugin.video.gdrive" optional="true" />
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
 		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
 		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
 		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-        <forum>https://www.tvaddons.co/forums</forum>
+		<forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
-	</extension>
-</addon>
-
-<addon id="script.module.urlresolver.xxx" version="1.0.09" name="Adult Resolver SMU Extension" provider-name="jsergio, Echo Coder">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-        	<import addon="script.module.urlresolver" version="3.0.38" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</summary>
-		<description lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</description>
-		<platform>all</platform>
 	</extension>
 </addon>
 
@@ -11870,6 +12059,34 @@ NOTE: Due to updates by rytec, this addon might completely break in a couple of 
     </extension>
 </addon>
 
+<addon id="service.streamlink.proxy" name="Streamlink Proxy" version="4.1.2" provider-name="Twilight0">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.streamlink.base" version="2018.06.12"/>
+        <!--<import addon="script.module.streamlink.plugins" version="1.0.3"/>-->
+    </requires>
+    <extension point="xbmc.service" library="resources/lib/service.py" start="login"/>
+    <extension point="xbmc.python.pluginsource" library="options.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en de el</language>
+        <summary>Streamlink Proxy</summary>
+        <description>Streamlink Proxy for Kodi</description>
+        <platform>all</platform>
+        <license>GPLv3</license>
+        <source>https://github.com/Twilight0/service.streamlink.proxy</source>
+        <size>172839</size>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <news>+ 4.1.2
+- Removed plugins dependency
+- Bumped base module dependency to latest</news>
+    </extension>
+</addon>
+
 <addon id="service.subtitles.opensubtitles_by_opensubtitles"
        name="OpenSubtitles.org by OpenSubtitles"
        version="5.2.14"
@@ -12433,6 +12650,7 @@ v5.2.14 (2017-01-23)
 		<import addon="plugin.video.xstream" version="3.4.4"/>
 		<import addon="plugin.video.exodus" version="4.1.07"/>
 		<import addon="weather.yahoo" version="4.3.1"/>
+		<import addon="visualization.spectrum" version="1.1.1"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="1.0">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
