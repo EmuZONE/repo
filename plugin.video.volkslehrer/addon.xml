@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.volkslehrer" name="[COLOR red]Der Volkslehrer[/COLOR]" version="1.2.8" provider-name="EmuZONE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
+	<import addon="plugin.video.youtube" version="5.3.7"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Der Volkslehrer Informiert:</summary>
+    <description>Der Volkslehrer (Nikolai N.) Tourt durch unser Land und Informiert Gutmenschen und andere Fehlgeleiteten Leute wer in Wirklichkeit zu den Faschisten gehort.</description>
+  </extension>
+</addon>
