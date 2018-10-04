@@ -7329,11 +7329,11 @@ Siehe auch https://github.com/generia/plugin.video.zdf_de_2016
 	</extension>
 </addon>
 
-<addon id="repository.emuzone" name="[COLOR red]EMUZONE[/COLOR] [COLOR white]ADDON[/COLOR] [COLOR red]REPOSITORY[/COLOR]" version="2.1.7" provider-name="EmuZONE">
+<addon id="repository.emuzone" name="[COLOR red]EMUZONE[/COLOR] [COLOR white]ADDON[/COLOR] [COLOR red]REPOSITORY[/COLOR]" version="2.1.8" provider-name="EmuZONE">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
-		<import addon="plugin.video.xstream"/>
-		<import addon="plugin.video.exodus"/>
+		<import addon="plugin.video.xstream" version="3.4.4"/>
+		<import addon="plugin.video.exodus" version="4.1.07"/>
 		<import addon="weather.yahoo" version="4.3.1"/>
 	</requires>
 	<extension point="xbmc.addon.repository" name="EmuZONE">
