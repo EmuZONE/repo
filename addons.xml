@@ -5712,7 +5712,7 @@ provider-name="[COLOR yellow]YggDraz1l[/COLOR]">
     </extension>
 </addon>
 
-<addon id="plugin.video.myspass_de" name="Myspass.de" version="3.0.3" provider-name="L0RE">
+<addon id="plugin.video.myspass_de" name="[COLOR red]MySpass[/COLOR] [COLOR white]Mediathek[/COLOR]" version="3.0.3" provider-name="EmuZONE">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
 		<import addon="script.module.youtube.dl" version="14.810.0"/>
@@ -5721,7 +5721,7 @@ provider-name="[COLOR yellow]YggDraz1l[/COLOR]">
         <provides>video</provides>
     </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="de">Schlag den Raab/Star, TV total, Elton vs. Simon, Pastewka, Dr. Psycho, Stromberg, South Park, Spongebob und vieles mehr...</summary>
+    <summary lang="de">MySpass Mediathek: Comedy Klassiker komplett Kostenlos ansehen</summary>
     <summary lang="en">Schlag den Raab/Star, TV total, Elton vs. Simon, Pastewka, Dr. Psycho, Stromberg, South Park, Spongebob and much more...</summary>
     <language>de</language>
     <description lang="de">Schlag den Raab/Star, TV total, Elton vs. Simon, Pastewka, Dr. Psycho, Stromberg, South Park, Spongebob und vieles mehr...</description>
