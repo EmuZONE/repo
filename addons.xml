@@ -4526,27 +4526,33 @@ provider-name="[COLOR lime]YggDraz1l[/COLOR]">
 	</extension>
 </addon>
 
-<addon id="plugin.video.comedycentral" name="[COLOR red]Comedy Central[/COLOR]" version="0.1.0" provider-name="EmuZONE">
+<addon id="plugin.video.comedycentral" version="1.0.2" name="[COLOR red]Comedy Central[/COLOR]" provider-name="EmuZONE">
     <requires>
-        <import addon="xbmc.python" version="2.24.0"/>
-        <import addon="script.module.requests" version="2.12.4"/>
-        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.simplecache" version="1.0.0"/>
+        <import addon="script.module.youtube.dl" version="17.0.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
     </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="de">Comedycentral</summary>
-    <summary lang="en">Comedycentral</summary>
-    <description lang="en">Comedycentral</description>
-    <description lang="de">Comedy Central Mediathek</description>
-    <website></website>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <source>https://github.com/kodinerds/repo/tree/master/addons/plugin.video.L0RE.comedycentral</source>
-    <forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
-    <email>andreas at vogler dot name</email>
-    <platform>all</platform>
-  </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Watch full episodes and clips from your favorite Comedy Central shows.</summary>
+        <description lang="en_GB">Comedy Central brings you the funniest stuff on the planet. Watch hit shows like Workaholics, Tosh.0, The Daily Show with Trevor Noah, Key and Peele @midnight and Broad City, plus cutting-edge stand-up comedy you won't find anywhere else. Head to CC.com for full episodes, exclusives, previews and more.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+        <source>https://github.com/Lunatixz/KODI_Addons/tree/master/plugin.video.comedycentral</source>
+        <website>http://www.cc.com/</website>
+        <news>v1.0.1[CR]-Added Featured Shows and Increased content size to include All Shows.</news>
+        <forum>https://forum.kodi.tv/showthread.php?tid=326986</forum>
+        <assets>
+            <icon>resources/images/icon.png</icon>
+            <fanart>resources/images/fanart.jpg</fanart>
+            <screenshot>resources/images/screenshot01.png</screenshot>
+            <screenshot>resources/images/screenshot02.png</screenshot>
+            <screenshot>resources/images/screenshot03.png</screenshot>
+            <screenshot>resources/images/screenshot04.png</screenshot>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="plugin.video.couchpotato_manager" name="CouchPotato Manager" version="0.0.8" provider-name="Tristan Fischer (sphere@dersphere.de)">
@@ -6907,46 +6913,43 @@ provider-name="[COLOR red]YggDraz1l[/COLOR]">
 	</extension>
 </addon>
 
-<addon id="plugin.video.xstream"
-    name="xStream"
-    version="3.4.4"
-    provider-name="EmuZONE">
+<addon id="plugin.video.xstream" name="[COLOR white]x[/COLOR][COLOR red]Stream[/COLOR] [COLOR white]Pro[/COLOR]" version="3.5.4" provider-name="EmuZONE">
  <requires>
    <import addon="xbmc.python"                 version="2.14.0"/>
    <import addon="repository.xstream"          version="1.1.1" />
    <import addon="script.module.urlresolver"   version="3.0.0"/>
    <import addon="script.module.metahandler"   version="1.0.0"/>
-   <import addon="script.module.mechanize"     version="0.2.6"/>
+   <import addon="script.module.inputstreamhelper" version="0.3.3" optional="true"/>
  </requires>
  <extension point="xbmc.python.pluginsource" library="default.py">
    <provides>video</provides>
  </extension>
  <extension point="xbmc.addon.metadata">
    <summary lang="de">Watch xStream!</summary>
-   <description lang="de">Mit diesem Addon kannst du auf alle angebotenen Streams verschiedenster deutschen Quellen zugreifen.[CR]Website: http://worldofwarcry.de/board[CR]Support: http://worldofwarcry.de/board</description>
+   <description lang="de">Mit diesem Addon kannst du auf alle angebotenen Streams verschiedenster deutschen Quellen zugreifen</description>
    <disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
    <summary lang="en">Watch xStream!</summary>
-   <description lang="en">With this addon you can watch all the streams from various german sources.[CR]Website: http://worldofwarcry.de/board[CR]Support: http://worldofwarcry.de/board</description>
+   <description lang="en">With this addon you can watch all the streams from various german sources</description>
    <disclaimer lang="en">The creators of this addon do not host or distribute any of the content displayed by the addon nor do they have any affiliation with the content providers.</disclaimer>
-   <forum>http://worldofwarcry.de/board/</forum>
-   <source>https://github.com/EmuZONE/plugin.video.xstream</source>
+   <forum>http://lastship.square7.ch/home</forum>
+   <source>https://github.com/lastship/plugin.video.xstream</source>
    <license>GNU GPLv3</license>
    <platform>all</platform>
-   <news>Big THX to all contributors!
-   For more information check out the commit history at GitHub.
+   <news>
+   xStream 3.5.2~nightly
 
-   xStream 3.4.2
-
-    - Fix Kinodogs (Next Page)
-    - Fix Cinenator (Erscheinungsjahr)
-    - Fix kinox
-    - Fix hdfilme_tv
-
-
-    xStream 3.4.1
-    ================================================================================
-
-    -  Fix Dokustream, Kinox, Moviesever, Foxx
+- [watchbox.de] Add DRM DRM Support(Kodi 18+) zum abzuspielen von DRM streams mindestens Kodi 18
+- [hd-streams.org] fix hoster and Search
+- [alleserien.com] Add Description
+- [alleserien.com] komplett neu geschrieben
+- [s.to] Fix Next Page
+- [hdfilme_tv] Fix Hoster
+- [kinoger.com] Fix Hoster
+- [iload.to] Fix Cover and next Page
+- [Foxx.to] Fix Hoster
+- [s.to] Fix Episode
+- [kinox.to] add new domains
+- Resolver Autoupdate ausgeblendet
    </news>
    <assets>
      <icon>icon.png</icon>
@@ -9882,6 +9885,34 @@ You can clone the project and host it in your own server.
     <website>https://github.com/kjd/idna</website>
     <source>https://github.com/beenje/script.module.idna</source>
     <email>beenje AT gmail.com</email>
+  </extension>
+</addon>
+
+<addon id="script.module.inputstreamhelper"
+       version="0.3.3"
+       name="InputStream Helper"
+       provider-name="emilsvennesson">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+  </requires>
+  <extension library="lib" point="xbmc.python.module"/>
+  <extension point="xbmc.addon.metadata">
+    <description lang="en_GB">A simple Kodi module that makes life easier for add-on developers relying on InputStream based add-ons and DRM playback.</description>
+    <news>2018.02.21 v0.3.3
+        + Load loop if it's a kernel module (thanks to mkreisl)
+        + Fix legacy Widevine CDM update detection
+        + inputstream_addon is now a public variable
+        + Notify user that ARM64 needs 32-bit userspace
+        + Improve logging
+        + Cosmetics
+    </news>
+    <platform>all</platform>
+    <license>MIT License</license>
+    <source>https://github.com/emilsvennesson/script.module.inputstreamhelper</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
   </extension>
 </addon>
 
