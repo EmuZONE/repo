@@ -1,23 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.comedycentral" name="[COLOR red]Comedy Central[/COLOR]" version="0.1.0" provider-name="EmuZONE">
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.comedycentral" version="1.0.2" name="[COLOR red]Comedy Central[/COLOR]" provider-name="EmuZONE">
     <requires>
-        <import addon="xbmc.python" version="2.24.0"/>
-        <import addon="script.module.requests" version="2.12.4"/>
-        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.simplecache" version="1.0.0"/>
+        <import addon="script.module.youtube.dl" version="17.0.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
     </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="de">Comedycentral</summary>
-    <summary lang="en">Comedycentral</summary>
-    <description lang="en">Comedycentral</description>
-    <description lang="de">Comedy Central Mediathek</description>
-    <website></website>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <source>https://github.com/kodinerds/repo/tree/master/addons/plugin.video.L0RE.comedycentral</source>
-    <forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
-    <email>andreas at vogler dot name</email>
-    <platform>all</platform>
-  </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Verpasse keine Episode oder TV-Show von Comedy Central.</summary>
+        <description lang="en_GB">Verfolge die Abenteuer der total beklopten New Kids oder erkundige dich was gerade in South Park los ist.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+        <source>https://github.com/emuzone/repo/master/plugin.video.comedycentral</source>
+        <website>http://www.cc.com/</website>
+        <news>v1.0.1[CR]-Added Featured Shows and Increased content size to include All Shows.</news>
+        <forum>https://forum.kodi.tv/showthread.php?tid=326986</forum>
+        <assets>
+            <icon>resources/images/icon.png</icon>
+            <fanart>resources/images/fanart.jpg</fanart>
+            <screenshot>resources/images/screenshot01.png</screenshot>
+            <screenshot>resources/images/screenshot02.png</screenshot>
+            <screenshot>resources/images/screenshot03.png</screenshot>
+            <screenshot>resources/images/screenshot04.png</screenshot>
+        </assets>
+    </extension>
 </addon>
