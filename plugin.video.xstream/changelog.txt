@@ -1,7 +1,125 @@
-Nightly Updates
+xStream 3.5.2~nightly:
+
+- [kinoger.com] Fix Hoster
+- [cinemaxx.cc] Fix Hoster
+- [watchbox.de] Add DRM DRM Support(Kodi 18+) zum abzuspielen von DRM streams wird mindestens Kodi 18 benötigt
+- [hd-streams.org] fix hoster and Search tnx sraedler.
+- [alleserien.com] Add Description
+- [alleserien.com] komplett neu geschrieben
+- [s.to] Fix Next Page
+- [hdfilme_tv] Fix Hoster
+- [kinoger.com] Fix Hoster
+- [iload.to] Fix Cover and next Page
+- [Foxx.to] Fix Hoster tnx sP4rK
+- [s.to] Fix Episode
+- [kinox.to] add new domains
+- Resolver Autoupdate ausgeblendet
+
+xStream 3.5.1
+  23.08.2018
+- [watchbox.de] Fix no DRM Support
+- [watchbox.to] entfernt (Seite offline)
+- [kinoger.com] Fix Hoster
+- [cinemaxx.cc] Fix Hoster
+- [kino.cx] Add Seite 
+- [StreamDream.ws] Domain zu MovieDream.ws
+- [hdfilme.tv] Fix Hoster
+- Fix Foxx
+- Fix Foxx hoster google
+
+xStream 3.5.0
+  04.08.2018
+- Abhängigkeit von script.module.mechanize entfernt
+- Code Optimierung
+- Update auf urllib2
+- add alleserien.com
+
+xStream 3.4.9
+   16.07.2018
+ - [Filmmerstube] Fix Next page
+ - [HDKino] Seite hinzugefügt
+ - [Cinemaxx_cc] Seite hinzugefügt
+ - Fix foxx
+ - kinodogs.to entfernt (Seite offline)
+ - seriesever.net entfernt (Seite offline)
+ - tmovie.to entfernt (Seite offline)
+ - foxx.to (Anpassung in der Bildanzeige und die Hosterermittlung wurde gefixt)
+ - [serienstream.to] Fix Suche tnx sP4rK
+ - [bs.to] entfernt API KEY funktioniert nicht mehr
+ - {xStream.py] code cleanup
+ - [serienstream.to] fix hoster & code cleanup
+ - Update CFScraper
+ - [watchbox.to] fix
+ - [movie4k] dirty fast fix
+ - [Foxx] Fix
+ - [moviex.co] entfernt seite aufgegeben ersetzt durch Movies.gg
+ - [cine.to] entfernt benutzt recaptcha
+  
+  xStream 3.4.8
+   21.04.2018
+ - [streamit.ws] fix Seite
+ - [Kinox.one] Seite hinzugefügt
+ - [Movies.gg] Seite hinzugefügt
+ - [Foxx.to] Fix Hoster
+ - [TMovie.to] Seite hinzugefügt
+ - [HD-Streams_org] Fix Hoster
+ - Cinenator entfernt (Seite offline)
+ - [Onlinefilme] Fix Hoster
+ - Update cCFScrape.py
+ 
+ xStream 3.4.7
+   03.03.2018
+- [Streamdream.ws] Fix Serien [tnx koditorsten] 
+- [Kinostern] Seite hinzugefügt
+- [Watchbox.de] Optimize code, Add Fanart, Seitenname angepasst & Globale Suche standartmäßig deaktiviert
+- [Watchbox.to] Seite hinzugefügt
+- [Kinoger.com] Seite hinzugefügt
+- [Cinematrix.to] Seite hinzugefügt 
+- [moviex.co] Seite hinzugefügt
+
+xStream 3.4.6
+
+- Kinostreamz und FilmeStreamz entfernt (Seiten offline)
+- Quick Fix Anmeldedaten Serienstream.to 
+- Add SzeneStreams
+- Foxx Fix search
+- Update util.py
+- HD-Streams Fix search und Code Cleanup
+- Update HDStreams (Fix Regex)
+- Streamit Suche hinzugefügt und Code optimiert
+
+xStream 3.4.5
+
+- Update jsunpacker.py
+- Fix Foxx
+- Cinenator Fix Bug's und Code optimiert
+- video2k entfernt
+- Add Movie2k AG
+- Fix CFScrape für HD-Streams
+- Add HD-Streams
+- Onlinefilme Code optimiert
+- Video4k entfernt (umleitung auf cine.to)
+- HD-Streams add Nxload direct
+
+xStream 3.4.4
+
+- URLResolver AutoUpdate - Standard deaktiviert
+- Update settings.xml
+- Fix DDL.me Genres
+- Watchbox Code Optimiert und Regex fix
+- Fix Streamdream Hoster Problem
+- Add OnlineFilme
+- Folgende Seiten entfernt:
+     1kino, Goldstream, Meinkino, Moviesever, RapidStream, streamkisteTV, SzeneStreams, 
+     tata (aktuell keine Filme und Serien mehr)
+
+xStream 3.4.3
 
 - Anmeldedaten für Serienstream.to eingefügt (Danke an WizzardMaker)
 - Fix hdfilme_tv (Danke an vka)
+- Watchbox hinzugefügt
+- Meinkino.to entfernt
+- Update Flimmerstube
 
 xStream 3.4.2
 
