@@ -2336,7 +2336,7 @@ No Station Such Dedication
 </addon>
 
 <addon id="plugin.audio.rac"
-version="2.3.4"
+version="2.3.5"
 name="[COLOR red]RAC Music Libary[/COLOR]"
 provider-name="EmuZONE - [COLOR black]THE[/COLOR] [COLOR white]FOURTH[/COLOR] [COLOR red]REICH[/COLOR]">
 <requires>
