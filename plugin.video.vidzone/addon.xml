@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.vidzone"
+version="1.0.1"
+name="[COLOR red]The VidZONE[/COLOR]"
+provider-name="[COLOR red]YggDraz1l[/COLOR]">
+<requires>
+  <import addon="xbmc.python" version="2.1.0"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">Deutsche Filme und TV Serien</summary>
+  <description lang="en_GB">Deutsche Filme und TV Serien mit einem Klick auf dem Bildschirm. Raritaeten wie die Maerchenbraut oder die Tarzan Filmreihe.</description>
+  <disclaimer lang="en_GB">Der Provider ist nicht fuer die Inhalte verantwortlich.</disclaimer>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+    <screenshot>resources\screenshot-01.jpg</screenshot>
+    <screenshot>resources\screenshot-02.jpg</screenshot>
+    <screenshot>resources\screenshot-03.jpg</screenshot>    
+  </assets>
+  <news>Updated with latest artwork metadata</news>
+</extension>
+</addon>
