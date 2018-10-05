@@ -4848,7 +4848,7 @@ With Digi Storage Player you can easily browse through Media files ( music, movi
   </extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="4.1.07" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="4.1.10" name="[COLOR red]Exodus Media[/COLOR]" provider-name="EmuZONE">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.exodus" />
